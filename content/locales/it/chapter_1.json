@@ -30,6 +30,10 @@
       "sutraId": "sutra_1_02",
       "pronunciation": "yo-gaś chit-ta vrit-ti ni-ro-dhah",
       "initialPronunciation": "yo-gaś",
+      "hintPronunciations": [
+        "yo-gaś",
+        "chit-ta vrit-ti ni-ro-dhah"
+      ],
       "wordMeanings": [
         {
           "term": "yogaḥ",
@@ -80,6 +84,10 @@
       "sutraId": "sutra_1_04",
       "pronunciation": "vrit-ti sā-rū-pyam i-ta-ra-tra",
       "initialPronunciation": "vrit-ti",
+      "hintPronunciations": [
+        "vrit-ti sā-rū-pyam",
+        "i-ta-ra-tra"
+      ],
       "wordMeanings": [
         {
           "term": "vṛtti",
@@ -180,6 +188,12 @@
       "sutraId": "sutra_1_08",
       "pronunciation": "vi-par-ya-yo mith-yā jñā-nam a-ta-drū-pa pra-ti-ṣṭham",
       "initialPronunciation": "vi-par-ya-yo",
+      "hintPronunciations": [
+        "vi-par-ya-yo",
+        "mith-yā jñā-nam",
+        "a-ta-drū-pa",
+        "pra-ti-ṣṭham"
+      ],
       "wordMeanings": [
         {
           "term": "viparyayaḥ",
@@ -209,6 +223,12 @@
       "sutraId": "sutra_1_09",
       "pronunciation": "śab-da jñā-na a-nu-pā-tī va-stu śūn-yo vi-kal-paḥ",
       "initialPronunciation": "śab-da",
+      "hintPronunciations": [
+        "śab-da jñā-na",
+        "a-nu-pā-tī",
+        "va-stu śūn-yo",
+        "vi-kal-paḥ"
+      ],
       "wordMeanings": [
         {
           "term": "śabda",
@@ -350,6 +370,15 @@
       "sutraId": "sutra_1_14",
       "pronunciation": "sa tu dīr-gha kā-la nai-ran-tar-ya sat-kā-rā-se-vi-to dṛ-ḍha bhū-miḥ",
       "initialPronunciation": "sa",
+      "hintPronunciations": [
+        "sa",
+        "tu",
+        "dīr-gha",
+        "kā-la",
+        "nai-ran-tar-ya",
+        "sat-kā-rā-se-vi-to",
+        "dṛ-ḍha bhū-miḥ"
+      ],
       "wordMeanings": [
         {
           "term": "sa",
@@ -1554,6 +1583,14 @@
       "sutraId": "sutra_1_50",
       "pronunciation": "taj-jaḥ sam-skā-raḥ an-ya sam-skā-ra pra-ti-ban-dhī",
       "initialPronunciation": "taj-jaḥ",
+      "hintPronunciations": [
+        "taj",
+        "jaḥ",
+        "sam-skā-raḥ",
+        "an-ya",
+        "sam-skā-ra",
+        "pra-ti-ban-dhī"
+      ],
       "wordMeanings": [
         {
           "term": "taj-jaḥ",

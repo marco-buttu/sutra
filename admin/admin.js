@@ -20,6 +20,7 @@
     changeState: document.querySelector("#change-state"),
     sanskrit: document.querySelector("#sanskrit"),
     pronunciation: document.querySelector("#pronunciation"),
+    hintPronunciations: document.querySelector("#hint-pronunciations"),
     wordList: document.querySelector("#word-list"),
     wordTemplate: document.querySelector("#word-row-template"),
     addWord: document.querySelector("#add-word"),
@@ -166,6 +167,7 @@
     elements.sutraNumber.textContent = `Sutra ${sutra.number}`;
     elements.sanskrit.value = sutra.sanskrit;
     elements.pronunciation.value = sutra.pronunciation;
+    elements.hintPronunciations.value = sutra.hintPronunciations.join("\n");
     elements.meaning.value = sutra.meaning;
     elements.explanation.value = sutra.explanation;
     elements.wordList.replaceChildren();
@@ -332,6 +334,10 @@
         sutraId: state.sutraId,
         sanskrit: elements.sanskrit.value,
         pronunciation: elements.pronunciation.value,
+        hintPronunciations: elements.hintPronunciations.value
+          .split("\n")
+          .map((value) => value.trim())
+          .filter(Boolean),
         wordMeanings: wordMeaningsFromForm(),
         meaning: elements.meaning.value,
         explanation: elements.explanation.value

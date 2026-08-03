@@ -114,9 +114,19 @@ def main() -> None:
             if not localized["description"]:
                 raise ValueError(f"Missing chapter description in {path}")
             for item in localized["sutras"]:
+                core_sutra = sutra_by_id[item["sutraId"]]
                 if item["initialPronunciation"] != item["pronunciation"].split()[0]:
                     raise ValueError(
                         f"Incorrect initial pronunciation for {item['sutraId']} in {path}"
+                    )
+                hint_pronunciations = item.get(
+                    "hintPronunciations",
+                    item["pronunciation"].split(),
+                )
+                if len(hint_pronunciations) != len(core_sutra["sanskrit"].split()):
+                    raise ValueError(
+                        f"Progressive pronunciation hints do not match the Sanskrit "
+                        f"words for {item['sutraId']} in {path}"
                     )
                 if catalog["features"]["explanations"] and not item["explanation"]:
                     raise ValueError(f"Missing explanation for {item['sutraId']} in {path}")

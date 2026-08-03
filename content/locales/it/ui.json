@@ -5,7 +5,7 @@
   },
   "cover": {
     "kicker": "Yoga Sutra di Patanjali",
-    "authorLabel": "Autore:",
+    "authorLabel": "Autori:",
     "voiceLabel": "Voce:",
     "importantNoteTitle": "Nota importante",
     "importantNote": "La voce che senti in questa app è quella del mio maestro, mentre le spiegazioni sono create da una AI. Se trovi imprecisioni o errori, la colpa è solo ed esclusivamente mia. Usa questo strumento come una guida per lo studio, con la dovuta consapevolezza.",
@@ -60,6 +60,27 @@
     "playingState": "In riproduzione",
     "pausedState": "In pausa",
     "noSutras": "Nessun sutra disponibile."
+  },
+  "verification": {
+    "title": "Verifica",
+    "selectionLabel": "Selezione",
+    "allOption": "Tutti i sutra",
+    "chapterOption": "Un capitolo",
+    "rangeOption": "Intervallo",
+    "chapterLabel": "Capitolo",
+    "fromLabel": "Da",
+    "toLabel": "A",
+    "start": "Inizia",
+    "next": "Prossimo sutra",
+    "hint": "Suggerimento",
+    "showSolution": "Mostra soluzione",
+    "ready": "Scegli la selezione e premi Inizia.",
+    "prompt": "Ricorda il sutra {number}",
+    "hintLabel": "Suggerimento",
+    "solutionLabel": "Soluzione",
+    "meaningLabel": "Significato:",
+    "playLabel": "Riproduci la soluzione del sutra {number}",
+    "noSutras": "Nessun sutra disponibile per questa selezione."
   },
   "audio": {
     "play": "Play",

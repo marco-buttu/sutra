@@ -147,6 +147,17 @@ button {
   line-height: 1.45;
 }
 
+.cover-credit-authors {
+  display: block;
+}
+
+.cover-author-list {
+  display: flex;
+  align-items: baseline;
+  gap: 0 0.35em;
+  white-space: nowrap;
+}
+
 .cover-credit a {
   color: var(--gold);
   font-weight: 700;
@@ -167,7 +178,7 @@ button {
 }
 
 .cover-note {
-  width: 70%;
+  width: 60%;
   margin-top: 22px;
   border-left: 2px solid var(--gold);
   color: #e5edef;
@@ -559,6 +570,158 @@ button {
   line-height: 1.45;
 }
 
+.verification-heading {
+  margin-bottom: 20px;
+}
+
+.verification-controls {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(130px, 1fr));
+  gap: 14px;
+}
+
+.verification-actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(33, 79, 99, 0.14);
+}
+
+.verification-primary,
+.verification-secondary {
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 2px;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    color 160ms ease,
+    background 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.verification-primary {
+  min-width: 126px;
+  border: 1px solid var(--midnight);
+  color: var(--white);
+  background: var(--midnight);
+}
+
+.verification-primary:hover {
+  border-color: var(--deep-blue);
+  background: var(--deep-blue);
+  transform: translateY(-1px);
+}
+
+.verification-secondary {
+  border: 1px solid #b7c9cd;
+  color: var(--midnight);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.verification-secondary:hover:not(:disabled) {
+  border-color: var(--deep-blue);
+  background: var(--white);
+}
+
+.verification-secondary:disabled {
+  color: #929a9b;
+  cursor: default;
+  opacity: 0.65;
+}
+
+.verification-primary:focus-visible,
+.verification-secondary:focus-visible {
+  outline: 3px solid rgba(196, 154, 82, 0.3);
+  outline-offset: 3px;
+}
+
+.verification-status {
+  position: relative;
+  z-index: 1;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.verification-card {
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+  padding: 24px;
+  border: 1px solid rgba(33, 79, 99, 0.16);
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.verification-number {
+  margin: 0;
+  color: var(--gold-dark);
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.verification-hint,
+.verification-solution {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(33, 79, 99, 0.13);
+}
+
+.verification-section-label {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.verification-hint-sanskrit,
+.verification-solution-sanskrit {
+  margin: 0;
+  color: var(--midnight);
+  font-size: clamp(20px, 2.8vw, 27px);
+  line-height: 1.35;
+}
+
+.verification-hint-pronunciation,
+.verification-solution-pronunciation {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.verification-solution-meaning {
+  margin: 15px 0 0;
+  padding: 11px 13px 12px;
+  border-left: 3px solid var(--gold);
+  color: var(--ink);
+  background: var(--warm-white);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.verification-solution-audio {
+  margin-top: 14px;
+}
+
 .chapter-toolbar {
   display: flex;
   align-items: center;
@@ -909,6 +1072,10 @@ button {
   .continuous-controls .continuous-options {
     grid-column: 1 / -1;
   }
+
+  .verification-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 720px) {
@@ -964,6 +1131,24 @@ button {
 
   .continuous-player {
     flex-wrap: wrap;
+  }
+
+  .verification-controls .verification-mode-field,
+  .verification-controls .verification-chapter-field {
+    grid-column: 1 / -1;
+  }
+
+  .verification-actions {
+    align-items: stretch;
+  }
+
+  .verification-primary,
+  .verification-secondary {
+    flex: 1 1 150px;
+  }
+
+  .verification-card {
+    padding: 19px 16px;
   }
 
   .sequence-status {

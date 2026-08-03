@@ -127,10 +127,14 @@
     const credits = catalog.credits;
     return `
       <div class="cover-credits">
-        <p class="cover-credit">
+        <div class="cover-credit cover-credit-authors">
           <span>${escapeHtml(message("cover.authorLabel"))}</span>
-          <a href="${escapeHtml(credits.authorUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(credits.authorName)}</a>
-        </p>
+          <span class="cover-author-list">
+            ${credits.authors.map((author) => `
+              <a href="${escapeHtml(author.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(author.name)}</a>
+            `).join('<span class="cover-author-separator">e</span>')}
+          </span>
+        </div>
         <p class="cover-credit">
           <span>${escapeHtml(message("cover.voiceLabel"))}</span>
           <span>${escapeHtml(credits.voiceHonorific)}</span>
@@ -154,6 +158,80 @@
           <p class="cover-count">${escapeHtml(count)}</p>
         </div>
       </header>`;
+  }
+
+  function verificationPanelMarkup() {
+    if (!catalog.features.tests) {
+      return "";
+    }
+    return `
+      <section class="home-panel verification-panel" aria-labelledby="verification-title">
+        <div class="panel-heading verification-heading">
+          <h2 class="panel-title" id="verification-title">${escapeHtml(message("verification.title"))}</h2>
+        </div>
+
+        <div class="verification-controls">
+          <label class="control-field verification-mode-field">
+            <span>${escapeHtml(message("verification.selectionLabel"))}</span>
+            <select id="verification-mode">
+              <option value="all">${escapeHtml(message("verification.allOption"))}</option>
+              <option value="chapter">${escapeHtml(message("verification.chapterOption"))}</option>
+              <option value="range">${escapeHtml(message("verification.rangeOption"))}</option>
+            </select>
+          </label>
+
+          <label class="control-field verification-chapter-field" hidden>
+            <span>${escapeHtml(message("verification.chapterLabel"))}</span>
+            <select id="verification-chapter">
+              ${chapters.map((chapter) => `
+                <option value="${chapter.number}">${escapeHtml(chapterLabel(chapter))}</option>
+              `).join("")}
+            </select>
+          </label>
+
+          <label class="control-field verification-start-field" hidden>
+            <span>${escapeHtml(message("verification.fromLabel"))}</span>
+            <select id="verification-start"></select>
+          </label>
+
+          <label class="control-field verification-end-field" hidden>
+            <span>${escapeHtml(message("verification.toLabel"))}</span>
+            <select id="verification-end"></select>
+          </label>
+        </div>
+
+        <div class="verification-actions">
+          <button class="verification-primary" id="verification-next" type="button">
+            ${escapeHtml(message("verification.start"))}
+          </button>
+          <button class="verification-secondary" id="verification-hint" type="button" disabled>
+            ${escapeHtml(message("verification.hint"))}
+          </button>
+          <button class="verification-secondary" id="verification-solution" type="button" disabled>
+            ${escapeHtml(message("verification.showSolution"))}
+          </button>
+        </div>
+
+        <p class="verification-status" id="verification-status" aria-live="polite">
+          ${escapeHtml(message("verification.ready"))}
+        </p>
+
+        <div class="verification-card" id="verification-card" hidden>
+          <p class="verification-number"></p>
+          <div class="verification-hint" hidden>
+            <p class="verification-section-label">${escapeHtml(message("verification.hintLabel"))}</p>
+            <p class="verification-hint-sanskrit"></p>
+            <p class="verification-hint-pronunciation"></p>
+          </div>
+          <div class="verification-solution" hidden>
+            <p class="verification-section-label">${escapeHtml(message("verification.solutionLabel"))}</p>
+            <p class="verification-solution-sanskrit"></p>
+            <p class="verification-solution-pronunciation"></p>
+            <p class="verification-solution-meaning"></p>
+            <div class="verification-solution-audio"></div>
+          </div>
+        </div>
+      </section>`;
   }
 
   function renderHome() {
@@ -260,6 +338,8 @@
             <p class="sequence-current-pronunciation"></p>
           </div>
         </section>
+
+        ${verificationPanelMarkup()}
       </main>`;
 
     document.querySelectorAll("[data-chapter-link]").forEach((button) => {
@@ -269,6 +349,7 @@
     });
 
     setupContinuousRecitation();
+    setupVerification();
   }
 
   function recitationMarkup(kind, title, source, chapter) {
@@ -431,6 +512,9 @@
         return;
       }
 
+      if (playbackMode === "sequence" && sequenceUi) {
+        sequenceUi.stopSequence();
+      }
       player.pause();
       resetAudioButton(activeButton);
       sequenceState = null;
@@ -446,6 +530,228 @@
         playbackMode = "idle";
       }
     });
+  }
+
+  function setupVerification() {
+    const panel = document.querySelector(".verification-panel");
+    if (!panel) {
+      return;
+    }
+
+    const modeSelect = panel.querySelector("#verification-mode");
+    const chapterField = panel.querySelector(".verification-chapter-field");
+    const chapterSelect = panel.querySelector("#verification-chapter");
+    const startField = panel.querySelector(".verification-start-field");
+    const startSelect = panel.querySelector("#verification-start");
+    const endField = panel.querySelector(".verification-end-field");
+    const endSelect = panel.querySelector("#verification-end");
+    const nextButton = panel.querySelector("#verification-next");
+    const hintButton = panel.querySelector("#verification-hint");
+    const solutionButton = panel.querySelector("#verification-solution");
+    const status = panel.querySelector("#verification-status");
+    const card = panel.querySelector("#verification-card");
+    const number = card.querySelector(".verification-number");
+    const hint = card.querySelector(".verification-hint");
+    const hintSanskrit = hint.querySelector(".verification-hint-sanskrit");
+    const hintPronunciation = hint.querySelector(
+      ".verification-hint-pronunciation"
+    );
+    const solution = card.querySelector(".verification-solution");
+    const solutionSanskrit = solution.querySelector(
+      ".verification-solution-sanskrit"
+    );
+    const solutionPronunciation = solution.querySelector(
+      ".verification-solution-pronunciation"
+    );
+    const solutionMeaning = solution.querySelector(
+      ".verification-solution-meaning"
+    );
+    const solutionAudio = solution.querySelector(
+      ".verification-solution-audio"
+    );
+
+    const verificationState = {
+      currentSutra: null,
+      hintCount: 0,
+      lastSutraId: null
+    };
+
+    function selectedChapter() {
+      return chapters.find(
+        (chapter) => chapter.number === Number(chapterSelect.value)
+      );
+    }
+
+    function populateRange() {
+      const chapter = selectedChapter();
+      const options = chapter.sutras.map((sutra, index) => (
+        `<option value="${index}">${escapeHtml(sutra.number)}</option>`
+      )).join("");
+      startSelect.innerHTML = options;
+      endSelect.innerHTML = options;
+      startSelect.value = "0";
+      endSelect.value = String(chapter.sutras.length - 1);
+    }
+
+    function selectedPool() {
+      if (modeSelect.value === "all") {
+        return chapters.flatMap((chapter) => chapter.sutras);
+      }
+      const sutras = selectedChapter().sutras;
+      if (modeSelect.value === "chapter") {
+        return sutras.slice();
+      }
+      return sutras.slice(
+        Number(startSelect.value),
+        Number(endSelect.value) + 1
+      );
+    }
+
+    function progressiveHints(sutra) {
+      const sanskritWords = sutra.sanskrit.trim().split(/\s+/);
+      const pronunciationWords = Array.isArray(sutra.hintPronunciations)
+        ? sutra.hintPronunciations
+        : sutra.pronunciation.trim().split(/\s+/);
+      return sanskritWords.map((sanskrit, index) => ({
+        sanskrit,
+        pronunciation: pronunciationWords[index] || ""
+      }));
+    }
+
+    function stopVerificationAudio() {
+      if (
+        playbackMode === "single" &&
+        activeButton &&
+        panel.contains(activeButton)
+      ) {
+        player.pause();
+        resetAudioButton(activeButton);
+        activeButton = null;
+        playbackMode = "idle";
+        clearPlayerSource();
+      }
+    }
+
+    function resetQuestion() {
+      stopVerificationAudio();
+      verificationState.currentSutra = null;
+      verificationState.hintCount = 0;
+      card.hidden = true;
+      hint.hidden = true;
+      solution.hidden = true;
+      hintButton.disabled = true;
+      solutionButton.disabled = true;
+      nextButton.textContent = message("verification.start");
+      status.hidden = false;
+      status.textContent = message("verification.ready");
+      solutionAudio.replaceChildren();
+    }
+
+    function updateMode() {
+      const showChapter = modeSelect.value !== "all";
+      const showRange = modeSelect.value === "range";
+      chapterField.hidden = !showChapter;
+      startField.hidden = !showRange;
+      endField.hidden = !showRange;
+      resetQuestion();
+    }
+
+    function chooseSutra() {
+      const pool = selectedPool();
+      if (!pool.length) {
+        resetQuestion();
+        status.textContent = message("verification.noSutras");
+        return;
+      }
+
+      if (playbackMode === "sequence" && sequenceUi) {
+        sequenceUi.stopSequence();
+      } else {
+        stopVerificationAudio();
+      }
+      const candidates = pool.length > 1
+        ? pool.filter((sutra) => sutra.id !== verificationState.lastSutraId)
+        : pool;
+      const sutra = candidates[Math.floor(Math.random() * candidates.length)];
+      verificationState.currentSutra = sutra;
+      verificationState.lastSutraId = sutra.id;
+      verificationState.hintCount = 0;
+
+      card.hidden = false;
+      number.textContent = message("verification.prompt", {number: sutra.number});
+      hint.hidden = true;
+      hintSanskrit.textContent = "";
+      hintPronunciation.textContent = "";
+      solution.hidden = true;
+      solutionAudio.replaceChildren();
+      hintButton.disabled = false;
+      solutionButton.disabled = false;
+      nextButton.textContent = message("verification.next");
+      status.hidden = true;
+    }
+
+    function revealHint() {
+      const sutra = verificationState.currentSutra;
+      if (!sutra) {
+        return;
+      }
+      const hints = progressiveHints(sutra);
+      verificationState.hintCount = Math.min(
+        verificationState.hintCount + 1,
+        hints.length
+      );
+      const revealed = hints.slice(0, verificationState.hintCount);
+      hintSanskrit.textContent = revealed.map((item) => item.sanskrit).join(" ");
+      hintPronunciation.textContent = revealed
+        .map((item) => item.pronunciation)
+        .filter(Boolean)
+        .join(" ");
+      hint.hidden = false;
+      hintButton.disabled = verificationState.hintCount >= hints.length;
+    }
+
+    function revealSolution() {
+      const sutra = verificationState.currentSutra;
+      if (!sutra) {
+        return;
+      }
+      stopVerificationAudio();
+      solutionSanskrit.textContent = sutra.sanskrit;
+      solutionPronunciation.textContent = sutra.pronunciation;
+      solutionMeaning.textContent = `${message("verification.meaningLabel")} ${sutra.meaning}`;
+      solutionAudio.innerHTML = audioButton(
+        sutra.audio,
+        message("verification.playLabel", {number: sutra.number})
+      );
+      setupAudioButton(solutionAudio.querySelector(".audio-button"));
+      solution.hidden = false;
+      hintButton.disabled = true;
+      solutionButton.disabled = true;
+    }
+
+    modeSelect.addEventListener("change", updateMode);
+    chapterSelect.addEventListener("change", () => {
+      populateRange();
+      resetQuestion();
+    });
+    startSelect.addEventListener("change", () => {
+      if (Number(startSelect.value) > Number(endSelect.value)) {
+        endSelect.value = startSelect.value;
+      }
+      resetQuestion();
+    });
+    endSelect.addEventListener("change", () => {
+      if (Number(endSelect.value) < Number(startSelect.value)) {
+        startSelect.value = endSelect.value;
+      }
+      resetQuestion();
+    });
+    nextButton.addEventListener("click", chooseSutra);
+    hintButton.addEventListener("click", revealHint);
+    solutionButton.addEventListener("click", revealSolution);
+
+    populateRange();
+    updateMode();
   }
 
   function setupContinuousRecitation() {
@@ -696,6 +1002,9 @@
         return;
       }
 
+      player.pause();
+      resetAudioButton(activeButton);
+      activeButton = null;
       playbackMode = "sequence";
       sequenceState = {
         queue,

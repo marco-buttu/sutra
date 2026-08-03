@@ -43,6 +43,7 @@ function fixture() {
               order: 1,
               sanskrit: "atha yogānuśāsanam",
               pronunciation: "a-tha yo-gā-nu-śā-sa-nam",
+              hintPronunciations: ["a-tha", "yo-gā-nu-śā-sa-nam"],
               wordMeanings: [
                 {term: "atha", meaning: "ora"},
                 {term: "yoga", meaning: "yoga"}
@@ -102,6 +103,9 @@ async function main() {
     if (document.querySelectorAll(".word-row").length !== 2) {
       throw new Error("The word meanings were not populated.");
     }
+    if (document.querySelector("#hint-pronunciations").value.split("\n").length !== 2) {
+      throw new Error("The progressive pronunciation hints were not populated.");
+    }
 
     document.querySelector("#add-word").click();
     if (document.querySelectorAll(".word-row").length !== 3) {
@@ -127,6 +131,9 @@ async function main() {
     }
     if (savedPayload.wordMeanings.length !== 3) {
       throw new Error("The edited word meanings were not submitted.");
+    }
+    if (savedPayload.hintPronunciations.length !== 2) {
+      throw new Error("The progressive pronunciation hints were not submitted.");
     }
 
     console.log("Admin interface smoke test passed.");

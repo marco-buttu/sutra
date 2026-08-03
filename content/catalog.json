@@ -7,8 +7,16 @@
   ],
   "defaultVoiceId": "vijay",
   "credits": {
-    "authorName": "Marco Buttu",
-    "authorUrl": "https://www.instagram.com/marco.buttu/",
+    "authors": [
+      {
+        "name": "Marco Buttu",
+        "url": "https://www.instagram.com/marco.buttu/"
+      },
+      {
+        "name": "Arianna Macciantelli",
+        "url": "https://www.instagram.com/a.riamm/"
+      }
+    ],
     "voiceHonorific": "Guruji",
     "voiceName": "Vijay Kumar",
     "voiceUrl": "https://www.ashtangasaadhana.com/"
@@ -17,6 +25,6 @@
     "study": true,
     "continuousRecitation": true,
     "explanations": true,
-    "tests": false
+    "tests": true
   }
 }

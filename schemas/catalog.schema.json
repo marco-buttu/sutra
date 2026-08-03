@@ -27,10 +27,21 @@
     "credits": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["authorName", "authorUrl", "voiceHonorific", "voiceName", "voiceUrl"],
+      "required": ["authors", "voiceHonorific", "voiceName", "voiceUrl"],
       "properties": {
-        "authorName": {"type": "string", "minLength": 1},
-        "authorUrl": {"type": "string", "format": "uri"},
+        "authors": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "url"],
+            "properties": {
+              "name": {"type": "string", "minLength": 1},
+              "url": {"type": "string", "format": "uri"}
+            }
+          }
+        },
         "voiceHonorific": {"type": "string", "minLength": 1},
         "voiceName": {"type": "string", "minLength": 1},
         "voiceUrl": {"type": "string", "format": "uri"}

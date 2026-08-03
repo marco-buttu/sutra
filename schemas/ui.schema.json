@@ -4,7 +4,7 @@
   "title": "Sutra by Heart interface translation",
   "type": "object",
   "additionalProperties": false,
-  "required": ["metadata", "cover", "home", "navigation", "chapter", "sutra", "continuous", "audio", "errors"],
+  "required": ["metadata", "cover", "home", "navigation", "chapter", "sutra", "continuous", "verification", "audio", "errors"],
   "properties": {
     "metadata": {"$ref": "#/$defs/stringMap"},
     "cover": {"$ref": "#/$defs/stringMap"},
@@ -13,6 +13,7 @@
     "chapter": {"$ref": "#/$defs/stringMap"},
     "sutra": {"$ref": "#/$defs/stringMap"},
     "continuous": {"$ref": "#/$defs/stringMap"},
+    "verification": {"$ref": "#/$defs/stringMap"},
     "audio": {"$ref": "#/$defs/stringMap"},
     "errors": {"$ref": "#/$defs/stringMap"}
   },

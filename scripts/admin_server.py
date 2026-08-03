@@ -90,6 +90,10 @@ class ContentRepository:
                             "order": core["order"],
                             "sanskrit": core["sanskrit"],
                             "pronunciation": localized_sutra["pronunciation"],
+                            "hintPronunciations": localized_sutra.get(
+                                "hintPronunciations",
+                                localized_sutra["pronunciation"].split(),
+                            ),
                             "wordMeanings": localized_sutra["wordMeanings"],
                             "meaning": localized_sutra["meaning"],
                             "explanation": localized_sutra["explanation"] or "",
@@ -124,6 +128,11 @@ class ContentRepository:
         pronunciation = required_text(
             payload.get("pronunciation"),
             "Pronunciation",
+        )
+        hint_pronunciations = self._normalize_hint_pronunciations(
+            payload.get("hintPronunciations"),
+            sanskrit,
+            pronunciation,
         )
         meaning = required_text(payload.get("meaning"), "Meaning")
         explanation = required_text(payload.get("explanation"), "Explanation")
@@ -167,6 +176,7 @@ class ContentRepository:
             core_sutra["initialWord"] = sanskrit.split()[0]
             localized_sutra["pronunciation"] = pronunciation
             localized_sutra["initialPronunciation"] = pronunciation.split()[0]
+            localized_sutra["hintPronunciations"] = hint_pronunciations
             localized_sutra["wordMeanings"] = word_meanings
             localized_sutra["meaning"] = meaning
             localized_sutra["explanation"] = explanation
@@ -230,6 +240,28 @@ class ContentRepository:
                 "message": f"Chapter {chapter['title']} saved.",
                 "data": self.editor_data(),
             }
+
+    @staticmethod
+    def _normalize_hint_pronunciations(
+        value: Any,
+        sanskrit: str,
+        pronunciation: str,
+    ) -> list[str]:
+        if value is None:
+            value = pronunciation.split()
+        if not isinstance(value, list) or not value:
+            raise EditorError("Progressive pronunciation hints are required.")
+        normalized = [
+            required_text(item, f"Pronunciation hint {index}")
+            for index, item in enumerate(value, start=1)
+        ]
+        expected = len(sanskrit.split())
+        if len(normalized) != expected:
+            raise EditorError(
+                f"Expected {expected} progressive pronunciation hints, "
+                f"received {len(normalized)}."
+            )
+        return normalized
 
     @staticmethod
     def _normalize_word_meanings(value: Any) -> list[dict[str, str]]:
