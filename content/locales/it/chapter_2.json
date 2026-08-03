@@ -1,0 +1,1860 @@
+{
+  "locale": "it",
+  "chapterId": "chapter_2",
+  "title": "Sadhana Pada",
+  "subtitle": "significato letterale essenziale",
+  "description": "Il Sādhana Pāda presenta il percorso pratico dello yoga. Esamina le cause della sofferenza e introduce le prime cinque membra dell'aṣṭāṅga yoga: yama, niyama, āsana, prāṇāyāma e pratyāhāra.",
+  "sutras": [
+    {
+      "sutraId": "sutra_2_01",
+      "pronunciation": "ta-paḥ svā-dhyā-ya ī-śva-ra pra-ni-dhā-nā-ni kri-yā yo-gaḥ",
+      "initialPronunciation": "ta-paḥ",
+      "wordMeanings": [
+        {
+          "term": "tapaḥ",
+          "meaning": "disciplina, ascesi"
+        },
+        {
+          "term": "svādhyāya",
+          "meaning": "studio di sé e dei testi sacri"
+        },
+        {
+          "term": "īśvara",
+          "meaning": "il Signore, la coscienza suprema"
+        },
+        {
+          "term": "praṇidhānāni",
+          "meaning": "dedizione, abbandono"
+        },
+        {
+          "term": "kriyā",
+          "meaning": "azione, pratica"
+        },
+        {
+          "term": "yogaḥ",
+          "meaning": "yoga"
+        }
+      ],
+      "meaning": "La disciplina, lo studio di sé e l'abbandono al Signore costituiscono lo yoga dell'azione.",
+      "explanation": "Il kriyā yoga riunisce disciplina, studio e dedizione in una pratica adatta a trasformare la vita quotidiana. Questi tre elementi agiscono su comportamento, comprensione e orientamento profondo, evitando che lo yoga rimanga soltanto teorico."
+    },
+    {
+      "sutraId": "sutra_2_02",
+      "pronunciation": "sa-mā-dhi bhā-va-nār-thaḥ kle-śa ta-nū-ka-ra-ṇār-thaś cha",
+      "initialPronunciation": "sa-mā-dhi",
+      "wordMeanings": [
+        {
+          "term": "samādhi",
+          "meaning": "assorbimento meditativo"
+        },
+        {
+          "term": "bhāvanārthaḥ",
+          "meaning": "per coltivare, produrre"
+        },
+        {
+          "term": "kleśa",
+          "meaning": "afflizioni"
+        },
+        {
+          "term": "tanūkaraṇārthaḥ",
+          "meaning": "per attenuare, rendere sottili"
+        },
+        {
+          "term": "ca",
+          "meaning": "e"
+        }
+      ],
+      "meaning": "Esso serve a coltivare il samādhi e ad attenuare le afflizioni.",
+      "explanation": "Lo scopo del kriyā yoga è duplice: preparare il samādhi e indebolire le afflizioni. Non promette di eliminarle immediatamente, ma riduce il loro potere così che la mente possa diventare più stabile e trasparente."
+    },
+    {
+      "sutraId": "sutra_2_03",
+      "pronunciation": "a-vid-yā as-mi-tā rā-ga dve-ṣa a-bhi-ni-ve-śāḥ kle-śāḥ",
+      "initialPronunciation": "a-vid-yā",
+      "wordMeanings": [
+        {
+          "term": "avidyā",
+          "meaning": "ignoranza"
+        },
+        {
+          "term": "asmitā",
+          "meaning": "senso dell'io"
+        },
+        {
+          "term": "rāga",
+          "meaning": "attaccamento"
+        },
+        {
+          "term": "dveṣa",
+          "meaning": "avversione"
+        },
+        {
+          "term": "abhiniveśāḥ",
+          "meaning": "attaccamento alla vita, paura della morte"
+        },
+        {
+          "term": "kleśāḥ",
+          "meaning": "afflizioni"
+        }
+      ],
+      "meaning": "Le afflizioni sono ignoranza, senso dell'io, attaccamento, avversione e attaccamento alla vita.",
+      "explanation": "Le cinque kleśa descrivono le radici fondamentali della sofferenza mentale. L'ignoranza sostiene le altre: da una visione confusa nascono identificazione, attrazione, repulsione e paura di perdere la continuità dell'esistenza."
+    },
+    {
+      "sutraId": "sutra_2_04",
+      "pronunciation": "a-vid-yā kṣe-tram ut-ta-re-ṣām pra-sup-ta ta-nu vich-chhin-na u-dā-rā-ṇām",
+      "initialPronunciation": "a-vid-yā",
+      "wordMeanings": [
+        {
+          "term": "avidyā",
+          "meaning": "ignoranza"
+        },
+        {
+          "term": "kṣetram",
+          "meaning": "campo, terreno"
+        },
+        {
+          "term": "uttareṣām",
+          "meaning": "delle altre"
+        },
+        {
+          "term": "prasupta",
+          "meaning": "dormienti"
+        },
+        {
+          "term": "tanu",
+          "meaning": "attenuate"
+        },
+        {
+          "term": "vicchinna",
+          "meaning": "intermittenti"
+        },
+        {
+          "term": "udārāṇām",
+          "meaning": "pienamente attive"
+        }
+      ],
+      "meaning": "L'ignoranza è il terreno delle altre afflizioni, dormienti, attenuate, intermittenti o pienamente attive.",
+      "explanation": "Le afflizioni non sono sempre manifestamente attive. Possono restare latenti, essere attenuate dalla pratica, comparire in modo intermittente o dominare la mente; riconoscerne lo stato permette di comprenderne meglio l'azione."
+    },
+    {
+      "sutraId": "sutra_2_05",
+      "pronunciation": "a-ni-tya a-śu-chi duḥ-kha a-nāt-ma-su ni-tya śu-chi su-kha āt-ma khyā-tir a-vid-yā",
+      "initialPronunciation": "a-ni-tya",
+      "wordMeanings": [
+        {
+          "term": "anitya",
+          "meaning": "impermanente"
+        },
+        {
+          "term": "aśuci",
+          "meaning": "impuro"
+        },
+        {
+          "term": "duḥkha",
+          "meaning": "dolore"
+        },
+        {
+          "term": "anātmasu",
+          "meaning": "nel non-Sé"
+        },
+        {
+          "term": "nitya",
+          "meaning": "permanente"
+        },
+        {
+          "term": "śuci",
+          "meaning": "puro"
+        },
+        {
+          "term": "sukha",
+          "meaning": "piacere"
+        },
+        {
+          "term": "ātma",
+          "meaning": "Sé"
+        },
+        {
+          "term": "khyātiḥ",
+          "meaning": "considerare, riconoscere"
+        },
+        {
+          "term": "avidyā",
+          "meaning": "ignoranza"
+        }
+      ],
+      "meaning": "L'ignoranza scambia l'impermanente per permanente, l'impuro per puro, il dolore per piacere e il non-Sé per il Sé.",
+      "explanation": "Avidyā non è semplice mancanza di informazioni, ma un modo capovolto di vedere. Attribuisce stabilità, purezza, felicità e identità a ciò che non le possiede in modo permanente, generando aspettative inevitabilmente fragili."
+    },
+    {
+      "sutraId": "sutra_2_06",
+      "pronunciation": "dṛg dar-śa-na śak-tyor e-kāt-ma-tā i-va as-mi-tā",
+      "initialPronunciation": "dṛg",
+      "wordMeanings": [
+        {
+          "term": "dṛg",
+          "meaning": "il veggente"
+        },
+        {
+          "term": "darśana",
+          "meaning": "la visione"
+        },
+        {
+          "term": "śaktyoḥ",
+          "meaning": "dei due poteri"
+        },
+        {
+          "term": "ekātmatā",
+          "meaning": "identità, unità"
+        },
+        {
+          "term": "iva",
+          "meaning": "come se, apparente"
+        },
+        {
+          "term": "asmitā",
+          "meaning": "senso dell'io"
+        }
+      ],
+      "meaning": "Il senso dell'io è l'apparente identità tra il veggente e il potere della visione.",
+      "explanation": "Asmitā sorge quando la pura facoltà di vedere viene confusa con lo strumento mentale attraverso cui avviene la conoscenza. Il pensiero 'io sono questo' attribuisce al veggente proprietà che appartengono invece alla mente e alla natura."
+    },
+    {
+      "sutraId": "sutra_2_07",
+      "pronunciation": "su-kha a-nu-śa-yī rā-gaḥ",
+      "initialPronunciation": "su-kha",
+      "wordMeanings": [
+        {
+          "term": "sukha",
+          "meaning": "piacere"
+        },
+        {
+          "term": "anuśayī",
+          "meaning": "che segue, che si appoggia a"
+        },
+        {
+          "term": "rāgaḥ",
+          "meaning": "attaccamento"
+        }
+      ],
+      "meaning": "L'attaccamento segue l'esperienza del piacere.",
+      "explanation": "Rāga è la tendenza a trattenere o ripetere ciò che ha prodotto piacere. Non coincide con il piacere stesso: è l'impronta che lo trasforma in desiderio e rende la serenità dipendente dal suo ritorno."
+    },
+    {
+      "sutraId": "sutra_2_08",
+      "pronunciation": "duḥ-kha a-nu-śa-yī dve-ṣaḥ",
+      "initialPronunciation": "duḥ-kha",
+      "wordMeanings": [
+        {
+          "term": "duḥkha",
+          "meaning": "dolore"
+        },
+        {
+          "term": "anuśayī",
+          "meaning": "che segue, che si appoggia a"
+        },
+        {
+          "term": "dveṣaḥ",
+          "meaning": "avversione"
+        }
+      ],
+      "meaning": "L'avversione segue l'esperienza del dolore.",
+      "explanation": "Dveṣa è la tendenza a respingere ciò che è stato associato al dolore. Anche quando protegge da un pericolo reale, può fissarsi come reazione automatica e impedire di vedere la situazione presente per ciò che è."
+    },
+    {
+      "sutraId": "sutra_2_09",
+      "pronunciation": "sva ra-sa vā-hī vi-du-ṣo a-pi ta-thā rū-ḍhaḥ a-bhi-ni-ve-śaḥ",
+      "initialPronunciation": "sva",
+      "wordMeanings": [
+        {
+          "term": "sva",
+          "meaning": "proprio"
+        },
+        {
+          "term": "rasa",
+          "meaning": "impulso, inclinazione"
+        },
+        {
+          "term": "vāhī",
+          "meaning": "che scorre, che procede"
+        },
+        {
+          "term": "viduṣaḥ",
+          "meaning": "nel sapiente"
+        },
+        {
+          "term": "api",
+          "meaning": "anche"
+        },
+        {
+          "term": "tathā",
+          "meaning": "così"
+        },
+        {
+          "term": "rūḍhaḥ",
+          "meaning": "profondamente radicato"
+        },
+        {
+          "term": "abhiniveśaḥ",
+          "meaning": "attaccamento alla vita, paura della morte"
+        }
+      ],
+      "meaning": "L'attaccamento alla vita procede per impulso proprio ed è radicato anche nel sapiente.",
+      "explanation": "Abhiniveśa è il profondo impulso a conservare la propria continuità e a evitare la dissoluzione. La sua presenza anche nel sapiente mostra che non è soltanto un pensiero cosciente, ma una tendenza radicata negli strati più profondi della vita."
+    },
+    {
+      "sutraId": "sutra_2_10",
+      "pronunciation": "te pra-ti-pra-sa-va he-yāḥ sūk-ṣmāḥ",
+      "initialPronunciation": "te",
+      "wordMeanings": [
+        {
+          "term": "te",
+          "meaning": "esse"
+        },
+        {
+          "term": "pratiprasava",
+          "meaning": "riassorbimento nella causa originaria"
+        },
+        {
+          "term": "heyāḥ",
+          "meaning": "da eliminare"
+        },
+        {
+          "term": "sūkṣmāḥ",
+          "meaning": "sottili"
+        }
+      ],
+      "meaning": "Le afflizioni sottili si eliminano riassorbendole nella loro causa.",
+      "explanation": "Quando le afflizioni sono ridotte allo stato sottile, non basta contrastarne le manifestazioni esteriori. Devono essere ricondotte alla loro origine, fino a dissolvere il processo di identificazione che permette loro di germogliare."
+    },
+    {
+      "sutraId": "sutra_2_11",
+      "pronunciation": "dhyā-na he-yāḥ tat vrit-ta-yaḥ",
+      "initialPronunciation": "dhyā-na",
+      "wordMeanings": [
+        {
+          "term": "dhyāna",
+          "meaning": "meditazione"
+        },
+        {
+          "term": "heyāḥ",
+          "meaning": "da eliminare"
+        },
+        {
+          "term": "tat",
+          "meaning": "di esse"
+        },
+        {
+          "term": "vṛttayaḥ",
+          "meaning": "movimenti, manifestazioni"
+        }
+      ],
+      "meaning": "Le loro manifestazioni attive si eliminano con la meditazione.",
+      "explanation": "Le manifestazioni attive delle afflizioni diventano oggetto di meditazione. Osservate senza alimentarle né reprimerle, perdono gradualmente la capacità di trasformarsi in pensieri e azioni automatiche."
+    },
+    {
+      "sutraId": "sutra_2_12",
+      "pronunciation": "kle-śa mū-laḥ kar-ma ā-śa-yaḥ dṛṣ-ṭa a-dṛṣ-ṭa jan-ma ve-da-nī-yaḥ",
+      "initialPronunciation": "kle-śa",
+      "wordMeanings": [
+        {
+          "term": "kleśa",
+          "meaning": "afflizioni"
+        },
+        {
+          "term": "mūlaḥ",
+          "meaning": "radicato in"
+        },
+        {
+          "term": "karma",
+          "meaning": "azione e sue conseguenze"
+        },
+        {
+          "term": "āśayaḥ",
+          "meaning": "deposito, accumulo"
+        },
+        {
+          "term": "dṛṣṭa",
+          "meaning": "visto, presente"
+        },
+        {
+          "term": "adṛṣṭa",
+          "meaning": "non visto, futuro"
+        },
+        {
+          "term": "janma",
+          "meaning": "nascita"
+        },
+        {
+          "term": "vedanīyaḥ",
+          "meaning": "da sperimentare"
+        }
+      ],
+      "meaning": "Il deposito karmico, radicato nelle afflizioni, si sperimenta nelle nascite presenti o future.",
+      "explanation": "Le azioni motivate dalle afflizioni lasciano un deposito karmico, cioè potenzialità destinate a maturare. Il sutra collega quindi intenzioni, azioni ed esperienze future all'interno di una continuità che può estendersi oltre la vita presente."
+    },
+    {
+      "sutraId": "sutra_2_13",
+      "pronunciation": "sa-ti mū-le tat vi-pā-kaḥ jā-ti ā-yuḥ bho-gāḥ",
+      "initialPronunciation": "sa-ti",
+      "wordMeanings": [
+        {
+          "term": "sati",
+          "meaning": "esistendo"
+        },
+        {
+          "term": "mūle",
+          "meaning": "la radice"
+        },
+        {
+          "term": "tat",
+          "meaning": "di esso"
+        },
+        {
+          "term": "vipākaḥ",
+          "meaning": "maturazione, frutto"
+        },
+        {
+          "term": "jāti",
+          "meaning": "nascita, condizione"
+        },
+        {
+          "term": "āyuḥ",
+          "meaning": "durata della vita"
+        },
+        {
+          "term": "bhogāḥ",
+          "meaning": "esperienze"
+        }
+      ],
+      "meaning": "Finché la radice esiste, il suo frutto è nascita, durata della vita ed esperienze.",
+      "explanation": "Finché la radice afflittiva rimane, le potenzialità karmiche producono condizioni di nascita, durata della vita ed esperienze. Il frutto non è separato dalla causa: rende visibili tendenze accumulate in precedenza."
+    },
+    {
+      "sutraId": "sutra_2_14",
+      "pronunciation": "te hlā-da pa-ri-tā-pa pha-lāḥ puṇ-ya a-puṇ-ya he-tut-vāt",
+      "initialPronunciation": "te",
+      "wordMeanings": [
+        {
+          "term": "te",
+          "meaning": "essi"
+        },
+        {
+          "term": "hlāda",
+          "meaning": "piacere"
+        },
+        {
+          "term": "paritāpa",
+          "meaning": "dolore"
+        },
+        {
+          "term": "phalāḥ",
+          "meaning": "aventi come frutti"
+        },
+        {
+          "term": "puṇya",
+          "meaning": "merito, virtù"
+        },
+        {
+          "term": "apuṇya",
+          "meaning": "demerito, non virtù"
+        },
+        {
+          "term": "hetutvāt",
+          "meaning": "a causa di"
+        }
+      ],
+      "meaning": "I loro frutti sono piacere o dolore, secondo che la causa sia virtuosa o non virtuosa.",
+      "explanation": "La qualità dell'azione determina la tonalità piacevole o dolorosa dei suoi frutti. Patañjali non riduce però la liberazione alla ricerca di esperienze piacevoli, perché anche il piacere rimane instabile e condizionato."
+    },
+    {
+      "sutraId": "sutra_2_15",
+      "pronunciation": "pa-ri-ṇā-ma tā-pa sam-skā-ra duḥ-khaiḥ gu-ṇa vrit-ti vi-ro-dhāch cha duḥ-kham e-va sar-vam vi-ve-ki-naḥ",
+      "initialPronunciation": "pa-ri-ṇā-ma",
+      "wordMeanings": [
+        {
+          "term": "pariṇāma",
+          "meaning": "mutamento"
+        },
+        {
+          "term": "tāpa",
+          "meaning": "tormento, inquietudine"
+        },
+        {
+          "term": "saṁskāra",
+          "meaning": "impressioni latenti"
+        },
+        {
+          "term": "duḥkhaiḥ",
+          "meaning": "per i dolori"
+        },
+        {
+          "term": "guṇa",
+          "meaning": "qualità della natura"
+        },
+        {
+          "term": "vṛtti",
+          "meaning": "attività, movimenti"
+        },
+        {
+          "term": "virodhāt",
+          "meaning": "per il conflitto"
+        },
+        {
+          "term": "ca",
+          "meaning": "e"
+        },
+        {
+          "term": "duḥkham",
+          "meaning": "dolore"
+        },
+        {
+          "term": "eva",
+          "meaning": "soltanto"
+        },
+        {
+          "term": "sarvam",
+          "meaning": "tutto"
+        },
+        {
+          "term": "vivekinaḥ",
+          "meaning": "per chi discerne"
+        }
+      ],
+      "meaning": "Per chi discerne, tutto è dolore a causa del mutamento, del tormento, delle impressioni e del conflitto tra i guṇa.",
+      "explanation": "Chi sviluppa discernimento riconosce l'insoddisfazione presente anche nelle esperienze piacevoli: cambiano, generano timore di perderle e lasciano nuove impressioni. Non è pessimismo, ma comprensione dell'impossibilità di trovare stabilità definitiva in ciò che muta."
+    },
+    {
+      "sutraId": "sutra_2_16",
+      "pronunciation": "he-yam duḥ-kham a-nā-ga-tam",
+      "initialPronunciation": "he-yam",
+      "wordMeanings": [
+        {
+          "term": "heyam",
+          "meaning": "da evitare"
+        },
+        {
+          "term": "duḥkham",
+          "meaning": "dolore"
+        },
+        {
+          "term": "anāgatam",
+          "meaning": "non ancora venuto, futuro"
+        }
+      ],
+      "meaning": "Il dolore non ancora venuto deve essere evitato.",
+      "explanation": "La pratica si rivolge al dolore che non si è ancora manifestato. Le conseguenze già maturate devono essere attraversate, mentre le cause del dolore futuro possono essere riconosciute e interrotte prima che producano il loro effetto."
+    },
+    {
+      "sutraId": "sutra_2_17",
+      "pronunciation": "dra-ṣṭri dṛś-ya yoḥ sam-yo-gaḥ he-ya he-tuḥ",
+      "initialPronunciation": "dra-ṣṭri",
+      "wordMeanings": [
+        {
+          "term": "draṣṭṛ",
+          "meaning": "il veggente"
+        },
+        {
+          "term": "dṛśyayoḥ",
+          "meaning": "del visto"
+        },
+        {
+          "term": "saṁyogaḥ",
+          "meaning": "congiunzione, identificazione"
+        },
+        {
+          "term": "heya",
+          "meaning": "da evitare"
+        },
+        {
+          "term": "hetuḥ",
+          "meaning": "causa"
+        }
+      ],
+      "meaning": "La congiunzione tra il veggente e il visto è la causa del dolore da evitare.",
+      "explanation": "La sofferenza nasce dalla confusione tra il veggente e ciò che viene visto, compresi corpo e mente. Quando la coscienza si identifica con i fenomeni mutevoli, ogni loro cambiamento viene vissuto come una minaccia alla propria natura."
+    },
+    {
+      "sutraId": "sutra_2_18",
+      "pronunciation": "pra-kā-śa kri-yā sthi-ti śī-lam bhū-ta in-dri-ya āt-ma-kam bho-ga a-pa-var-ga ar-tham dṛś-yam",
+      "initialPronunciation": "pra-kā-śa",
+      "wordMeanings": [
+        {
+          "term": "prakāśa",
+          "meaning": "luminosità"
+        },
+        {
+          "term": "kriyā",
+          "meaning": "attività"
+        },
+        {
+          "term": "sthiti",
+          "meaning": "stabilità, inerzia"
+        },
+        {
+          "term": "śīlam",
+          "meaning": "avente la natura di"
+        },
+        {
+          "term": "bhūta",
+          "meaning": "elementi"
+        },
+        {
+          "term": "indriya",
+          "meaning": "sensi"
+        },
+        {
+          "term": "ātmakam",
+          "meaning": "costituito da"
+        },
+        {
+          "term": "bhoga",
+          "meaning": "esperienza"
+        },
+        {
+          "term": "apavarga",
+          "meaning": "liberazione"
+        },
+        {
+          "term": "artham",
+          "meaning": "avente come scopo"
+        },
+        {
+          "term": "dṛśyam",
+          "meaning": "il visto, il conoscibile"
+        }
+      ],
+      "meaning": "Il visto ha natura di luminosità, attività e inerzia, è composto di elementi e sensi e serve all'esperienza e alla liberazione.",
+      "explanation": "Il 'visto' comprende l'intera natura, dagli elementi agli organi e alla mente, ed è mosso dai tre guṇa. La sua funzione è offrire esperienza e, attraverso la comprensione dell'esperienza, rendere possibile la liberazione del veggente."
+    },
+    {
+      "sutraId": "sutra_2_19",
+      "pronunciation": "vi-śe-ṣa a-vi-śe-ṣa lin-ga mā-tra a-lin-gā-ni gu-ṇa par-vā-ṇi",
+      "initialPronunciation": "vi-śe-ṣa",
+      "wordMeanings": [
+        {
+          "term": "viśeṣa",
+          "meaning": "particolare, differenziato"
+        },
+        {
+          "term": "aviśeṣa",
+          "meaning": "non particolare, indifferenziato"
+        },
+        {
+          "term": "liṅga mātra",
+          "meaning": "soltanto contrassegnato"
+        },
+        {
+          "term": "aliṅgāni",
+          "meaning": "privo di contrassegno, immanifesto"
+        },
+        {
+          "term": "guṇa",
+          "meaning": "qualità della natura"
+        },
+        {
+          "term": "parvāṇi",
+          "meaning": "stadi, livelli"
+        }
+      ],
+      "meaning": "Gli stadi dei guṇa sono il particolare, il non particolare, il solo contrassegnato e l'immanifesto.",
+      "explanation": "Patañjali ordina le manifestazioni dei guṇa dal particolare percepibile fino alla natura non manifestata. La distinzione mostra che anche i livelli più sottili dell'esperienza appartengono a prakṛti e non al puruṣa."
+    },
+    {
+      "sutraId": "sutra_2_20",
+      "pronunciation": "dra-ṣṭā dṛ-śi mā-traḥ śud-dhaḥ a-pi prat-ya-ya a-nu-pa-śyaḥ",
+      "initialPronunciation": "dra-ṣṭā",
+      "wordMeanings": [
+        {
+          "term": "draṣṭā",
+          "meaning": "il veggente"
+        },
+        {
+          "term": "dṛśi mātraḥ",
+          "meaning": "pura facoltà del vedere"
+        },
+        {
+          "term": "śuddhaḥ",
+          "meaning": "puro"
+        },
+        {
+          "term": "api",
+          "meaning": "sebbene"
+        },
+        {
+          "term": "pratyaya",
+          "meaning": "contenuto mentale, cognizione"
+        },
+        {
+          "term": "anupaśyaḥ",
+          "meaning": "che osserva attraverso"
+        }
+      ],
+      "meaning": "Il veggente è pura facoltà del vedere e, benché puro, osserva attraverso i contenuti mentali.",
+      "explanation": "Il veggente è pura capacità di conoscere e non viene modificato dagli oggetti conosciuti. Tuttavia l'esperienza appare attraverso i contenuti della mente, come una luce che rende visibili forme senza diventare quelle forme."
+    },
+    {
+      "sutraId": "sutra_2_21",
+      "pronunciation": "tad ar-tha e-va dṛś-ya-sya āt-mā",
+      "initialPronunciation": "tad",
+      "wordMeanings": [
+        {
+          "term": "tad artha",
+          "meaning": "per il suo scopo"
+        },
+        {
+          "term": "eva",
+          "meaning": "soltanto"
+        },
+        {
+          "term": "dṛśyasya",
+          "meaning": "del visto"
+        },
+        {
+          "term": "ātmā",
+          "meaning": "essenza, natura"
+        }
+      ],
+      "meaning": "La natura del visto esiste soltanto per lo scopo del veggente.",
+      "explanation": "Il mondo dell'esperienza acquista significato in rapporto al veggente. Serve dapprima all'esperienza e infine al discernimento, attraverso il quale si riconosce la differenza tra coscienza e natura."
+    },
+    {
+      "sutraId": "sutra_2_22",
+      "pronunciation": "kri-ta ar-tham pra-ti na-ṣṭam a-pi a-na-ṣṭam tad an-ya sā-dhā-ra-ṇa-tvāt",
+      "initialPronunciation": "kri-ta",
+      "wordMeanings": [
+        {
+          "term": "kṛta artham",
+          "meaning": "per chi ha compiuto lo scopo"
+        },
+        {
+          "term": "prati",
+          "meaning": "rispetto a"
+        },
+        {
+          "term": "naṣṭam",
+          "meaning": "cessato, dissolto"
+        },
+        {
+          "term": "api",
+          "meaning": "sebbene"
+        },
+        {
+          "term": "anaṣṭam",
+          "meaning": "non cessato"
+        },
+        {
+          "term": "tat",
+          "meaning": "esso"
+        },
+        {
+          "term": "anya",
+          "meaning": "per gli altri"
+        },
+        {
+          "term": "sādhāraṇatvāt",
+          "meaning": "perché comune"
+        }
+      ],
+      "meaning": "Il visto cessa per chi ha compiuto lo scopo, ma non per gli altri, perché è comune a loro.",
+      "explanation": "Per chi ha compiuto il discernimento, il visto non esercita più la funzione che lo legava all'esperienza. Esso non scompare universalmente: continua a presentarsi agli altri esseri che non hanno ancora realizzato quella distinzione."
+    },
+    {
+      "sutraId": "sutra_2_23",
+      "pronunciation": "sva svā-mi śak-tyoḥ sva-rū-pa u-pa-lab-dhi he-tuḥ sam-yo-gaḥ",
+      "initialPronunciation": "sva",
+      "wordMeanings": [
+        {
+          "term": "sva",
+          "meaning": "il posseduto, il visto"
+        },
+        {
+          "term": "svāmi",
+          "meaning": "il possessore, il veggente"
+        },
+        {
+          "term": "śaktyoḥ",
+          "meaning": "dei due poteri"
+        },
+        {
+          "term": "svarūpa",
+          "meaning": "natura propria"
+        },
+        {
+          "term": "upalabdhi",
+          "meaning": "conoscenza, riconoscimento"
+        },
+        {
+          "term": "hetuḥ",
+          "meaning": "causa"
+        },
+        {
+          "term": "saṁyogaḥ",
+          "meaning": "congiunzione"
+        }
+      ],
+      "meaning": "La congiunzione rende possibile conoscere la natura propria dei poteri del posseduto e del possessore.",
+      "explanation": "La congiunzione tra veggente e visto rende possibile conoscere sia i poteri della natura sia la coscienza che ne è testimone. È quindi causa di esperienza e sofferenza, ma anche condizione attraverso cui può maturare il discernimento."
+    },
+    {
+      "sutraId": "sutra_2_24",
+      "pronunciation": "tas-ya he-tuḥ a-vid-yā",
+      "initialPronunciation": "tas-ya",
+      "wordMeanings": [
+        {
+          "term": "tasya",
+          "meaning": "di essa"
+        },
+        {
+          "term": "hetuḥ",
+          "meaning": "causa"
+        },
+        {
+          "term": "avidyā",
+          "meaning": "ignoranza"
+        }
+      ],
+      "meaning": "La causa di questa congiunzione è l'ignoranza.",
+      "explanation": "La congiunzione diventa vincolante a causa di avidyā. Finché la differenza tra coscienza e natura non è vista chiaramente, le proprietà della mente vengono attribuite al veggente e l'identificazione continua."
+    },
+    {
+      "sutraId": "sutra_2_25",
+      "pronunciation": "tad a-bhā-vāt sam-yo-ga a-bhā-vaḥ hā-nam tad dṛ-śeḥ kai-val-yam",
+      "initialPronunciation": "tad",
+      "wordMeanings": [
+        {
+          "term": "tad abhāvāt",
+          "meaning": "per l'assenza di essa"
+        },
+        {
+          "term": "saṁyoga",
+          "meaning": "congiunzione"
+        },
+        {
+          "term": "abhāvaḥ",
+          "meaning": "assenza"
+        },
+        {
+          "term": "hānam",
+          "meaning": "cessazione"
+        },
+        {
+          "term": "tat",
+          "meaning": "quella"
+        },
+        {
+          "term": "dṛśeḥ",
+          "meaning": "del veggente"
+        },
+        {
+          "term": "kaivalyam",
+          "meaning": "libertà assoluta, isolamento"
+        }
+      ],
+      "meaning": "Scomparsa l'ignoranza, cessa la congiunzione: questa è la libertà assoluta del veggente.",
+      "explanation": "Quando l'ignoranza cessa, viene meno l'identificazione che univa il veggente al visto. Kaivalya indica questa indipendenza della coscienza, non la distruzione del mondo né l'isolamento psicologico della persona."
+    },
+    {
+      "sutraId": "sutra_2_26",
+      "pronunciation": "vi-ve-ka khyā-tiḥ a-vi-pla-vā hā-no-pā-yaḥ",
+      "initialPronunciation": "vi-ve-ka",
+      "wordMeanings": [
+        {
+          "term": "viveka",
+          "meaning": "discernimento"
+        },
+        {
+          "term": "khyātiḥ",
+          "meaning": "conoscenza chiara"
+        },
+        {
+          "term": "aviplavā",
+          "meaning": "ininterrotta, incrollabile"
+        },
+        {
+          "term": "hāna",
+          "meaning": "cessazione"
+        },
+        {
+          "term": "upāyaḥ",
+          "meaning": "mezzo"
+        }
+      ],
+      "meaning": "Il mezzo della cessazione è una conoscenza discriminante ininterrotta.",
+      "explanation": "Il mezzo della liberazione è un discernimento stabile che non viene interrotto dalle vecchie identificazioni. Non basta comprendere concettualmente la differenza tra puruṣa e prakṛti: essa deve diventare una visione continua."
+    },
+    {
+      "sutraId": "sutra_2_27",
+      "pronunciation": "tas-ya sap-ta-dhā prān-ta bhū-miḥ praj-ñā",
+      "initialPronunciation": "tas-ya",
+      "wordMeanings": [
+        {
+          "term": "tasya",
+          "meaning": "di colui, di essa"
+        },
+        {
+          "term": "saptadhā",
+          "meaning": "in sette modi"
+        },
+        {
+          "term": "prānta",
+          "meaning": "finale, supremo"
+        },
+        {
+          "term": "bhūmiḥ",
+          "meaning": "stadio, livello"
+        },
+        {
+          "term": "prajñā",
+          "meaning": "saggezza, conoscenza intuitiva"
+        }
+      ],
+      "meaning": "La sua saggezza raggiunge uno stadio finale articolato in sette livelli.",
+      "explanation": "La conoscenza discriminante matura per gradi fino alla propria completezza. Il riferimento ai sette livelli indica un processo progressivo nel quale ciò che deve essere conosciuto, abbandonato e realizzato giunge al suo termine."
+    },
+    {
+      "sutraId": "sutra_2_28",
+      "pronunciation": "yo-ga an-ga a-nu-ṣṭhā-nāt a-śud-dhi kṣa-ye jñā-na dīp-tiḥ ā vi-ve-ka khyā-teḥ",
+      "initialPronunciation": "yo-ga",
+      "wordMeanings": [
+        {
+          "term": "yoga",
+          "meaning": "yoga"
+        },
+        {
+          "term": "aṅga",
+          "meaning": "membra, stadi"
+        },
+        {
+          "term": "anuṣṭhānāt",
+          "meaning": "mediante la pratica costante"
+        },
+        {
+          "term": "aśuddhi",
+          "meaning": "impurità"
+        },
+        {
+          "term": "kṣaye",
+          "meaning": "con la distruzione"
+        },
+        {
+          "term": "jñāna",
+          "meaning": "conoscenza"
+        },
+        {
+          "term": "dīptiḥ",
+          "meaning": "luce, splendore"
+        },
+        {
+          "term": "ā",
+          "meaning": "fino a"
+        },
+        {
+          "term": "viveka khyāteḥ",
+          "meaning": "conoscenza discriminante"
+        }
+      ],
+      "meaning": "Con la pratica delle membra dello yoga e la distruzione delle impurità, la luce della conoscenza conduce al pieno discernimento.",
+      "explanation": "Le membra dello yoga agiscono come un processo di purificazione. Riducendo gli ostacoli nel comportamento, nel corpo, nel respiro, nei sensi e nella mente, permettono alla luce del discernimento di manifestarsi con crescente chiarezza."
+    },
+    {
+      "sutraId": "sutra_2_29",
+      "pronunciation": "ya-ma ni-ya-ma ā-sa-na prā-ṇā-yā-ma prat-yā-hā-ra dhā-ra-ṇā dhyā-na sa-mā-dhi aṣ-ṭān-gā-ni",
+      "initialPronunciation": "ya-ma",
+      "wordMeanings": [
+        {
+          "term": "yama",
+          "meaning": "restrizioni etiche"
+        },
+        {
+          "term": "niyama",
+          "meaning": "osservanze"
+        },
+        {
+          "term": "āsana",
+          "meaning": "postura"
+        },
+        {
+          "term": "prāṇāyāma",
+          "meaning": "regolazione del respiro"
+        },
+        {
+          "term": "pratyāhāra",
+          "meaning": "ritiro dei sensi"
+        },
+        {
+          "term": "dhāraṇā",
+          "meaning": "concentrazione"
+        },
+        {
+          "term": "dhyāna",
+          "meaning": "meditazione"
+        },
+        {
+          "term": "samādhi",
+          "meaning": "assorbimento"
+        },
+        {
+          "term": "aṣṭāṅgāni",
+          "meaning": "le otto membra"
+        }
+      ],
+      "meaning": "Le otto membra sono yama, niyama, postura, regolazione del respiro, ritiro dei sensi, concentrazione, meditazione e samādhi.",
+      "explanation": "Le otto membra formano un percorso integrato, non una raccolta di tecniche indipendenti. Le prime cinque preparano e orientano la vita psicofisica; le ultime tre approfondiscono direttamente concentrazione, meditazione e samādhi."
+    },
+    {
+      "sutraId": "sutra_2_30",
+      "pronunciation": "a-him-sā sat-ya a-ste-ya brah-ma-char-ya a-pa-ri-gra-hāḥ ya-māḥ",
+      "initialPronunciation": "a-him-sā",
+      "wordMeanings": [
+        {
+          "term": "ahiṁsā",
+          "meaning": "non violenza"
+        },
+        {
+          "term": "satya",
+          "meaning": "veridicità"
+        },
+        {
+          "term": "asteya",
+          "meaning": "non rubare"
+        },
+        {
+          "term": "brahmacarya",
+          "meaning": "continenza, condotta orientata all'assoluto"
+        },
+        {
+          "term": "aparigrahāḥ",
+          "meaning": "non possessività"
+        },
+        {
+          "term": "yamāḥ",
+          "meaning": "restrizioni"
+        }
+      ],
+      "meaning": "Le restrizioni sono non violenza, veridicità, non rubare, continenza e non possessività.",
+      "explanation": "Gli yama regolano il rapporto con gli altri, con i desideri e con il possesso. Non sono semplici divieti sociali: riducono conflitto, menzogna, appropriazione e dispersione, creando una base mentale favorevole allo yoga."
+    },
+    {
+      "sutraId": "sutra_2_31",
+      "pronunciation": "jā-ti de-śa kā-la sa-ma-ya a-na-va-chhin-nāḥ sār-va-bhau-mā ma-hā-vra-tam",
+      "initialPronunciation": "jā-ti",
+      "wordMeanings": [
+        {
+          "term": "jāti",
+          "meaning": "nascita, condizione"
+        },
+        {
+          "term": "deśa",
+          "meaning": "luogo"
+        },
+        {
+          "term": "kāla",
+          "meaning": "tempo"
+        },
+        {
+          "term": "samaya",
+          "meaning": "circostanza"
+        },
+        {
+          "term": "anavacchinnāḥ",
+          "meaning": "non limitati"
+        },
+        {
+          "term": "sārvabhaumāḥ",
+          "meaning": "universali"
+        },
+        {
+          "term": "mahāvratam",
+          "meaning": "grande voto"
+        }
+      ],
+      "meaning": "Non limitate da nascita, luogo, tempo o circostanza, esse costituiscono il grande voto universale.",
+      "explanation": "Gli yama diventano mahāvrata quando non dipendono da identità, luogo, epoca o convenienza. Il loro valore è universale e non può essere sospeso soltanto perché una circostanza rende più comodo ignorarli."
+    },
+    {
+      "sutraId": "sutra_2_32",
+      "pronunciation": "śau-cha san-to-ṣa ta-paḥ svā-dhyā-ya ī-śva-ra pra-ni-dhā-nā-ni ni-ya-māḥ",
+      "initialPronunciation": "śau-cha",
+      "wordMeanings": [
+        {
+          "term": "śauca",
+          "meaning": "purezza"
+        },
+        {
+          "term": "santoṣa",
+          "meaning": "appagamento"
+        },
+        {
+          "term": "tapaḥ",
+          "meaning": "disciplina, ascesi"
+        },
+        {
+          "term": "svādhyāya",
+          "meaning": "studio di sé e dei testi sacri"
+        },
+        {
+          "term": "īśvara",
+          "meaning": "il Signore"
+        },
+        {
+          "term": "praṇidhānāni",
+          "meaning": "dedizione, abbandono"
+        },
+        {
+          "term": "niyamāḥ",
+          "meaning": "osservanze"
+        }
+      ],
+      "meaning": "Le osservanze sono purezza, appagamento, disciplina, studio di sé e abbandono al Signore.",
+      "explanation": "I niyama indicano discipline da coltivare attivamente: purezza, appagamento, tapas, studio e dedizione. Insieme trasformano il rapporto con il corpo, le abitudini, la conoscenza e il senso personale dell'agire."
+    },
+    {
+      "sutraId": "sutra_2_33",
+      "pronunciation": "vi-tar-ka bā-dha-ne pra-ti-pak-ṣa bhā-va-nam",
+      "initialPronunciation": "vi-tar-ka",
+      "wordMeanings": [
+        {
+          "term": "vitarka",
+          "meaning": "pensieri contrari, nocivi"
+        },
+        {
+          "term": "bādhane",
+          "meaning": "quando disturbano"
+        },
+        {
+          "term": "pratipakṣa",
+          "meaning": "l'opposto"
+        },
+        {
+          "term": "bhāvanam",
+          "meaning": "coltivazione, contemplazione"
+        }
+      ],
+      "meaning": "Quando sorgono pensieri nocivi, si coltivi il loro opposto.",
+      "explanation": "Pratipakṣa bhāvana consiste nel coltivare consapevolmente una direzione opposta quando la mente è dominata da pensieri contrari allo yoga. Non significa negare ciò che sorge, ma interrompere il suo nutrimento e rafforzare un'attitudine incompatibile con esso."
+    },
+    {
+      "sutraId": "sutra_2_34",
+      "pronunciation": "vi-tar-kā him-sā-da-yaḥ kri-ta kā-ri-ta a-nu-mo-di-tā lo-bha kro-dha mo-ha pūr-va-kāḥ mri-du madh-ya a-dhi-mā-trā duḥ-kha aj-ñā-na a-nan-ta pha-lā i-ti pra-ti-pak-ṣa bhā-va-nam",
+      "initialPronunciation": "vi-tar-kā",
+      "wordMeanings": [
+        {
+          "term": "vitarkāḥ",
+          "meaning": "pensieri contrari"
+        },
+        {
+          "term": "hiṁsādayaḥ",
+          "meaning": "violenza e simili"
+        },
+        {
+          "term": "kṛta",
+          "meaning": "compiuti"
+        },
+        {
+          "term": "kārita",
+          "meaning": "fatti compiere"
+        },
+        {
+          "term": "anumoditāḥ",
+          "meaning": "approvati"
+        },
+        {
+          "term": "lobha",
+          "meaning": "avidità"
+        },
+        {
+          "term": "krodha",
+          "meaning": "ira"
+        },
+        {
+          "term": "moha",
+          "meaning": "illusione"
+        },
+        {
+          "term": "pūrvakāḥ",
+          "meaning": "preceduti da, mossi da"
+        },
+        {
+          "term": "mṛdu",
+          "meaning": "lievi"
+        },
+        {
+          "term": "madhya",
+          "meaning": "medi"
+        },
+        {
+          "term": "adhimātrāḥ",
+          "meaning": "intensi"
+        },
+        {
+          "term": "duḥkha",
+          "meaning": "dolore"
+        },
+        {
+          "term": "ajñāna",
+          "meaning": "ignoranza"
+        },
+        {
+          "term": "ananta",
+          "meaning": "senza fine"
+        },
+        {
+          "term": "phalāḥ",
+          "meaning": "aventi come frutto"
+        },
+        {
+          "term": "iti",
+          "meaning": "così"
+        },
+        {
+          "term": "pratipakṣa",
+          "meaning": "l'opposto"
+        },
+        {
+          "term": "bhāvanam",
+          "meaning": "contemplazione"
+        }
+      ],
+      "meaning": "Violenza e pensieri simili, compiuti, fatti compiere o approvati, mossi da avidità, ira o illusione e lievi, medi o intensi, producono dolore e ignoranza senza fine: perciò si contempli l'opposto.",
+      "explanation": "La responsabilità etica comprende ciò che facciamo, facciamo compiere o approviamo. Patañjali invita a riconoscere motivazione e intensità dei pensieri nocivi e a contemplarne le conseguenze, così che la comprensione sostenga la scelta dell'opposto."
+    },
+    {
+      "sutraId": "sutra_2_35",
+      "pronunciation": "a-him-sā pra-ti-ṣṭhā-yām tat san-ni-dhau vai-ra tyā-gaḥ",
+      "initialPronunciation": "a-him-sā",
+      "wordMeanings": [
+        {
+          "term": "ahiṁsā",
+          "meaning": "non violenza"
+        },
+        {
+          "term": "pratiṣṭhāyām",
+          "meaning": "quando è saldamente stabilita"
+        },
+        {
+          "term": "tat",
+          "meaning": "di colui"
+        },
+        {
+          "term": "sannidhau",
+          "meaning": "in presenza"
+        },
+        {
+          "term": "vaira",
+          "meaning": "ostilità"
+        },
+        {
+          "term": "tyāgaḥ",
+          "meaning": "abbandono"
+        }
+      ],
+      "meaning": "Quando la non violenza è saldamente stabilita, in sua presenza cessa l'ostilità.",
+      "explanation": "Quando ahiṁsā è pienamente incarnata, la non ostilità non è più uno sforzo occasionale ma una qualità della presenza. La tradizione descrive questa stabilità come capace di disarmare l'aggressività anche nell'ambiente circostante."
+    },
+    {
+      "sutraId": "sutra_2_36",
+      "pronunciation": "sat-ya pra-ti-ṣṭhā-yām kri-yā pha-la ā-śra-yat-vam",
+      "initialPronunciation": "sat-ya",
+      "wordMeanings": [
+        {
+          "term": "satya",
+          "meaning": "veridicità"
+        },
+        {
+          "term": "pratiṣṭhāyām",
+          "meaning": "quando è saldamente stabilita"
+        },
+        {
+          "term": "kriyā",
+          "meaning": "azione"
+        },
+        {
+          "term": "phala",
+          "meaning": "frutto"
+        },
+        {
+          "term": "āśrayatvam",
+          "meaning": "dipendenza, fondamento"
+        }
+      ],
+      "meaning": "Quando la veridicità è saldamente stabilita, azione e frutto trovano in essa il loro fondamento.",
+      "explanation": "La veridicità stabilisce coerenza tra percezione, parola e azione. Quando non viene usata per ferire e resta unita alla non violenza, la parola acquista affidabilità e ciò che viene espresso non è separato dai suoi effetti."
+    },
+    {
+      "sutraId": "sutra_2_37",
+      "pronunciation": "a-ste-ya pra-ti-ṣṭhā-yām sar-va rat-na u-pas-thā-nam",
+      "initialPronunciation": "a-ste-ya",
+      "wordMeanings": [
+        {
+          "term": "asteya",
+          "meaning": "non rubare"
+        },
+        {
+          "term": "pratiṣṭhāyām",
+          "meaning": "quando è saldamente stabilito"
+        },
+        {
+          "term": "sarva",
+          "meaning": "tutti"
+        },
+        {
+          "term": "ratna",
+          "meaning": "tesori, gioielli"
+        },
+        {
+          "term": "upasthānam",
+          "meaning": "si presentano, giungono"
+        }
+      ],
+      "meaning": "Quando il non rubare è saldamente stabilito, tutti i tesori si presentano.",
+      "explanation": "Asteya libera dalla spinta ad appropriarsi di ciò che appartiene ad altri, inclusi tempo, merito e opportunità. Venendo meno il senso di mancanza che alimenta il furto, ciò che ha reale valore può presentarsi senza essere inseguito o sottratto."
+    },
+    {
+      "sutraId": "sutra_2_38",
+      "pronunciation": "brah-ma-char-ya pra-ti-ṣṭhā-yām vī-rya lā-bhaḥ",
+      "initialPronunciation": "brah-ma-char-ya",
+      "wordMeanings": [
+        {
+          "term": "brahmacarya",
+          "meaning": "continenza, condotta orientata all'assoluto"
+        },
+        {
+          "term": "pratiṣṭhāyām",
+          "meaning": "quando è saldamente stabilita"
+        },
+        {
+          "term": "vīrya",
+          "meaning": "vigore, energia"
+        },
+        {
+          "term": "lābhaḥ",
+          "meaning": "acquisizione"
+        }
+      ],
+      "meaning": "Quando la continenza è saldamente stabilita, si acquisisce vigore.",
+      "explanation": "Brahmacarya raccoglie e orienta l'energia invece di disperderla nella ricerca compulsiva del piacere. La continenza, intesa secondo la condizione del praticante, sostiene vigore, attenzione e stabilità della pratica."
+    },
+    {
+      "sutraId": "sutra_2_39",
+      "pronunciation": "a-pa-ri-gra-ha sthai-rye jan-ma ka-than-tā sam-bo-dhaḥ",
+      "initialPronunciation": "a-pa-ri-gra-ha",
+      "wordMeanings": [
+        {
+          "term": "aparigraha",
+          "meaning": "non possessività"
+        },
+        {
+          "term": "sthairye",
+          "meaning": "quando è stabile"
+        },
+        {
+          "term": "janma",
+          "meaning": "nascita"
+        },
+        {
+          "term": "kathantā",
+          "meaning": "come e da dove"
+        },
+        {
+          "term": "saṁbodhaḥ",
+          "meaning": "piena conoscenza"
+        }
+      ],
+      "meaning": "Con la stabilità nella non possessività nasce la conoscenza del come e del perché delle nascite.",
+      "explanation": "Aparigraha riduce l'accumulo e il legame identitario con ciò che si possiede. Quando la mente non è occupata a ottenere e difendere beni, diventa più capace di riconoscere le cause e la continuità della propria esistenza."
+    },
+    {
+      "sutraId": "sutra_2_40",
+      "pronunciation": "śau-chāt svān-ga ju-gup-sā pa-rair a-sam-sar-gaḥ",
+      "initialPronunciation": "śau-chāt",
+      "wordMeanings": [
+        {
+          "term": "śaucāt",
+          "meaning": "dalla purezza"
+        },
+        {
+          "term": "svāṅga",
+          "meaning": "verso il proprio corpo"
+        },
+        {
+          "term": "jugupsā",
+          "meaning": "distacco, disinteresse"
+        },
+        {
+          "term": "paraiḥ",
+          "meaning": "con quelli altrui"
+        },
+        {
+          "term": "asaṁsargaḥ",
+          "meaning": "assenza di contatto, non associazione"
+        }
+      ],
+      "meaning": "Dalla purezza sorgono distacco dal proprio corpo e non attaccamento al contatto con quello altrui.",
+      "explanation": "Śauca modifica il rapporto con il corpo: la cura non si trasforma più in identificazione o idealizzazione. Il linguaggio tradizionale del distacco dal corpo non invita al disprezzo, ma a vedere con lucidità la sua natura composta e impermanente."
+    },
+    {
+      "sutraId": "sutra_2_41",
+      "pronunciation": "sat-tva śud-dhi sau-ma-na-sya e-kā-grya in-dri-ya ja-ya āt-ma dar-śa-na yog-ya-tvān-i cha",
+      "initialPronunciation": "sat-tva",
+      "wordMeanings": [
+        {
+          "term": "sattva",
+          "meaning": "mente, essenza luminosa"
+        },
+        {
+          "term": "śuddhi",
+          "meaning": "purezza"
+        },
+        {
+          "term": "saumanasya",
+          "meaning": "serenità"
+        },
+        {
+          "term": "ekāgrya",
+          "meaning": "concentrazione su un punto"
+        },
+        {
+          "term": "indriya",
+          "meaning": "sensi"
+        },
+        {
+          "term": "jaya",
+          "meaning": "dominio"
+        },
+        {
+          "term": "ātma",
+          "meaning": "Sé"
+        },
+        {
+          "term": "darśana",
+          "meaning": "visione"
+        },
+        {
+          "term": "yogyatvāni",
+          "meaning": "idoneità"
+        },
+        {
+          "term": "ca",
+          "meaning": "e"
+        }
+      ],
+      "meaning": "Ne derivano purezza della mente, serenità, concentrazione, dominio dei sensi e idoneità alla visione del Sé.",
+      "explanation": "La purezza interiore rende la mente più chiara, serena e unidirezionale. Con la diminuzione delle contaminazioni, i sensi diventano governabili e la mente acquista l'idoneità necessaria per la conoscenza del Sé."
+    },
+    {
+      "sutraId": "sutra_2_42",
+      "pronunciation": "san-to-ṣāt a-nut-ta-maḥ su-kha lā-bhaḥ",
+      "initialPronunciation": "san-to-ṣāt",
+      "wordMeanings": [
+        {
+          "term": "santoṣāt",
+          "meaning": "dall'appagamento"
+        },
+        {
+          "term": "anuttamaḥ",
+          "meaning": "insuperabile, supremo"
+        },
+        {
+          "term": "sukha",
+          "meaning": "felicità"
+        },
+        {
+          "term": "lābhaḥ",
+          "meaning": "acquisizione"
+        }
+      ],
+      "meaning": "Dall'appagamento si ottiene una felicità insuperabile.",
+      "explanation": "Santoṣa è la capacità di non fondare la felicità sulla continua acquisizione di condizioni nuove. Non implica passività: permette di agire senza che l'insoddisfazione permanente sottragga energia e pace alla pratica."
+    },
+    {
+      "sutraId": "sutra_2_43",
+      "pronunciation": "kā-ya in-dri-ya sid-dhiḥ a-śud-dhi kṣa-yāt ta-pa-saḥ",
+      "initialPronunciation": "kā-ya",
+      "wordMeanings": [
+        {
+          "term": "kāya",
+          "meaning": "corpo"
+        },
+        {
+          "term": "indriya",
+          "meaning": "sensi"
+        },
+        {
+          "term": "siddhiḥ",
+          "meaning": "perfezione, padronanza"
+        },
+        {
+          "term": "aśuddhi",
+          "meaning": "impurità"
+        },
+        {
+          "term": "kṣayāt",
+          "meaning": "con la distruzione"
+        },
+        {
+          "term": "tapasaḥ",
+          "meaning": "mediante la disciplina, l'ascesi"
+        }
+      ],
+      "meaning": "Mediante la disciplina e la distruzione delle impurità si perfezionano il corpo e i sensi.",
+      "explanation": "Tapas è il calore trasformativo di una disciplina accettata consapevolmente. Attraverso costanza e sobrietà, le impurità diminuiscono e corpo e sensi diventano strumenti più efficienti, non fini da esibire."
+    },
+    {
+      "sutraId": "sutra_2_44",
+      "pronunciation": "svā-dhyā-yāt iṣ-ṭa de-va-tā sam-pra-yo-gaḥ",
+      "initialPronunciation": "svā-dhyā-yāt",
+      "wordMeanings": [
+        {
+          "term": "svādhyāyāt",
+          "meaning": "dallo studio di sé e dei testi sacri"
+        },
+        {
+          "term": "iṣṭa",
+          "meaning": "prescelta"
+        },
+        {
+          "term": "devatā",
+          "meaning": "divinità"
+        },
+        {
+          "term": "samprayogaḥ",
+          "meaning": "unione, comunione"
+        }
+      ],
+      "meaning": "Dallo studio nasce la comunione con la divinità prescelta.",
+      "explanation": "Svādhyāya comprende lo studio dei testi, la recitazione e l'osservazione di sé alla luce dell'insegnamento. Questa pratica orienta la mente verso la forma del divino scelta dal praticante e approfondisce la relazione con essa."
+    },
+    {
+      "sutraId": "sutra_2_45",
+      "pronunciation": "sa-mā-dhi sid-dhiḥ ī-śva-ra pra-ni-dhā-nāt",
+      "initialPronunciation": "sa-mā-dhi",
+      "wordMeanings": [
+        {
+          "term": "samādhi",
+          "meaning": "assorbimento meditativo"
+        },
+        {
+          "term": "siddhiḥ",
+          "meaning": "perfezione, compimento"
+        },
+        {
+          "term": "īśvara",
+          "meaning": "il Signore, la coscienza suprema"
+        },
+        {
+          "term": "praṇidhānāt",
+          "meaning": "mediante la dedizione e l'abbandono"
+        }
+      ],
+      "meaning": "Dall'abbandono al Signore viene il compimento del samādhi.",
+      "explanation": "La dedizione a Īśvara riduce l'appropriazione personale dei risultati della pratica. Quando l'io smette di porsi come unico autore e destinatario dell'azione, la concentrazione può compiersi senza essere continuamente interrotta dal controllo."
+    },
+    {
+      "sutraId": "sutra_2_46",
+      "pronunciation": "sthi-ra su-kham ā-sa-nam",
+      "initialPronunciation": "sthi-ra",
+      "wordMeanings": [
+        {
+          "term": "sthira",
+          "meaning": "stabile"
+        },
+        {
+          "term": "sukham",
+          "meaning": "comoda, agevole"
+        },
+        {
+          "term": "āsanam",
+          "meaning": "postura"
+        }
+      ],
+      "meaning": "La postura è stabile e comoda.",
+      "explanation": "Patañjali definisce āsana con due qualità inseparabili: stabilità e agio. La postura meditativa deve poter essere mantenuta senza collasso né tensione superflua, così che il corpo non distragga la mente."
+    },
+    {
+      "sutraId": "sutra_2_47",
+      "pronunciation": "pra-yat-na śai-thil-ya a-nan-ta sa-mā-pat-ti-bhyām",
+      "initialPronunciation": "pra-yat-na",
+      "wordMeanings": [
+        {
+          "term": "prayatna",
+          "meaning": "sforzo"
+        },
+        {
+          "term": "śaithilya",
+          "meaning": "rilassamento"
+        },
+        {
+          "term": "ananta",
+          "meaning": "infinito"
+        },
+        {
+          "term": "samāpattibhyām",
+          "meaning": "mediante l'assorbimento, la fusione"
+        }
+      ],
+      "meaning": "La postura si compie rilassando lo sforzo e assorbendosi nell'infinito.",
+      "explanation": "La postura si perfeziona quando lo sforzo inutile viene lasciato andare e l'attenzione si apre all'infinito. Non si tratta di inerzia: il sostegno necessario rimane, ma cessa la lotta che irrigidisce corpo e mente."
+    },
+    {
+      "sutraId": "sutra_2_48",
+      "pronunciation": "ta-taḥ dvan-dva a-na-bhi-ghā-taḥ",
+      "initialPronunciation": "ta-taḥ",
+      "wordMeanings": [
+        {
+          "term": "tataḥ",
+          "meaning": "allora, da ciò"
+        },
+        {
+          "term": "dvandva",
+          "meaning": "coppie di opposti"
+        },
+        {
+          "term": "anabhighātaḥ",
+          "meaning": "assenza di turbamento, immunità"
+        }
+      ],
+      "meaning": "Da ciò non si è più turbati dalle coppie di opposti.",
+      "explanation": "Da una postura realmente stabile nasce una minore vulnerabilità alle coppie di opposti, come caldo e freddo, piacere e disagio. Le condizioni continuano a cambiare, ma non interrompono con la stessa facilità il raccoglimento."
+    },
+    {
+      "sutraId": "sutra_2_49",
+      "pronunciation": "tas-min sa-ti śvā-sa pra-śvā-sa yoḥ ga-ti vich-che-daḥ prā-ṇā-yā-maḥ",
+      "initialPronunciation": "tas-min",
+      "wordMeanings": [
+        {
+          "term": "tasmin",
+          "meaning": "in quella, dopo quella"
+        },
+        {
+          "term": "sati",
+          "meaning": "essendo stabilita"
+        },
+        {
+          "term": "śvāsa",
+          "meaning": "inspirazione"
+        },
+        {
+          "term": "praśvāsa",
+          "meaning": "espirazione"
+        },
+        {
+          "term": "yoḥ",
+          "meaning": "di entrambe"
+        },
+        {
+          "term": "gati",
+          "meaning": "movimento"
+        },
+        {
+          "term": "vicchedaḥ",
+          "meaning": "interruzione, regolazione"
+        },
+        {
+          "term": "prāṇāyāmaḥ",
+          "meaning": "regolazione del respiro vitale"
+        }
+      ],
+      "meaning": "Stabilita la postura, il prāṇāyāma è la regolazione del movimento di inspirazione ed espirazione.",
+      "explanation": "Quando āsana è stabilita, l'attenzione può rivolgersi al movimento del respiro. Prāṇāyāma interrompe e regola il flusso abituale di inspirazione ed espirazione, collegando in modo consapevole respiro e stato mentale."
+    },
+    {
+      "sutraId": "sutra_2_50",
+      "pronunciation": "bāh-ya a-bhyan-ta-ra stam-bha vrit-tiḥ de-śa kā-la sam-khyā-bhiḥ pa-ri dṛṣ-ṭaḥ dīr-gha sūk-ṣmaḥ",
+      "initialPronunciation": "bāh-ya",
+      "wordMeanings": [
+        {
+          "term": "bāhya",
+          "meaning": "esterna, espirazione"
+        },
+        {
+          "term": "abhyantara",
+          "meaning": "interna, inspirazione"
+        },
+        {
+          "term": "stambha",
+          "meaning": "sospensione"
+        },
+        {
+          "term": "vṛttiḥ",
+          "meaning": "modalità"
+        },
+        {
+          "term": "deśa",
+          "meaning": "luogo"
+        },
+        {
+          "term": "kāla",
+          "meaning": "tempo"
+        },
+        {
+          "term": "saṁkhyābhiḥ",
+          "meaning": "numero"
+        },
+        {
+          "term": "paridṛṣṭaḥ",
+          "meaning": "osservata, regolata"
+        },
+        {
+          "term": "dīrgha",
+          "meaning": "lunga"
+        },
+        {
+          "term": "sūkṣmaḥ",
+          "meaning": "sottile"
+        }
+      ],
+      "meaning": "Le modalità esterna, interna e sospesa, regolate per luogo, tempo e numero, diventano lunghe e sottili.",
+      "explanation": "Il respiro può essere osservato e regolato nelle fasi esterna, interna e sospesa. Luogo, durata e numero rendono la pratica misurabile; con il tempo il respiro diventa più lungo e sottile, senza essere forzato."
+    },
+    {
+      "sutraId": "sutra_2_51",
+      "pronunciation": "bāh-ya a-bhyan-ta-ra vi-sha-ya āk-ṣe-pī cha-tur-thaḥ",
+      "initialPronunciation": "bāh-ya",
+      "wordMeanings": [
+        {
+          "term": "bāhya",
+          "meaning": "esterno"
+        },
+        {
+          "term": "abhyantara",
+          "meaning": "interno"
+        },
+        {
+          "term": "viṣaya",
+          "meaning": "ambito, oggetto"
+        },
+        {
+          "term": "ākṣepī",
+          "meaning": "che oltrepassa"
+        },
+        {
+          "term": "caturthaḥ",
+          "meaning": "il quarto"
+        }
+      ],
+      "meaning": "Il quarto prāṇāyāma oltrepassa l'ambito dell'esterno e dell'interno.",
+      "explanation": "Il quarto prāṇāyāma non dipende più deliberatamente dalle normali fasi interna ed esterna. Viene descritto come un trascendimento della regolazione precedente, che emerge quando la pratica è maturata."
+    },
+    {
+      "sutraId": "sutra_2_52",
+      "pronunciation": "ta-taḥ kṣī-ya-te pra-kā-śa ā-va-ra-ṇam",
+      "initialPronunciation": "ta-taḥ",
+      "wordMeanings": [
+        {
+          "term": "tataḥ",
+          "meaning": "allora, da ciò"
+        },
+        {
+          "term": "kṣīyate",
+          "meaning": "si assottiglia, scompare"
+        },
+        {
+          "term": "prakāśa",
+          "meaning": "luce"
+        },
+        {
+          "term": "āvaraṇam",
+          "meaning": "velo, copertura"
+        }
+      ],
+      "meaning": "Da ciò si dissolve il velo che ricopre la luce.",
+      "explanation": "La regolazione del respiro riduce ciò che vela la luminosità della mente. Il sutra collega quindi prāṇāyāma alla conoscenza: il suo risultato essenziale non è una prestazione respiratoria, ma una maggiore chiarezza interiore."
+    },
+    {
+      "sutraId": "sutra_2_53",
+      "pronunciation": "dhā-ra-ṇā-su cha yog-ya-tā ma-na-saḥ",
+      "initialPronunciation": "dhā-ra-ṇā-su",
+      "wordMeanings": [
+        {
+          "term": "dhāraṇāsu",
+          "meaning": "per le concentrazioni"
+        },
+        {
+          "term": "ca",
+          "meaning": "e"
+        },
+        {
+          "term": "yogyatā",
+          "meaning": "idoneità, capacità"
+        },
+        {
+          "term": "manasaḥ",
+          "meaning": "della mente"
+        }
+      ],
+      "meaning": "E la mente diviene idonea alla concentrazione.",
+      "explanation": "Con il respiro più quieto e il velo mentale assottigliato, la mente diventa adatta a dhāraṇā. Prāṇāyāma svolge così una funzione di passaggio tra la stabilità psicofisica e le pratiche propriamente contemplative."
+    },
+    {
+      "sutraId": "sutra_2_54",
+      "pronunciation": "sva vi-sha-ya a-sam-pra-yo-ge chit-tas-ya sva-rū-pa a-nu-kā-raḥ i-va in-dri-yā-ṇām prat-yā-hā-raḥ",
+      "initialPronunciation": "sva",
+      "wordMeanings": [
+        {
+          "term": "sva",
+          "meaning": "propri"
+        },
+        {
+          "term": "viṣaya",
+          "meaning": "oggetti"
+        },
+        {
+          "term": "asaṁprayoge",
+          "meaning": "senza contatto"
+        },
+        {
+          "term": "cittasya",
+          "meaning": "della mente"
+        },
+        {
+          "term": "svarūpa",
+          "meaning": "natura propria"
+        },
+        {
+          "term": "anukāraḥ",
+          "meaning": "imitazione"
+        },
+        {
+          "term": "iva",
+          "meaning": "come se"
+        },
+        {
+          "term": "indriyāṇām",
+          "meaning": "dei sensi"
+        },
+        {
+          "term": "pratyāhāraḥ",
+          "meaning": "ritiro dei sensi"
+        }
+      ],
+      "meaning": "Il ritiro dei sensi avviene quando, separati dai propri oggetti, essi sembrano assumere la natura della mente.",
+      "explanation": "Nel pratyāhāra i sensi cessano di inseguire automaticamente i propri oggetti e seguono la direzione della mente raccolta. Non è perdita della capacità sensoriale, ma libertà dalla risposta obbligata a ogni stimolo."
+    },
+    {
+      "sutraId": "sutra_2_55",
+      "pronunciation": "ta-taḥ pa-ra-mā va-śya-tā in-dri-yā-ṇām",
+      "initialPronunciation": "ta-taḥ",
+      "wordMeanings": [
+        {
+          "term": "tataḥ",
+          "meaning": "allora, da ciò"
+        },
+        {
+          "term": "paramā",
+          "meaning": "suprema"
+        },
+        {
+          "term": "vaśyatā",
+          "meaning": "padronanza, controllo"
+        },
+        {
+          "term": "indriyāṇām",
+          "meaning": "dei sensi"
+        }
+      ],
+      "meaning": "Da ciò deriva la suprema padronanza dei sensi.",
+      "explanation": "Quando il ritiro dei sensi è stabilito, nasce una padronanza che non richiede repressione continua. Gli oggetti possono essere presenti senza comandare l'attenzione, preparando la mente alle membra interiori dello yoga."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "language": "it",
+    "pageTitle": "Sutra by Heart - Yoga Sutra di Patanjali"
+  },
+  "cover": {
+    "kicker": "Yoga Sutra di Patanjali",
+    "authorLabel": "Autore:",
+    "voiceLabel": "Voce:",
+    "importantNoteTitle": "Nota importante",
+    "importantNote": "La voce che senti in questa app è quella del mio maestro, mentre le spiegazioni sono create da una AI. Se trovi imprecisioni o errori, la colpa è solo ed esclusivamente mia. Usa questo strumento come una guida per lo studio, con la dovuta consapevolezza.",
+    "homeCount": "{chapters} capitoli · {sutras} sutra",
+    "chapterCount": "{chapter} · {sutras}"
+  },
+  "home": {
+    "studyTitle": "Studio",
+    "studyDescription": "Scegli un capitolo per leggere, ascoltare e studiare i sutra.",
+    "chapterLabel": "Capitolo {chapter}",
+    "sutraCount": "{sutras} sutra",
+    "continuousTitle": "Recitazione continua",
+    "continuousDescription": "Scegli un capitolo, tutti i sutra oppure un intervallo e ascoltali in sequenza, una volta o a ripetizione."
+  },
+  "navigation": {
+    "home": "Torna alla home",
+    "chapterPosition": "Capitolo {chapter} di {total}"
+  },
+  "chapter": {
+    "aboutTitle": "Il capitolo",
+    "openingRecitation": "Recitazione iniziale",
+    "closingRecitation": "Recitazione conclusiva",
+    "documentDetail": "Yoga Sutra di Patanjali"
+  },
+  "sutra": {
+    "wordsLabel": "Parole:",
+    "meaningLabel": "Significato:",
+    "explanationLabel": "Spiegazione",
+    "playLabel": "Riproduci il sutra {number}"
+  },
+  "continuous": {
+    "chapterLabel": "Capitolo",
+    "selectionLabel": "Selezione",
+    "allOption": "Tutti i sutra",
+    "rangeOption": "Intervallo",
+    "fromLabel": "Da",
+    "toLabel": "A",
+    "repeatLabel": "Ripeti in ciclo",
+    "bellLabel": "Campana",
+    "repetitionPauseLabel": "Pausa per ripetere",
+    "start": "Avvia",
+    "pause": "Pausa",
+    "resume": "Riprendi",
+    "stop": "Interrompi",
+    "ready": "Pronto per la riproduzione.",
+    "bellPlaying": "Campana tra i cicli...",
+    "bellPaused": "Campana in pausa.",
+    "repetitionPause": "Pausa per ripetere il sutra {number}.",
+    "repetitionPausePaused": "Pausa per ripetere sospesa.",
+    "completed": "Riproduzione completata.",
+    "trackStatus": "{state}: sutra {number} · {current} di {total}",
+    "playingState": "In riproduzione",
+    "pausedState": "In pausa",
+    "noSutras": "Nessun sutra disponibile."
+  },
+  "audio": {
+    "play": "Play",
+    "pause": "Pausa",
+    "openingLabel": "{title}, {chapter}",
+    "closingLabel": "{title}, {chapter}"
+  },
+  "errors": {
+    "singlePlayback": "Impossibile riprodurre l'audio.",
+    "sequenceTrack": "Impossibile riprodurre il sutra {number}.",
+    "bellCue": "Impossibile riprodurre la campana.",
+    "resume": "Impossibile riprendere la riproduzione.",
+    "missingContent": "I dati dell'app non sono disponibili."
+  }
+}

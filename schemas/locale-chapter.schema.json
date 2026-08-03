@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scientia.yoga/schemas/locale-chapter.schema.json",
+  "title": "Sutra by Heart localized chapter",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["locale", "chapterId", "title", "subtitle", "description", "sutras"],
+  "properties": {
+    "locale": {"type": "string", "pattern": "^[a-z]{2}(-[A-Z]{2})?$"},
+    "chapterId": {"type": "string", "pattern": "^chapter_[1-9][0-9]*$"},
+    "title": {"type": "string", "minLength": 1},
+    "subtitle": {"type": "string", "minLength": 1},
+    "description": {"type": ["string", "null"]},
+    "sutras": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sutraId",
+          "pronunciation",
+          "initialPronunciation",
+          "wordMeanings",
+          "meaning",
+          "explanation"
+        ],
+        "properties": {
+          "sutraId": {"type": "string", "pattern": "^sutra_[1-9][0-9]*_[0-9]{2,}$"},
+          "pronunciation": {"type": "string", "minLength": 1},
+          "initialPronunciation": {"type": "string", "minLength": 1},
+          "wordMeanings": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["term", "meaning"],
+              "properties": {
+                "term": {"type": "string", "minLength": 1},
+                "meaning": {"type": "string", "minLength": 1}
+              }
+            }
+          },
+          "meaning": {"type": "string", "minLength": 1},
+          "explanation": {"type": ["string", "null"]}
+        }
+      }
+    }
+  }
+}

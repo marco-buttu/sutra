@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "defaultLocale": "it",
+  "sourceLocale": "it",
+  "supportedLocales": [
+    "it"
+  ],
+  "defaultVoiceId": "vijay",
+  "credits": {
+    "authorName": "Marco Buttu",
+    "authorUrl": "https://www.instagram.com/marco.buttu/",
+    "voiceHonorific": "Guruji",
+    "voiceName": "Vijay Kumar",
+    "voiceUrl": "https://www.ashtangasaadhana.com/"
+  },
+  "features": {
+    "study": true,
+    "continuousRecitation": true,
+    "explanations": true,
+    "tests": false
+  }
+}

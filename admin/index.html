@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Sutra by Heart - Content Editor</title>
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+  <header class="editor-header">
+    <div>
+      <p class="editor-kicker">Sutra by Heart</p>
+      <h1>Content Editor</h1>
+      <p class="editor-introduction">Edit the source content and save it directly to the project JSON files.</p>
+    </div>
+    <a class="preview-link" href="/" target="_blank" rel="noopener">Open application</a>
+  </header>
+
+  <div class="editor-layout">
+    <aside class="editor-navigation" aria-label="Content selection">
+      <label class="editor-field compact-field">
+        <span>Language</span>
+        <select id="locale-select"></select>
+      </label>
+
+      <label class="editor-field compact-field">
+        <span>Chapter</span>
+        <select id="chapter-select"></select>
+      </label>
+
+      <label class="editor-field compact-field">
+        <span>Sutra</span>
+        <select id="sutra-select"></select>
+      </label>
+
+      <div class="sutra-navigation">
+        <button class="secondary-button" id="previous-sutra" type="button">Previous</button>
+        <button class="secondary-button" id="next-sutra" type="button">Next</button>
+      </div>
+
+      <p class="navigation-note">Sanskrit is shared by every language. The other fields belong to the selected language.</p>
+    </aside>
+
+    <main class="editor-main">
+      <div class="editor-status" id="editor-status" role="status" aria-live="polite">Loading content...</div>
+
+      <details class="chapter-editor" id="chapter-editor">
+        <summary>Chapter information</summary>
+        <form id="chapter-form">
+          <div class="two-column-fields">
+            <label class="editor-field">
+              <span>Title</span>
+              <input id="chapter-title" name="title" type="text" required>
+            </label>
+            <label class="editor-field">
+              <span>Subtitle</span>
+              <input id="chapter-subtitle" name="subtitle" type="text" required>
+            </label>
+          </div>
+          <label class="editor-field">
+            <span>Description</span>
+            <textarea id="chapter-description" name="description" rows="4" required></textarea>
+          </label>
+          <div class="form-actions compact-actions">
+            <button class="secondary-button" id="reset-chapter" type="button">Reset</button>
+            <button class="primary-button" id="save-chapter" type="submit">Save chapter</button>
+          </div>
+        </form>
+      </details>
+
+      <form class="sutra-editor" id="sutra-form">
+        <div class="sutra-heading">
+          <div>
+            <p class="sutra-identifier" id="sutra-identifier"></p>
+            <h2 id="sutra-number">Sutra</h2>
+          </div>
+          <span class="change-state" id="change-state">Saved</span>
+        </div>
+
+        <label class="editor-field">
+          <span>Sanskrit</span>
+          <textarea id="sanskrit" name="sanskrit" rows="3" required></textarea>
+          <small>Changing this field changes the Sanskrit text in every language.</small>
+        </label>
+
+        <label class="editor-field">
+          <span>Pronunciation</span>
+          <textarea id="pronunciation" name="pronunciation" rows="3" required></textarea>
+        </label>
+
+        <section class="word-editor" aria-labelledby="word-editor-title">
+          <div class="section-heading">
+            <div>
+              <h3 id="word-editor-title">Words and meanings</h3>
+              <p>Add, remove or reorder the word entries.</p>
+            </div>
+            <button class="secondary-button" id="add-word" type="button">Add word</button>
+          </div>
+          <div class="word-list" id="word-list"></div>
+        </section>
+
+        <label class="editor-field">
+          <span>Essential meaning</span>
+          <textarea id="meaning" name="meaning" rows="4" required></textarea>
+        </label>
+
+        <label class="editor-field">
+          <span>Explanation</span>
+          <textarea id="explanation" name="explanation" rows="8" required></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button class="secondary-button" id="reset-sutra" type="button">Reset changes</button>
+          <button class="primary-button" id="save-sutra" type="submit">Save sutra</button>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <template id="word-row-template">
+    <div class="word-row">
+      <label class="editor-field word-term-field">
+        <span>Word</span>
+        <input class="word-term" type="text" required>
+      </label>
+      <label class="editor-field word-meaning-field">
+        <span>Meaning</span>
+        <input class="word-meaning" type="text" required>
+      </label>
+      <div class="word-actions" aria-label="Word actions">
+        <button class="icon-button move-up" type="button" aria-label="Move word up" title="Move up">↑</button>
+        <button class="icon-button move-down" type="button" aria-label="Move word down" title="Move down">↓</button>
+        <button class="icon-button remove-word" type="button" aria-label="Remove word" title="Remove">×</button>
+      </div>
+    </div>
+  </template>
+
+  <script src="/admin/admin.js"></script>
+</body>
+</html>

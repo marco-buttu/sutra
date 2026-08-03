@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scientia.yoga/schemas/audio-manifest.schema.json",
+  "title": "Sutra by Heart audio manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["restartCue", "voices"],
+  "properties": {
+    "restartCue": {"type": "string", "pattern": "^audio/.+\\.mp3$"},
+    "voices": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["voiceId", "chapters"],
+        "properties": {
+          "voiceId": {"type": "string", "minLength": 1},
+          "chapters": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["chapterId", "opening", "closing", "sutras"],
+              "properties": {
+                "chapterId": {"type": "string", "pattern": "^chapter_[1-9][0-9]*$"},
+                "opening": {"type": "string", "pattern": "^audio/.+\\.mp3$"},
+                "closing": {"type": "string", "pattern": "^audio/.+\\.mp3$"},
+                "sutras": {
+                  "type": "object",
+                  "minProperties": 1,
+                  "propertyNames": {"pattern": "^sutra_[1-9][0-9]*_[0-9]{2,}$"},
+                  "additionalProperties": {"type": "string", "pattern": "^audio/.+\\.mp3$"}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

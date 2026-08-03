@@ -1,0 +1,1620 @@
+{
+  "locale": "it",
+  "chapterId": "chapter_1",
+  "title": "Samadhi Pada",
+  "subtitle": "significato letterale essenziale",
+  "description": "Il Samādhi Pāda definisce lo yoga, descrive i movimenti della mente e presenta i mezzi per acquietarli. Il capitolo conduce dalla pratica e dal distacco alle forme più profonde di concentrazione, fino al samādhi senza seme.",
+  "sutras": [
+    {
+      "sutraId": "sutra_1_01",
+      "pronunciation": "a-tha yo-gā-nu-śā-sa-nam",
+      "initialPronunciation": "a-tha",
+      "wordMeanings": [
+        {
+          "term": "atha",
+          "meaning": "ora"
+        },
+        {
+          "term": "yoga",
+          "meaning": "yoga"
+        },
+        {
+          "term": "anuśāsanam",
+          "meaning": "insegnamento, disciplina"
+        }
+      ],
+      "meaning": "Ora comincia l'insegnamento dello yoga.",
+      "explanation": "Atha indica un inizio che avviene nel presente, dopo una preparazione adeguata. Anuśāsanam richiama un insegnamento trasmesso e ordinato: il testo non propone una teoria isolata, ma introduce una disciplina da praticare."
+    },
+    {
+      "sutraId": "sutra_1_02",
+      "pronunciation": "yo-gaś chit-ta vrit-ti ni-ro-dhah",
+      "initialPronunciation": "yo-gaś",
+      "wordMeanings": [
+        {
+          "term": "yogaḥ",
+          "meaning": "lo yoga"
+        },
+        {
+          "term": "citta",
+          "meaning": "la mente, il campo mentale"
+        },
+        {
+          "term": "vṛtti",
+          "meaning": "i movimenti, le modificazioni"
+        },
+        {
+          "term": "nirodhaḥ",
+          "meaning": "l'arresto, la restrizione"
+        }
+      ],
+      "meaning": "Lo yoga è l'arresto dei movimenti della mente.",
+      "explanation": "Patañjali definisce lo yoga attraverso il rapporto con le attività di citta, l'intero campo mentale. Nirodha non è una distruzione della mente, ma il suo acquietarsi e raccogliersi, così che le sue modificazioni non dominino più l'esperienza."
+    },
+    {
+      "sutraId": "sutra_1_03",
+      "pronunciation": "ta-dā dra-shṭuḥ sva-rū-pe a-va-sthā-nam",
+      "initialPronunciation": "ta-dā",
+      "wordMeanings": [
+        {
+          "term": "tadā",
+          "meaning": "allora"
+        },
+        {
+          "term": "draṣṭuḥ",
+          "meaning": "del veggente, del testimone"
+        },
+        {
+          "term": "svarūpe",
+          "meaning": "nella propria natura"
+        },
+        {
+          "term": "avasthānam",
+          "meaning": "il dimorare, lo stabilirsi"
+        }
+      ],
+      "meaning": "Allora il veggente dimora nella propria natura.",
+      "explanation": "Quando le modificazioni mentali si placano, il veggente non viene prodotto né trasformato: si rivela nella propria natura. Il sutra distingue quindi la coscienza che conosce dai contenuti mutevoli attraverso i quali abitualmente conosce."
+    },
+    {
+      "sutraId": "sutra_1_04",
+      "pronunciation": "vrit-ti sā-rū-pyam i-ta-ra-tra",
+      "initialPronunciation": "vrit-ti",
+      "wordMeanings": [
+        {
+          "term": "vṛtti",
+          "meaning": "i movimenti mentali"
+        },
+        {
+          "term": "sārūpyam",
+          "meaning": "l'identificazione, l'assunzione della stessa forma"
+        },
+        {
+          "term": "itaratra",
+          "meaning": "altrimenti, negli altri stati"
+        }
+      ],
+      "meaning": "Altrimenti il veggente si identifica con i movimenti mentali.",
+      "explanation": "Negli stati ordinari, la coscienza sembra assumere la forma dei pensieri, delle emozioni e delle percezioni. Questa identificazione fa apparire il contenuto mentale come se fosse il soggetto stesso che lo osserva."
+    },
+    {
+      "sutraId": "sutra_1_05",
+      "pronunciation": "vrit-ta-yaḥ pan-cha-tay-yaḥ kliṣ-ṭā a-kliṣ-ṭāḥ",
+      "initialPronunciation": "vrit-ta-yaḥ",
+      "wordMeanings": [
+        {
+          "term": "vṛttayaḥ",
+          "meaning": "i movimenti mentali"
+        },
+        {
+          "term": "pañcatayyaḥ",
+          "meaning": "di cinque tipi"
+        },
+        {
+          "term": "kliṣṭāḥ",
+          "meaning": "afflitti, dolorosi"
+        },
+        {
+          "term": "akliṣṭāḥ",
+          "meaning": "non afflitti, non dolorosi"
+        }
+      ],
+      "meaning": "I movimenti mentali sono di cinque tipi, afflitti o non afflitti.",
+      "explanation": "Patañjali classifica tutte le attività mentali in cinque categorie. Anche una conoscenza corretta può ostacolare la quiete se alimenta identificazione e attaccamento, mentre una stessa funzione può sostenere la pratica quando conduce al discernimento."
+    },
+    {
+      "sutraId": "sutra_1_06",
+      "pronunciation": "pra-mā-ṇa vi-par-ya-ya vi-kal-pa ni-drā smri-ta-yaḥ",
+      "initialPronunciation": "pra-mā-ṇa",
+      "wordMeanings": [
+        {
+          "term": "pramāṇa",
+          "meaning": "conoscenza valida"
+        },
+        {
+          "term": "viparyaya",
+          "meaning": "errore"
+        },
+        {
+          "term": "vikalpa",
+          "meaning": "costruzione concettuale"
+        },
+        {
+          "term": "nidrā",
+          "meaning": "sonno"
+        },
+        {
+          "term": "smṛtayaḥ",
+          "meaning": "ricordi, memorie"
+        }
+      ],
+      "meaning": "Essi sono conoscenza valida, errore, costruzione concettuale, sonno e memoria.",
+      "explanation": "Le cinque vṛtti comprendono modi molto diversi di funzionamento della mente, dalla conoscenza valida al sonno. La classificazione serve a riconoscere ciò che accade interiormente, prima di imparare a non esserne trascinati."
+    },
+    {
+      "sutraId": "sutra_1_07",
+      "pronunciation": "prat-yak-sha a-nu-mā-na ā-ga-māḥ pra-mā-ṇā-ni",
+      "initialPronunciation": "prat-yak-sha",
+      "wordMeanings": [
+        {
+          "term": "pratyakṣa",
+          "meaning": "percezione diretta"
+        },
+        {
+          "term": "anumāna",
+          "meaning": "inferenza"
+        },
+        {
+          "term": "āgamāḥ",
+          "meaning": "testimonianza autorevole"
+        },
+        {
+          "term": "pramāṇāni",
+          "meaning": "mezzi di conoscenza valida"
+        }
+      ],
+      "meaning": "Percezione diretta, inferenza e testimonianza autorevole sono i mezzi di conoscenza valida.",
+      "explanation": "La conoscenza valida può nascere dall'esperienza diretta, da un'inferenza corretta o da una testimonianza autorevole. Questi mezzi non sono equivalenti alla visione liberante, ma permettono alla mente di orientarsi senza fondarsi sull'errore."
+    },
+    {
+      "sutraId": "sutra_1_08",
+      "pronunciation": "vi-par-ya-yo mith-yā jñā-nam a-ta-drū-pa pra-ti-ṣṭham",
+      "initialPronunciation": "vi-par-ya-yo",
+      "wordMeanings": [
+        {
+          "term": "viparyayaḥ",
+          "meaning": "errore"
+        },
+        {
+          "term": "mithyā",
+          "meaning": "falso"
+        },
+        {
+          "term": "jñānam",
+          "meaning": "conoscenza"
+        },
+        {
+          "term": "atadrūpa",
+          "meaning": "non corrispondente alla forma reale"
+        },
+        {
+          "term": "pratiṣṭham",
+          "meaning": "fondata"
+        }
+      ],
+      "meaning": "L'errore è una conoscenza falsa, fondata su una forma che non è quella reale.",
+      "explanation": "Viparyaya è una cognizione che non corrisponde alla realtà dell'oggetto. Non è semplice assenza di sapere: è una costruzione positiva ma errata, che può guidare percezioni e azioni finché non viene corretta."
+    },
+    {
+      "sutraId": "sutra_1_09",
+      "pronunciation": "śab-da jñā-na a-nu-pā-tī va-stu śūn-yo vi-kal-paḥ",
+      "initialPronunciation": "śab-da",
+      "wordMeanings": [
+        {
+          "term": "śabda",
+          "meaning": "parola"
+        },
+        {
+          "term": "jñāna",
+          "meaning": "conoscenza"
+        },
+        {
+          "term": "anupātī",
+          "meaning": "che segue"
+        },
+        {
+          "term": "vastu",
+          "meaning": "oggetto reale"
+        },
+        {
+          "term": "śūnyaḥ",
+          "meaning": "privo, vuoto"
+        },
+        {
+          "term": "vikalpaḥ",
+          "meaning": "costruzione concettuale"
+        }
+      ],
+      "meaning": "Il vikalpa è una conoscenza che segue le parole ma è priva di un oggetto reale.",
+      "explanation": "Vikalpa nasce da parole e concetti che non rimandano a un oggetto effettivamente presente. Il linguaggio può quindi creare una conoscenza solo apparente, utile in alcuni contesti ma capace anche di alimentare immaginazioni prive di riscontro."
+    },
+    {
+      "sutraId": "sutra_1_10",
+      "pronunciation": "a-bhā-va prat-ya-ya ā-lam-ba-nā vrit-tir ni-drā",
+      "initialPronunciation": "a-bhā-va",
+      "wordMeanings": [
+        {
+          "term": "abhāva",
+          "meaning": "assenza"
+        },
+        {
+          "term": "pratyaya",
+          "meaning": "cognizione, contenuto mentale"
+        },
+        {
+          "term": "ālambanā",
+          "meaning": "che ha per sostegno"
+        },
+        {
+          "term": "vṛttiḥ",
+          "meaning": "movimento mentale"
+        },
+        {
+          "term": "nidrā",
+          "meaning": "sonno"
+        }
+      ],
+      "meaning": "Il sonno è un movimento mentale che ha per sostegno la cognizione dell'assenza.",
+      "explanation": "Il sonno non è considerato una completa assenza di attività mentale. Al risveglio sappiamo di avere dormito: ciò indica una vṛtti sostenuta dall'esperienza dell'assenza dei contenuti propri della veglia e del sogno."
+    },
+    {
+      "sutraId": "sutra_1_11",
+      "pronunciation": "a-nu-bhū-ta vi-sha-ya a-sam-pra-mo-shaḥ smri-tiḥ",
+      "initialPronunciation": "a-nu-bhū-ta",
+      "wordMeanings": [
+        {
+          "term": "anubhūta",
+          "meaning": "esperito"
+        },
+        {
+          "term": "viṣaya",
+          "meaning": "oggetto"
+        },
+        {
+          "term": "asaṁpramoṣaḥ",
+          "meaning": "non perdita, mancata dispersione"
+        },
+        {
+          "term": "smṛtiḥ",
+          "meaning": "memoria"
+        }
+      ],
+      "meaning": "La memoria è il non perdere l'oggetto esperito.",
+      "explanation": "La memoria conserva e ripresenta ciò che è stato sperimentato. Essa può mantenere disponibile una conoscenza utile, ma può anche riattivare indefinitamente impressioni, desideri e paure legati al passato."
+    },
+    {
+      "sutraId": "sutra_1_12",
+      "pronunciation": "ab-hyā-sa vai-rāg-yā-bhyām tan ni-ro-dhah",
+      "initialPronunciation": "ab-hyā-sa",
+      "wordMeanings": [
+        {
+          "term": "abhyāsa",
+          "meaning": "pratica"
+        },
+        {
+          "term": "vairāgya",
+          "meaning": "distacco"
+        },
+        {
+          "term": "abhyām",
+          "meaning": "mediante entrambi"
+        },
+        {
+          "term": "tat",
+          "meaning": "di essi"
+        },
+        {
+          "term": "nirodhaḥ",
+          "meaning": "arresto"
+        }
+      ],
+      "meaning": "L'arresto di questi movimenti avviene mediante pratica e distacco.",
+      "explanation": "La quiete mentale richiede due movimenti complementari. Abhyāsa stabilizza la capacità di restare presenti, mentre vairāgya riduce la spinta a inseguire o respingere i contenuti che sorgono."
+    },
+    {
+      "sutraId": "sutra_1_13",
+      "pronunciation": "ta-tra sthi-tau yat-no ab-hyā-saḥ",
+      "initialPronunciation": "ta-tra",
+      "wordMeanings": [
+        {
+          "term": "tatra",
+          "meaning": "in ciò, in quello stato"
+        },
+        {
+          "term": "sthitau",
+          "meaning": "nella stabilità"
+        },
+        {
+          "term": "yatnaḥ",
+          "meaning": "sforzo"
+        },
+        {
+          "term": "abhyāsaḥ",
+          "meaning": "pratica"
+        }
+      ],
+      "meaning": "La pratica è lo sforzo di rimanere stabili in quello stato.",
+      "explanation": "La pratica non è una successione casuale di esercizi, ma lo sforzo continuo di stabilire la mente nella quiete. Il criterio non è l'intensità momentanea, bensì la capacità di tornare con costanza allo stato ricercato."
+    },
+    {
+      "sutraId": "sutra_1_14",
+      "pronunciation": "sa tu dīr-gha kā-la nai-ran-tar-ya sat-kā-rā-se-vi-to dṛ-ḍha bhū-miḥ",
+      "initialPronunciation": "sa",
+      "wordMeanings": [
+        {
+          "term": "sa",
+          "meaning": "essa"
+        },
+        {
+          "term": "tu",
+          "meaning": "invero"
+        },
+        {
+          "term": "dīrgha",
+          "meaning": "lungo"
+        },
+        {
+          "term": "kāla",
+          "meaning": "tempo"
+        },
+        {
+          "term": "nairantarya",
+          "meaning": "continuità, assenza di interruzioni"
+        },
+        {
+          "term": "satkāra",
+          "meaning": "devozione, rispetto"
+        },
+        {
+          "term": "āsevitaḥ",
+          "meaning": "coltivata"
+        },
+        {
+          "term": "dṛḍha-bhūmiḥ",
+          "meaning": "saldamente fondata"
+        }
+      ],
+      "meaning": "La pratica diventa saldamente fondata quando è coltivata a lungo, senza interruzioni e con devozione.",
+      "explanation": "Una pratica diventa realmente stabile soltanto quando attraversa il tempo, prosegue senza lunghe interruzioni ed è sostenuta da attenzione e rispetto. Patañjali esclude così l'idea che risultati profondi derivino da uno slancio breve e discontinuo."
+    },
+    {
+      "sutraId": "sutra_1_15",
+      "pronunciation": "dṛṣ-ṭā-nu-śra-vi-ka vi-sha-ya vi-triṣ-ṇa-sya va-śī-kā-ra sam-jñā vai-rāg-yam",
+      "initialPronunciation": "dṛṣ-ṭā-nu-śra-vi-ka",
+      "wordMeanings": [
+        {
+          "term": "dṛṣṭa",
+          "meaning": "visto, sperimentato"
+        },
+        {
+          "term": "anuśravika",
+          "meaning": "udito, tramandato"
+        },
+        {
+          "term": "viṣaya",
+          "meaning": "oggetto"
+        },
+        {
+          "term": "vitṛṣṇasya",
+          "meaning": "di chi è privo di sete, di desiderio"
+        },
+        {
+          "term": "vaśīkāra",
+          "meaning": "padronanza"
+        },
+        {
+          "term": "saṁjñā",
+          "meaning": "consapevolezza, condizione riconosciuta"
+        },
+        {
+          "term": "vairāgyam",
+          "meaning": "distacco"
+        }
+      ],
+      "meaning": "Il distacco è la padronanza di chi non desidera gli oggetti visti o tramandati.",
+      "explanation": "Il distacco è padronanza del desiderio, non rifiuto degli oggetti. Riguarda sia ciò che è stato sperimentato direttamente sia ciò che viene promesso dalla tradizione: il praticante non dipende più dalla loro acquisizione per sentirsi completo."
+    },
+    {
+      "sutraId": "sutra_1_16",
+      "pronunciation": "tat pa-ram pu-ru-ṣa khyā-ter gu-ṇa vai-triṣ-ṇyam",
+      "initialPronunciation": "tat",
+      "wordMeanings": [
+        {
+          "term": "tat",
+          "meaning": "quello"
+        },
+        {
+          "term": "param",
+          "meaning": "supremo"
+        },
+        {
+          "term": "puruṣa",
+          "meaning": "coscienza pura"
+        },
+        {
+          "term": "khyāteḥ",
+          "meaning": "dalla conoscenza, dal discernimento"
+        },
+        {
+          "term": "guṇa",
+          "meaning": "costituenti della natura"
+        },
+        {
+          "term": "vaitṛṣṇyam",
+          "meaning": "assenza di desiderio"
+        }
+      ],
+      "meaning": "Il distacco supremo è l'assenza di desiderio per i guṇa, nata dalla conoscenza del puruṣa.",
+      "explanation": "Il distacco più alto nasce dal riconoscimento del puruṣa, distinto da ogni fenomeno della natura. Quando questo discernimento matura, anche l'attrazione per gli stati più sottili e luminosi dei guṇa perde il proprio potere."
+    },
+    {
+      "sutraId": "sutra_1_17",
+      "pronunciation": "vi-tar-ka vi-chā-ra ā-nan-da as-mi-tā rū-pa a-nu-ga-māt sam-praj-ñā-taḥ",
+      "initialPronunciation": "vi-tar-ka",
+      "wordMeanings": [
+        {
+          "term": "vitarka",
+          "meaning": "ragionamento"
+        },
+        {
+          "term": "vicāra",
+          "meaning": "riflessione sottile"
+        },
+        {
+          "term": "ānanda",
+          "meaning": "beatitudine"
+        },
+        {
+          "term": "asmitā",
+          "meaning": "senso dell'io"
+        },
+        {
+          "term": "rūpa",
+          "meaning": "forma"
+        },
+        {
+          "term": "anugamāt",
+          "meaning": "perché accompagnato da"
+        },
+        {
+          "term": "samprajñātaḥ",
+          "meaning": "samādhi con cognizione"
+        }
+      ],
+      "meaning": "Il samādhi con cognizione è accompagnato da ragionamento, riflessione, beatitudine e senso dell'io.",
+      "explanation": "Il samādhi samprajñāta conserva un oggetto di conoscenza e si approfondisce attraverso livelli successivi. Il processo procede dal ragionamento su oggetti grossolani alla comprensione del sottile, alla beatitudine e infine al puro senso di essere."
+    },
+    {
+      "sutraId": "sutra_1_18",
+      "pronunciation": "vi-rā-ma prat-ya-ya ab-hyā-sa pūr-vaḥ sam-skā-ra śe-ṣo an-yaḥ",
+      "initialPronunciation": "vi-rā-ma",
+      "wordMeanings": [
+        {
+          "term": "virāma",
+          "meaning": "cessazione"
+        },
+        {
+          "term": "pratyaya",
+          "meaning": "contenuto mentale"
+        },
+        {
+          "term": "abhyāsa",
+          "meaning": "pratica"
+        },
+        {
+          "term": "pūrvaḥ",
+          "meaning": "preceduto da"
+        },
+        {
+          "term": "saṁskāra",
+          "meaning": "impressioni latenti"
+        },
+        {
+          "term": "śeṣaḥ",
+          "meaning": "residuo"
+        },
+        {
+          "term": "anyaḥ",
+          "meaning": "altro"
+        }
+      ],
+      "meaning": "L'altro samādhi, preceduto dalla pratica della cessazione dei contenuti mentali, lascia solo le impressioni latenti.",
+      "explanation": "Nell'altro samādhi cessano anche i contenuti cognitivi più sottili, ma rimangono impressioni latenti. Non è ancora la libertà definitiva: la pratica della cessazione deve maturare finché anche questi semi non producano più attività mentale."
+    },
+    {
+      "sutraId": "sutra_1_19",
+      "pronunciation": "bha-va prat-ya-yo vi-de-ha pra-kṛ-ti la-yā-nām",
+      "initialPronunciation": "bha-va",
+      "wordMeanings": [
+        {
+          "term": "bhava",
+          "meaning": "esistenza condizionata, divenire"
+        },
+        {
+          "term": "pratyayaḥ",
+          "meaning": "condizione, causa"
+        },
+        {
+          "term": "videha",
+          "meaning": "disincarnati"
+        },
+        {
+          "term": "prakṛti",
+          "meaning": "natura"
+        },
+        {
+          "term": "layānām",
+          "meaning": "di coloro che sono assorbiti"
+        }
+      ],
+      "meaning": "Per i disincarnati e gli assorbiti nella natura, l'altro samādhi deriva dalla loro condizione di esistenza.",
+      "explanation": "Patañjali distingue il conseguimento fondato sulla pratica yogica da condizioni di assorbimento legate a particolari forme di esistenza. Tali condizioni possono essere elevate, ma non equivalgono necessariamente al discernimento liberante."
+    },
+    {
+      "sutraId": "sutra_1_20",
+      "pronunciation": "śrad-dhā vī-rya smri-ti sa-mā-dhi praj-ñā pūr-va-ka i-ta-re-ṣām",
+      "initialPronunciation": "śrad-dhā",
+      "wordMeanings": [
+        {
+          "term": "śraddhā",
+          "meaning": "fiducia, fede"
+        },
+        {
+          "term": "vīrya",
+          "meaning": "vigore, energia"
+        },
+        {
+          "term": "smṛti",
+          "meaning": "memoria, presenza mentale"
+        },
+        {
+          "term": "samādhi",
+          "meaning": "assorbimento"
+        },
+        {
+          "term": "prajñā",
+          "meaning": "conoscenza intuitiva"
+        },
+        {
+          "term": "pūrvakaḥ",
+          "meaning": "preceduto da"
+        },
+        {
+          "term": "itareṣām",
+          "meaning": "per gli altri"
+        }
+      ],
+      "meaning": "Per gli altri, esso è preceduto da fiducia, vigore, memoria, samādhi e conoscenza intuitiva.",
+      "explanation": "Per la maggior parte dei praticanti il percorso si sviluppa attraverso una sequenza concreta: fiducia, energia, memoria della direzione scelta, raccoglimento e conoscenza intuitiva. Ogni qualità sostiene la successiva e impedisce alla pratica di disperdersi."
+    },
+    {
+      "sutraId": "sutra_1_21",
+      "pronunciation": "tī-vra sam-ve-gā-nām ā-san-naḥ",
+      "initialPronunciation": "tī-vra",
+      "wordMeanings": [
+        {
+          "term": "tīvra",
+          "meaning": "intenso"
+        },
+        {
+          "term": "saṁvegānām",
+          "meaning": "di coloro che hanno ardore, impeto"
+        },
+        {
+          "term": "āsannaḥ",
+          "meaning": "vicino"
+        }
+      ],
+      "meaning": "Il samādhi è vicino per coloro il cui ardore è intenso.",
+      "explanation": "La meta si avvicina quando l'aspirazione è intensa e non divisa. Saṁvega non indica agitazione, ma urgenza lucida: la pratica diventa prioritaria e riceve energia costante."
+    },
+    {
+      "sutraId": "sutra_1_22",
+      "pronunciation": "mri-du madh-ya a-dhi-mā-trat-vāt ta-to a-pi vi-śe-ṣaḥ",
+      "initialPronunciation": "mri-du",
+      "wordMeanings": [
+        {
+          "term": "mṛdu",
+          "meaning": "debole"
+        },
+        {
+          "term": "madhya",
+          "meaning": "medio"
+        },
+        {
+          "term": "adhimātratvāt",
+          "meaning": "per il grado elevato, molto intenso"
+        },
+        {
+          "term": "tataḥ",
+          "meaning": "da ciò"
+        },
+        {
+          "term": "api",
+          "meaning": "anche"
+        },
+        {
+          "term": "viśeṣaḥ",
+          "meaning": "distinzione"
+        }
+      ],
+      "meaning": "Vi è un'ulteriore distinzione secondo che l'intensità sia debole, media o elevata.",
+      "explanation": "Anche tra i praticanti sinceri esistono differenze di intensità. Il tempo e la profondità del percorso dipendono quindi non solo dal metodo, ma dalla continuità e dalla forza con cui viene applicato."
+    },
+    {
+      "sutraId": "sutra_1_23",
+      "pronunciation": "ī-śva-ra pra-ni-dhā-nād vā",
+      "initialPronunciation": "ī-śva-ra",
+      "wordMeanings": [
+        {
+          "term": "īśvara",
+          "meaning": "il Signore"
+        },
+        {
+          "term": "praṇidhānāt",
+          "meaning": "mediante dedizione, abbandono"
+        },
+        {
+          "term": "vā",
+          "meaning": "oppure"
+        }
+      ],
+      "meaning": "Oppure il samādhi si consegue mediante la dedizione a Īśvara.",
+      "explanation": "Patañjali presenta la dedizione a Īśvara come una via al samādhi. L'abbandono riduce la pretesa dell'io di controllare il processo e orienta mente e azione verso un principio che le trascende."
+    },
+    {
+      "sutraId": "sutra_1_24",
+      "pronunciation": "kle-śa kar-ma vi-pā-ka ā-śa-yair a-pa-rā-mriṣ-ṭaḥ pu-ru-ṣa vi-śe-ṣa ī-śva-raḥ",
+      "initialPronunciation": "kle-śa",
+      "wordMeanings": [
+        {
+          "term": "kleśa",
+          "meaning": "afflizioni"
+        },
+        {
+          "term": "karma",
+          "meaning": "azioni"
+        },
+        {
+          "term": "vipāka",
+          "meaning": "frutti, maturazione"
+        },
+        {
+          "term": "āśayaiḥ",
+          "meaning": "depositi latenti"
+        },
+        {
+          "term": "aparāmṛṣṭaḥ",
+          "meaning": "non toccato"
+        },
+        {
+          "term": "puruṣa",
+          "meaning": "coscienza pura"
+        },
+        {
+          "term": "viśeṣaḥ",
+          "meaning": "speciale"
+        },
+        {
+          "term": "īśvaraḥ",
+          "meaning": "il Signore"
+        }
+      ],
+      "meaning": "Īśvara è un puruṣa speciale, non toccato dalle afflizioni, dalle azioni, dai loro frutti e dai depositi latenti.",
+      "explanation": "Īśvara è descritto come un puruṣa particolare, mai coinvolto nei meccanismi che condizionano gli esseri. Non è toccato dalle afflizioni, dalle azioni, dai loro risultati o dalle impressioni che ne derivano."
+    },
+    {
+      "sutraId": "sutra_1_25",
+      "pronunciation": "ta-tra ni-ra-ti-śa-yam sar-va-jña bī-jam",
+      "initialPronunciation": "ta-tra",
+      "wordMeanings": [
+        {
+          "term": "tatra",
+          "meaning": "in lui"
+        },
+        {
+          "term": "niratiśayam",
+          "meaning": "insuperato, illimitato"
+        },
+        {
+          "term": "sarvajña",
+          "meaning": "onniscienza"
+        },
+        {
+          "term": "bījam",
+          "meaning": "seme"
+        }
+      ],
+      "meaning": "In lui è insuperato il seme dell'onniscienza.",
+      "explanation": "In Īśvara la possibilità della conoscenza raggiunge il suo grado insuperabile. L'espressione 'seme dell'onniscienza' indica il fondamento perfetto di una conoscenza non limitata dagli ostacoli della mente ordinaria."
+    },
+    {
+      "sutraId": "sutra_1_26",
+      "pronunciation": "sa pūr-ve-ṣām a-pi gu-ruḥ kā-le-na a-na-va-chhe-dāt",
+      "initialPronunciation": "sa",
+      "wordMeanings": [
+        {
+          "term": "sa",
+          "meaning": "egli"
+        },
+        {
+          "term": "pūrveṣām",
+          "meaning": "degli antichi, dei precedenti"
+        },
+        {
+          "term": "api",
+          "meaning": "anche"
+        },
+        {
+          "term": "guruḥ",
+          "meaning": "maestro"
+        },
+        {
+          "term": "kālena",
+          "meaning": "dal tempo"
+        },
+        {
+          "term": "anavacchedāt",
+          "meaning": "perché non limitato"
+        }
+      ],
+      "meaning": "Egli è il maestro anche degli antichi, poiché non è limitato dal tempo.",
+      "explanation": "Poiché non è delimitato dal tempo, Īśvara è il maestro anche dei maestri più antichi. La sorgente dell'insegnamento yogico non dipende così da una singola persona o epoca storica."
+    },
+    {
+      "sutraId": "sutra_1_27",
+      "pronunciation": "tas-ya vā-cha-kaḥ pra-na-vaḥ",
+      "initialPronunciation": "tas-ya",
+      "wordMeanings": [
+        {
+          "term": "tasya",
+          "meaning": "di lui"
+        },
+        {
+          "term": "vācakaḥ",
+          "meaning": "designazione, espressione"
+        },
+        {
+          "term": "praṇavaḥ",
+          "meaning": "Oṃ"
+        }
+      ],
+      "meaning": "La sua espressione è il praṇava, Oṃ.",
+      "explanation": "Oṃ è il segno sonoro attraverso cui la mente può rivolgersi a Īśvara. Il simbolo rende possibile una pratica concreta: ciò che trascende la rappresentazione viene contemplato mediante una forma sonora."
+    },
+    {
+      "sutraId": "sutra_1_28",
+      "pronunciation": "taj ja-pas tad ar-tha bhā-va-nam",
+      "initialPronunciation": "taj",
+      "wordMeanings": [
+        {
+          "term": "tat",
+          "meaning": "quello, Oṃ"
+        },
+        {
+          "term": "japaḥ",
+          "meaning": "ripetizione"
+        },
+        {
+          "term": "tad",
+          "meaning": "suo"
+        },
+        {
+          "term": "artha",
+          "meaning": "significato"
+        },
+        {
+          "term": "bhāvanam",
+          "meaning": "contemplazione"
+        }
+      ],
+      "meaning": "Si pratichino la ripetizione di Oṃ e la contemplazione del suo significato.",
+      "explanation": "La ripetizione di Oṃ non è presentata come un gesto meccanico. Japa deve essere accompagnato dalla contemplazione del suo significato, affinché suono, attenzione e orientamento interiore convergano."
+    },
+    {
+      "sutraId": "sutra_1_29",
+      "pronunciation": "ta-taḥ prat-yak che-ta-na ad-hi-ga-mo a-pi an-ta-rā-ya a-bhā-vaś cha",
+      "initialPronunciation": "ta-taḥ",
+      "wordMeanings": [
+        {
+          "term": "tataḥ",
+          "meaning": "da ciò"
+        },
+        {
+          "term": "pratyak",
+          "meaning": "interiore, rivolto all'interno"
+        },
+        {
+          "term": "cetana",
+          "meaning": "coscienza"
+        },
+        {
+          "term": "adhigamaḥ",
+          "meaning": "conseguimento, conoscenza"
+        },
+        {
+          "term": "api",
+          "meaning": "anche"
+        },
+        {
+          "term": "antarāya",
+          "meaning": "ostacoli"
+        },
+        {
+          "term": "abhāvaḥ",
+          "meaning": "assenza"
+        },
+        {
+          "term": "ca",
+          "meaning": "e"
+        }
+      ],
+      "meaning": "Da ciò derivano la conoscenza della coscienza interiore e la scomparsa degli ostacoli.",
+      "explanation": "La pratica di Oṃ e la dedizione a Īśvara volgono l'attenzione verso la coscienza interiore. Con questo raccoglimento gli ostacoli perdono forza, perché la mente non rimane dispersa esclusivamente verso l'esterno."
+    },
+    {
+      "sutraId": "sutra_1_30",
+      "pronunciation": "vyā-dhi styā-na sam-śa-ya pra-mā-da ā-las-ya a-vi-ra-ti bhrān-ti dar-śa-na a-lab-dha bhū-mi-kat-va a-na-va-sthi-tat-vā-ni chit-ta vik-she-pāḥ te an-ta-rā-yāḥ",
+      "initialPronunciation": "vyā-dhi",
+      "wordMeanings": [
+        {
+          "term": "vyādhi",
+          "meaning": "malattia"
+        },
+        {
+          "term": "styāna",
+          "meaning": "apatia, inerzia mentale"
+        },
+        {
+          "term": "saṁśaya",
+          "meaning": "dubbio"
+        },
+        {
+          "term": "pramāda",
+          "meaning": "negligenza"
+        },
+        {
+          "term": "ālasya",
+          "meaning": "pigrizia"
+        },
+        {
+          "term": "avirati",
+          "meaning": "intemperanza, attaccamento ai sensi"
+        },
+        {
+          "term": "bhrānti-darśana",
+          "meaning": "falsa visione"
+        },
+        {
+          "term": "alabdha-bhūmikatva",
+          "meaning": "mancato raggiungimento di uno stadio"
+        },
+        {
+          "term": "anavasthitatvāni",
+          "meaning": "incapacità di mantenervisi"
+        },
+        {
+          "term": "citta-vikṣepāḥ",
+          "meaning": "dispersioni della mente"
+        },
+        {
+          "term": "te",
+          "meaning": "questi"
+        },
+        {
+          "term": "antarāyāḥ",
+          "meaning": "ostacoli"
+        }
+      ],
+      "meaning": "Malattia, apatia, dubbio, negligenza, pigrizia, intemperanza, falsa visione, mancato conseguimento e instabilità sono dispersioni della mente e ostacoli.",
+      "explanation": "Gli ostacoli elencati riguardano corpo, energia, comprensione, volontà e stabilità. Riconoscerli con precisione evita di trasformarli in colpe personali e permette di applicare un rimedio adeguato alla reale causa della dispersione."
+    },
+    {
+      "sutraId": "sutra_1_31",
+      "pronunciation": "duḥ-kha daur-ma-na-sya an-ga-me-ja-yat-va śvā-sa pra-śvā-sā vik-she-pa sa-ha-bhu-vaḥ",
+      "initialPronunciation": "duḥ-kha",
+      "wordMeanings": [
+        {
+          "term": "duḥkha",
+          "meaning": "dolore"
+        },
+        {
+          "term": "daurmanasya",
+          "meaning": "sconforto, abbattimento"
+        },
+        {
+          "term": "aṅgamejayatva",
+          "meaning": "tremore del corpo"
+        },
+        {
+          "term": "śvāsa",
+          "meaning": "inspirazione"
+        },
+        {
+          "term": "praśvāsa",
+          "meaning": "espirazione"
+        },
+        {
+          "term": "vikṣepa",
+          "meaning": "dispersione"
+        },
+        {
+          "term": "sahabhuvaḥ",
+          "meaning": "che accompagnano"
+        }
+      ],
+      "meaning": "Dolore, sconforto, tremore del corpo e respiro irregolare accompagnano la dispersione mentale.",
+      "explanation": "Dolore, scoraggiamento, irrequietezza corporea e alterazione del respiro sono segnali che accompagnano una mente dispersa. Il sutra mostra che lo squilibrio mentale coinvolge l'intera persona e può essere riconosciuto anche attraverso il corpo."
+    },
+    {
+      "sutraId": "sutra_1_32",
+      "pronunciation": "tat pra-ti-ṣe-dhār-tham e-ka tat-tva ab-hyā-saḥ",
+      "initialPronunciation": "tat",
+      "wordMeanings": [
+        {
+          "term": "tat",
+          "meaning": "di ciò, di questi ostacoli"
+        },
+        {
+          "term": "pratiṣedhārtham",
+          "meaning": "per impedirli"
+        },
+        {
+          "term": "eka",
+          "meaning": "uno"
+        },
+        {
+          "term": "tattva",
+          "meaning": "principio, realtà"
+        },
+        {
+          "term": "abhyāsaḥ",
+          "meaning": "pratica"
+        }
+      ],
+      "meaning": "Per impedirli, si pratichi la concentrazione su un unico principio.",
+      "explanation": "Di fronte agli ostacoli, Patañjali propone la pratica su un unico principio. La continuità dell'oggetto riduce la frammentazione e consente alla mente di raccogliere progressivamente le proprie energie."
+    },
+    {
+      "sutraId": "sutra_1_33",
+      "pronunciation": "mai-trī ka-ru-ṇā mu-di-tā u-pek-ṣā-ṇām su-kha duḥ-kha puṇ-ya a-puṇ-ya vi-sha-yā-ṇām bhā-va-nā-taḥ chit-ta pra-sā-da-nam",
+      "initialPronunciation": "mai-trī",
+      "wordMeanings": [
+        {
+          "term": "maitrī",
+          "meaning": "amicizia"
+        },
+        {
+          "term": "karuṇā",
+          "meaning": "compassione"
+        },
+        {
+          "term": "muditā",
+          "meaning": "gioia compartecipe"
+        },
+        {
+          "term": "upekṣāṇām",
+          "meaning": "equanimità"
+        },
+        {
+          "term": "sukha",
+          "meaning": "felicità"
+        },
+        {
+          "term": "duḥkha",
+          "meaning": "dolore"
+        },
+        {
+          "term": "puṇya",
+          "meaning": "virtù"
+        },
+        {
+          "term": "apuṇya",
+          "meaning": "non virtù"
+        },
+        {
+          "term": "viṣayāṇām",
+          "meaning": "verso coloro che ne sono oggetto"
+        },
+        {
+          "term": "bhāvanātaḥ",
+          "meaning": "mediante la coltivazione"
+        },
+        {
+          "term": "citta-prasādanam",
+          "meaning": "serenità, limpidezza della mente"
+        }
+      ],
+      "meaning": "La mente si rasserena coltivando amicizia verso chi è felice, compassione verso chi soffre, gioia verso chi è virtuoso ed equanimità verso chi non lo è.",
+      "explanation": "Quattro atteggiamenti proteggono la serenità nelle relazioni: amicizia, compassione, gioia per il bene altrui ed equanimità davanti a ciò che è nocivo. Essi contrastano invidia, durezza, compiacimento e reazione impulsiva."
+    },
+    {
+      "sutraId": "sutra_1_34",
+      "pronunciation": "prach-chhar-da-na vi-dā-ra-ṇā-bhyām vā prā-ṇa-sya",
+      "initialPronunciation": "prach-chhar-da-na",
+      "wordMeanings": [
+        {
+          "term": "pracchardana",
+          "meaning": "espulsione, espirazione"
+        },
+        {
+          "term": "vidāraṇābhyām",
+          "meaning": "mediante la ritenzione"
+        },
+        {
+          "term": "vā",
+          "meaning": "oppure"
+        },
+        {
+          "term": "prāṇasya",
+          "meaning": "del respiro, dell'energia vitale"
+        }
+      ],
+      "meaning": "Oppure la mente si stabilizza mediante l'espulsione e la ritenzione del respiro.",
+      "explanation": "Il respiro offre un accesso diretto alla stabilità mentale. Un'espirazione consapevole e la successiva sospensione possono favorire il raccoglimento, purché la pratica sia proporzionata e non forzata."
+    },
+    {
+      "sutraId": "sutra_1_35",
+      "pronunciation": "vi-sha-ya-va-tī vā pra-vrit-tir ut-pan-nā ma-na-saḥ sthi-ti ni-ban-dhi-nī",
+      "initialPronunciation": "vi-sha-ya-va-tī",
+      "wordMeanings": [
+        {
+          "term": "viṣayavatī",
+          "meaning": "riferita a un oggetto sensibile"
+        },
+        {
+          "term": "vā",
+          "meaning": "oppure"
+        },
+        {
+          "term": "pravṛttiḥ",
+          "meaning": "attività, percezione"
+        },
+        {
+          "term": "utpannā",
+          "meaning": "sorta"
+        },
+        {
+          "term": "manasaḥ",
+          "meaning": "della mente"
+        },
+        {
+          "term": "sthiti",
+          "meaning": "stabilità"
+        },
+        {
+          "term": "nibandhinī",
+          "meaning": "che fissa, che sostiene"
+        }
+      ],
+      "meaning": "Oppure una percezione sorta da un oggetto rende stabile la mente.",
+      "explanation": "Una percezione particolarmente chiara e stabile può diventare sostegno della concentrazione. Il punto non è ricercare esperienze straordinarie, ma utilizzare una cognizione concreta per rafforzare la fiducia e fermare la dispersione."
+    },
+    {
+      "sutraId": "sutra_1_36",
+      "pronunciation": "vi-śo-kā vā jyo-tiṣ-ma-tī",
+      "initialPronunciation": "vi-śo-kā",
+      "wordMeanings": [
+        {
+          "term": "viśokā",
+          "meaning": "priva di dolore"
+        },
+        {
+          "term": "vā",
+          "meaning": "oppure"
+        },
+        {
+          "term": "jyotiṣmatī",
+          "meaning": "luminosa, colma di luce"
+        }
+      ],
+      "meaning": "Oppure la mente si stabilizza rivolgendosi a una luminosità priva di dolore.",
+      "explanation": "La mente può stabilizzarsi contemplando una luminosità interiore libera dal dolore. Questa esperienza rappresenta chiarezza e serenità, non una semplice immagine visiva da produrre con lo sforzo."
+    },
+    {
+      "sutraId": "sutra_1_37",
+      "pronunciation": "vī-ta rā-ga vi-sha-yam vā chit-tam",
+      "initialPronunciation": "vī-ta",
+      "wordMeanings": [
+        {
+          "term": "vīta",
+          "meaning": "privo"
+        },
+        {
+          "term": "rāga",
+          "meaning": "attaccamento"
+        },
+        {
+          "term": "viṣayam",
+          "meaning": "avente per oggetto"
+        },
+        {
+          "term": "vā",
+          "meaning": "oppure"
+        },
+        {
+          "term": "cittam",
+          "meaning": "mente"
+        }
+      ],
+      "meaning": "Oppure la mente si stabilizza prendendo come oggetto una mente libera dall'attaccamento.",
+      "explanation": "La contemplazione di una mente realmente libera dall'attaccamento offre un modello di quiete. Può trattarsi di un maestro o di una figura interiormente significativa, purché il suo ricordo conduca al distacco e non a una nuova dipendenza."
+    },
+    {
+      "sutraId": "sutra_1_38",
+      "pronunciation": "svap-na ni-drā jñā-na ā-lam-ba-nam vā",
+      "initialPronunciation": "svap-na",
+      "wordMeanings": [
+        {
+          "term": "svapna",
+          "meaning": "sogno"
+        },
+        {
+          "term": "nidrā",
+          "meaning": "sonno"
+        },
+        {
+          "term": "jñāna",
+          "meaning": "conoscenza"
+        },
+        {
+          "term": "ālambanam",
+          "meaning": "sostegno"
+        },
+        {
+          "term": "vā",
+          "meaning": "oppure"
+        }
+      ],
+      "meaning": "Oppure assumendo come sostegno la conoscenza del sogno o del sonno.",
+      "explanation": "Anche una conoscenza emersa nel sogno o la qualità di quiete riconosciuta nel sonno possono sostenere la meditazione. Ciò che conta è la capacità di assumerle come oggetto stabile, non l'interpretazione indiscriminata di ogni sogno."
+    },
+    {
+      "sutraId": "sutra_1_39",
+      "pronunciation": "ya-thā a-bhi-ma-ta dhyā-nād vā",
+      "initialPronunciation": "ya-thā",
+      "wordMeanings": [
+        {
+          "term": "yathā",
+          "meaning": "secondo, come"
+        },
+        {
+          "term": "abhimata",
+          "meaning": "desiderato, scelto"
+        },
+        {
+          "term": "dhyānāt",
+          "meaning": "mediante la meditazione"
+        },
+        {
+          "term": "vā",
+          "meaning": "oppure"
+        }
+      ],
+      "meaning": "Oppure meditando su un oggetto scelto.",
+      "explanation": "Patañjali ammette un oggetto di meditazione scelto secondo l'inclinazione del praticante. La libertà di scelta non elimina il criterio essenziale: l'oggetto deve favorire stabilità, chiarezza e continuità dell'attenzione."
+    },
+    {
+      "sutraId": "sutra_1_40",
+      "pronunciation": "pa-ra-mā-ṇu pa-ra-ma ma-hat-tva an-taḥ as-ya va-śī-kā-raḥ",
+      "initialPronunciation": "pa-ra-mā-ṇu",
+      "wordMeanings": [
+        {
+          "term": "paramāṇu",
+          "meaning": "atomo infinitesimo"
+        },
+        {
+          "term": "parama",
+          "meaning": "supremo, massimo"
+        },
+        {
+          "term": "mahattva",
+          "meaning": "grandezza"
+        },
+        {
+          "term": "antaḥ",
+          "meaning": "fino al limite"
+        },
+        {
+          "term": "asya",
+          "meaning": "di lui"
+        },
+        {
+          "term": "vaśīkāraḥ",
+          "meaning": "padronanza"
+        }
+      ],
+      "meaning": "La sua padronanza si estende dall'infinitamente piccolo all'infinitamente grande.",
+      "explanation": "Quando la mente è pienamente raccolta, può applicarsi senza dispersione a oggetti di qualsiasi scala, dal più sottile al più vasto. La padronanza descritta riguarda l'attenzione, non il possesso materiale degli oggetti contemplati."
+    },
+    {
+      "sutraId": "sutra_1_41",
+      "pronunciation": "kṣī-ṇa vrit-ter a-bhi-jā-ta-sya i-va ma-ṇeḥ gra-hī-tri gra-ha-ṇa grāh-ye-ṣu tat-stha tad an-ja-na-tā sa-mā-pat-tiḥ",
+      "initialPronunciation": "kṣī-ṇa",
+      "wordMeanings": [
+        {
+          "term": "kṣīṇa-vṛtteḥ",
+          "meaning": "di colui i cui movimenti mentali sono attenuati"
+        },
+        {
+          "term": "abhijātasya",
+          "meaning": "puro, limpido"
+        },
+        {
+          "term": "iva",
+          "meaning": "come"
+        },
+        {
+          "term": "maṇeḥ",
+          "meaning": "un cristallo, una gemma"
+        },
+        {
+          "term": "grahītṛ",
+          "meaning": "conoscitore"
+        },
+        {
+          "term": "grahaṇa",
+          "meaning": "conoscenza, processo conoscitivo"
+        },
+        {
+          "term": "grāhyeṣu",
+          "meaning": "negli oggetti conosciuti"
+        },
+        {
+          "term": "tat-stha",
+          "meaning": "posato su quello"
+        },
+        {
+          "term": "tad-añjanatā",
+          "meaning": "che ne assume il colore"
+        },
+        {
+          "term": "samāpattiḥ",
+          "meaning": "assorbimento"
+        }
+      ],
+      "meaning": "Quando i movimenti mentali si attenuano, la mente, limpida come un cristallo, assume il colore del conoscitore, del conoscere o del conosciuto su cui si posa: questa è samāpatti.",
+      "explanation": "La metafora del cristallo descrive una mente le cui modificazioni si sono attenuate: essa riflette con precisione ciò su cui si posa. Conoscitore, processo del conoscere e oggetto possono così essere contemplati senza la consueta torbidità mentale."
+    },
+    {
+      "sutraId": "sutra_1_42",
+      "pronunciation": "ta-tra śab-da ar-tha jñā-na vi-kal-paiḥ san-kīr-ṇā sa-vi-tar-kā sa-mā-pat-tiḥ",
+      "initialPronunciation": "ta-tra",
+      "wordMeanings": [
+        {
+          "term": "tatra",
+          "meaning": "in essa"
+        },
+        {
+          "term": "śabda",
+          "meaning": "parola"
+        },
+        {
+          "term": "artha",
+          "meaning": "oggetto, significato"
+        },
+        {
+          "term": "jñāna",
+          "meaning": "conoscenza"
+        },
+        {
+          "term": "vikalpaiḥ",
+          "meaning": "con distinzioni concettuali"
+        },
+        {
+          "term": "saṅkīrṇā",
+          "meaning": "mescolata"
+        },
+        {
+          "term": "savitarkā",
+          "meaning": "con ragionamento"
+        },
+        {
+          "term": "samāpattiḥ",
+          "meaning": "assorbimento"
+        }
+      ],
+      "meaning": "La samāpatti savitarkā è mescolata a distinzioni tra parola, oggetto e conoscenza.",
+      "explanation": "Nella samāpatti savitarkā l'oggetto è ancora conosciuto attraverso una mescolanza di nome, significato e idee associate. La concentrazione è presente, ma la memoria concettuale continua a intervenire nell'esperienza."
+    },
+    {
+      "sutraId": "sutra_1_43",
+      "pronunciation": "smri-ti pa-ri-śud-dhau sva-rū-pa śūn-ye i-va ar-tha mā-tra nir-bhā-sā nir-vi-tar-kā",
+      "initialPronunciation": "smri-ti",
+      "wordMeanings": [
+        {
+          "term": "smṛti",
+          "meaning": "memoria"
+        },
+        {
+          "term": "pariśuddhau",
+          "meaning": "quando è purificata"
+        },
+        {
+          "term": "svarūpa",
+          "meaning": "forma propria"
+        },
+        {
+          "term": "śūnye",
+          "meaning": "vuota, priva"
+        },
+        {
+          "term": "iva",
+          "meaning": "come se"
+        },
+        {
+          "term": "artha",
+          "meaning": "oggetto"
+        },
+        {
+          "term": "mātra",
+          "meaning": "soltanto"
+        },
+        {
+          "term": "nirbhāsā",
+          "meaning": "risplendente"
+        },
+        {
+          "term": "nirvitarkā",
+          "meaning": "senza ragionamento"
+        }
+      ],
+      "meaning": "Quando la memoria è purificata e la mente appare priva di forma propria, risplende soltanto l'oggetto: questa è nirvitarkā.",
+      "explanation": "Quando la memoria viene purificata dalle associazioni, l'oggetto risplende senza essere sovrapposto da nomi e concetti. La mente sembra svuotata di una forma propria perché non altera più ciò che contempla."
+    },
+    {
+      "sutraId": "sutra_1_44",
+      "pronunciation": "e-ta-ya-i-va sa-vi-chā-rā nir-vi-chā-rā cha sūk-ṣma vi-sha-yā vyā-khyā-tā",
+      "initialPronunciation": "e-ta-ya-i-va",
+      "wordMeanings": [
+        {
+          "term": "etayā",
+          "meaning": "mediante questa"
+        },
+        {
+          "term": "eva",
+          "meaning": "proprio, anche"
+        },
+        {
+          "term": "savicārā",
+          "meaning": "con riflessione sottile"
+        },
+        {
+          "term": "nirvicārā",
+          "meaning": "senza riflessione sottile"
+        },
+        {
+          "term": "ca",
+          "meaning": "e"
+        },
+        {
+          "term": "sūkṣma",
+          "meaning": "sottili"
+        },
+        {
+          "term": "viṣayā",
+          "meaning": "aventi per oggetto"
+        },
+        {
+          "term": "vyākhyātā",
+          "meaning": "spiegate"
+        }
+      ],
+      "meaning": "Con ciò sono spiegate anche le samāpatti savicārā e nirvicārā, che hanno oggetti sottili.",
+      "explanation": "La distinzione tra concentrazione con e senza elaborazione si applica anche agli oggetti sottili. Savicārā conserva una riflessione sottile; nirvicārā lascia emergere l'oggetto senza tale attività concettuale."
+    },
+    {
+      "sutraId": "sutra_1_45",
+      "pronunciation": "sūk-ṣma vi-sha-yat-vam cha a-lin-ga par-ya-va-sā-nam",
+      "initialPronunciation": "sūk-ṣma",
+      "wordMeanings": [
+        {
+          "term": "sūkṣma",
+          "meaning": "sottile"
+        },
+        {
+          "term": "viṣayatvam",
+          "meaning": "condizione di essere oggetto"
+        },
+        {
+          "term": "ca",
+          "meaning": "e"
+        },
+        {
+          "term": "aliṅga",
+          "meaning": "il non manifestato, privo di segno"
+        },
+        {
+          "term": "paryavasānam",
+          "meaning": "termine, limite finale"
+        }
+      ],
+      "meaning": "La serie degli oggetti sottili termina nell'aliṅga, la natura non manifestata.",
+      "explanation": "L'indagine meditativa può procedere attraverso livelli sempre più sottili della natura fino ad aliṅga, la prakṛti non manifestata. Oltre questo limite non vi è un oggetto naturale ancora più sottile da assumere come supporto."
+    },
+    {
+      "sutraId": "sutra_1_46",
+      "pronunciation": "tā e-va sa-bī-jaḥ sa-mā-dhiḥ",
+      "initialPronunciation": "tā",
+      "wordMeanings": [
+        {
+          "term": "tāḥ",
+          "meaning": "queste"
+        },
+        {
+          "term": "eva",
+          "meaning": "proprio"
+        },
+        {
+          "term": "sabījaḥ",
+          "meaning": "con seme"
+        },
+        {
+          "term": "samādhiḥ",
+          "meaning": "samādhi"
+        }
+      ],
+      "meaning": "Questi stati sono samādhi con seme.",
+      "explanation": "Tutti gli assorbimenti descritti fin qui conservano un seme: un oggetto o un'impressione capace di sostenere una futura manifestazione mentale. Sono samādhi autentici, ma non costituiscono ancora la cessazione completa."
+    },
+    {
+      "sutraId": "sutra_1_47",
+      "pronunciation": "nir-vi-chā-ra vai-śā-rad-ye ad-hyāt-ma pra-sā-daḥ",
+      "initialPronunciation": "nir-vi-chā-ra",
+      "wordMeanings": [
+        {
+          "term": "nirvicāra",
+          "meaning": "senza riflessione sottile"
+        },
+        {
+          "term": "vaiśāradye",
+          "meaning": "nella piena maestria, limpidezza"
+        },
+        {
+          "term": "adhyātma",
+          "meaning": "interiore, relativo al sé"
+        },
+        {
+          "term": "prasādaḥ",
+          "meaning": "serenità, chiarezza"
+        }
+      ],
+      "meaning": "Nella piena limpidezza della nirvicāra sorge la serenità interiore.",
+      "explanation": "Quando nirvicārā diventa pienamente limpida, nasce una serenità che riguarda l'interiorità nel suo insieme. La conoscenza non è più disturbata dall'elaborazione mentale e acquista una chiarezza stabile."
+    },
+    {
+      "sutraId": "sutra_1_48",
+      "pronunciation": "ri-tam-bha-rā ta-tra praj-ñā",
+      "initialPronunciation": "ri-tam-bha-rā",
+      "wordMeanings": [
+        {
+          "term": "ṛtambharā",
+          "meaning": "colma di verità"
+        },
+        {
+          "term": "tatra",
+          "meaning": "in quello stato"
+        },
+        {
+          "term": "prajñā",
+          "meaning": "conoscenza intuitiva, sapienza"
+        }
+      ],
+      "meaning": "In quello stato, la conoscenza intuitiva è colma di verità.",
+      "explanation": "La prajñā di questo stato è detta portatrice di verità perché coglie l'oggetto senza le deformazioni abituali. Non è una convinzione più forte delle altre, ma una conoscenza che nasce dalla trasparenza della mente concentrata."
+    },
+    {
+      "sutraId": "sutra_1_49",
+      "pronunciation": "śru-ta a-nu-mā-na praj-ñā-bhyām an-ya vi-sha-yā vi-śe-ṣa ar-tha-t-tvāt",
+      "initialPronunciation": "śru-ta",
+      "wordMeanings": [
+        {
+          "term": "śruta",
+          "meaning": "conoscenza appresa"
+        },
+        {
+          "term": "anumāna",
+          "meaning": "inferenza"
+        },
+        {
+          "term": "prajñābhyām",
+          "meaning": "dalle due forme di conoscenza"
+        },
+        {
+          "term": "anya",
+          "meaning": "altra, diversa"
+        },
+        {
+          "term": "viṣayā",
+          "meaning": "avente per oggetto"
+        },
+        {
+          "term": "viśeṣa",
+          "meaning": "il particolare"
+        },
+        {
+          "term": "arthattvāt",
+          "meaning": "perché concerne direttamente il suo oggetto"
+        }
+      ],
+      "meaning": "Questa conoscenza ha un oggetto diverso da quella appresa o inferita, perché coglie direttamente il particolare.",
+      "explanation": "La conoscenza diretta del samādhi differisce da ciò che apprendiamo attraverso parole o inferenze. Queste ultime trattano categorie generali; la prajñā meditativa coglie la particolarità dell'oggetto presente."
+    },
+    {
+      "sutraId": "sutra_1_50",
+      "pronunciation": "taj-jaḥ sam-skā-raḥ an-ya sam-skā-ra pra-ti-ban-dhī",
+      "initialPronunciation": "taj-jaḥ",
+      "wordMeanings": [
+        {
+          "term": "taj-jaḥ",
+          "meaning": "nato da quella"
+        },
+        {
+          "term": "saṁskāraḥ",
+          "meaning": "impressione latente"
+        },
+        {
+          "term": "anya",
+          "meaning": "altre"
+        },
+        {
+          "term": "saṁskāra",
+          "meaning": "impressioni latenti"
+        },
+        {
+          "term": "pratibandhī",
+          "meaning": "che ostacola, che impedisce"
+        }
+      ],
+      "meaning": "L'impressione nata da quella conoscenza ostacola le altre impressioni.",
+      "explanation": "La conoscenza limpida lascia un'impressione capace di contrastare le abitudini mentali precedenti. In questo modo la pratica non produce soltanto un'esperienza temporanea, ma modifica progressivamente la tendenza della mente a disperdersi."
+    },
+    {
+      "sutraId": "sutra_1_51",
+      "pronunciation": "tas-ya a-pi ni-ro-dhe sar-va ni-ro-dhāt nir-bī-jaḥ sa-mā-dhiḥ",
+      "initialPronunciation": "tas-ya",
+      "wordMeanings": [
+        {
+          "term": "tasya",
+          "meaning": "di quella"
+        },
+        {
+          "term": "api",
+          "meaning": "anche"
+        },
+        {
+          "term": "nirodhe",
+          "meaning": "nella cessazione"
+        },
+        {
+          "term": "sarva",
+          "meaning": "di tutto"
+        },
+        {
+          "term": "nirodhāt",
+          "meaning": "per la cessazione"
+        },
+        {
+          "term": "nirbījaḥ",
+          "meaning": "senza seme"
+        },
+        {
+          "term": "samādhiḥ",
+          "meaning": "samādhi"
+        }
+      ],
+      "meaning": "Quando anche quell'impressione cessa, con la cessazione di tutto, si ha il samādhi senza seme.",
+      "explanation": "Anche l'impressione benefica generata dalla conoscenza deve infine cessare. Quando non rimane più alcun seme capace di riattivare le modificazioni, il samādhi è detto nirbīja, senza seme."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scientia.yoga/schemas/ui.schema.json",
+  "title": "Sutra by Heart interface translation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["metadata", "cover", "home", "navigation", "chapter", "sutra", "continuous", "audio", "errors"],
+  "properties": {
+    "metadata": {"$ref": "#/$defs/stringMap"},
+    "cover": {"$ref": "#/$defs/stringMap"},
+    "home": {"$ref": "#/$defs/stringMap"},
+    "navigation": {"$ref": "#/$defs/stringMap"},
+    "chapter": {"$ref": "#/$defs/stringMap"},
+    "sutra": {"$ref": "#/$defs/stringMap"},
+    "continuous": {"$ref": "#/$defs/stringMap"},
+    "audio": {"$ref": "#/$defs/stringMap"},
+    "errors": {"$ref": "#/$defs/stringMap"}
+  },
+  "$defs": {
+    "stringMap": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {"type": "string"}
+    }
+  }
+}

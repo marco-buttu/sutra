@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scientia.yoga/schemas/sutras.schema.json",
+  "title": "Sutra by Heart sutras",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "chapterId", "order", "number", "sanskrit", "initialWord", "media"],
+    "properties": {
+      "id": {"type": "string", "pattern": "^sutra_[1-9][0-9]*_[0-9]{2,}$"},
+      "chapterId": {"type": "string", "pattern": "^chapter_[1-9][0-9]*$"},
+      "order": {"type": "integer", "minimum": 1},
+      "number": {"type": "string", "pattern": "^[1-9][0-9]*\\.[1-9][0-9]*$"},
+      "sanskrit": {"type": "string", "minLength": 1},
+      "initialWord": {"type": "string", "minLength": 1},
+      "media": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["video"],
+        "properties": {
+          "video": {"type": ["string", "null"]}
+        }
+      }
+    }
+  }
+}

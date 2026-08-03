@@ -1,0 +1,1168 @@
+[
+  {
+    "id": "sutra_1_01",
+    "chapterId": "chapter_1",
+    "order": 1,
+    "number": "1.1",
+    "sanskrit": "atha yogānuśāsanam",
+    "initialWord": "atha",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_02",
+    "chapterId": "chapter_1",
+    "order": 2,
+    "number": "1.2",
+    "sanskrit": "yogaś citta-vṛtti-nirodhaḥ",
+    "initialWord": "yogaś",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_03",
+    "chapterId": "chapter_1",
+    "order": 3,
+    "number": "1.3",
+    "sanskrit": "tadā draṣṭuḥ svarūpe avasthānam",
+    "initialWord": "tadā",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_04",
+    "chapterId": "chapter_1",
+    "order": 4,
+    "number": "1.4",
+    "sanskrit": "vṛtti-sārūpyam itaratra",
+    "initialWord": "vṛtti-sārūpyam",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_05",
+    "chapterId": "chapter_1",
+    "order": 5,
+    "number": "1.5",
+    "sanskrit": "vṛttayaḥ pañcatayyaḥ kliṣṭā akliṣṭāḥ",
+    "initialWord": "vṛttayaḥ",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_06",
+    "chapterId": "chapter_1",
+    "order": 6,
+    "number": "1.6",
+    "sanskrit": "pramāṇa viparyaya vikalpa nidrā smṛtayaḥ",
+    "initialWord": "pramāṇa",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_07",
+    "chapterId": "chapter_1",
+    "order": 7,
+    "number": "1.7",
+    "sanskrit": "pratyakṣa anumāna āgamāḥ pramāṇāni",
+    "initialWord": "pratyakṣa",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_08",
+    "chapterId": "chapter_1",
+    "order": 8,
+    "number": "1.8",
+    "sanskrit": "viparyayo mithyā-jñānam atadrūpa pratiṣṭham",
+    "initialWord": "viparyayo",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_09",
+    "chapterId": "chapter_1",
+    "order": 9,
+    "number": "1.9",
+    "sanskrit": "śabda-jñāna anupātī vastu-śūnyo vikalpaḥ",
+    "initialWord": "śabda-jñāna",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_10",
+    "chapterId": "chapter_1",
+    "order": 10,
+    "number": "1.10",
+    "sanskrit": "abhāva pratyaya ālambanā vṛttir nidrā",
+    "initialWord": "abhāva",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_11",
+    "chapterId": "chapter_1",
+    "order": 11,
+    "number": "1.11",
+    "sanskrit": "anubhūta viṣaya asaṁpramoṣaḥ smṛtiḥ",
+    "initialWord": "anubhūta",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_12",
+    "chapterId": "chapter_1",
+    "order": 12,
+    "number": "1.12",
+    "sanskrit": "abhyāsa vairāgyābhyāṁ tan nirodhaḥ",
+    "initialWord": "abhyāsa",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_13",
+    "chapterId": "chapter_1",
+    "order": 13,
+    "number": "1.13",
+    "sanskrit": "tatra sthitau yatno abhyāsaḥ",
+    "initialWord": "tatra",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_14",
+    "chapterId": "chapter_1",
+    "order": 14,
+    "number": "1.14",
+    "sanskrit": "sa tu dīrgha kāla nairantarya satkārāsevito dṛḍha-bhūmiḥ",
+    "initialWord": "sa",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_15",
+    "chapterId": "chapter_1",
+    "order": 15,
+    "number": "1.15",
+    "sanskrit": "dṛṣṭānuśravika viṣaya vitṛṣṇasya vaśīkāra saṁjñā vairāgyam",
+    "initialWord": "dṛṣṭānuśravika",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_16",
+    "chapterId": "chapter_1",
+    "order": 16,
+    "number": "1.16",
+    "sanskrit": "tat paraṁ puruṣa khyāter guṇa vaitṛṣṇyam",
+    "initialWord": "tat",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_17",
+    "chapterId": "chapter_1",
+    "order": 17,
+    "number": "1.17",
+    "sanskrit": "vitarka vicāra ānanda asmitā rūpa anugamāt samprajñātaḥ",
+    "initialWord": "vitarka",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_18",
+    "chapterId": "chapter_1",
+    "order": 18,
+    "number": "1.18",
+    "sanskrit": "virāma pratyaya abhyāsa pūrvaḥ saṁskāra śeṣo anyaḥ",
+    "initialWord": "virāma",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_19",
+    "chapterId": "chapter_1",
+    "order": 19,
+    "number": "1.19",
+    "sanskrit": "bhava pratyayo videha prakṛti layānām",
+    "initialWord": "bhava",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_20",
+    "chapterId": "chapter_1",
+    "order": 20,
+    "number": "1.20",
+    "sanskrit": "śraddhā vīrya smṛti samādhi prajñā pūrvaka itareṣām",
+    "initialWord": "śraddhā",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_21",
+    "chapterId": "chapter_1",
+    "order": 21,
+    "number": "1.21",
+    "sanskrit": "tīvra saṁvegānām āsannaḥ",
+    "initialWord": "tīvra",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_22",
+    "chapterId": "chapter_1",
+    "order": 22,
+    "number": "1.22",
+    "sanskrit": "mṛdu madhya adhimātratvāt tato api viśeṣaḥ",
+    "initialWord": "mṛdu",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_23",
+    "chapterId": "chapter_1",
+    "order": 23,
+    "number": "1.23",
+    "sanskrit": "īśvara praṇidhānād vā",
+    "initialWord": "īśvara",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_24",
+    "chapterId": "chapter_1",
+    "order": 24,
+    "number": "1.24",
+    "sanskrit": "kleśa karma vipāka āśayair aparāmṛṣṭaḥ puruṣa viśeṣa īśvaraḥ",
+    "initialWord": "kleśa",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_25",
+    "chapterId": "chapter_1",
+    "order": 25,
+    "number": "1.25",
+    "sanskrit": "tatra niratiśayaṁ sarvajña bījam",
+    "initialWord": "tatra",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_26",
+    "chapterId": "chapter_1",
+    "order": 26,
+    "number": "1.26",
+    "sanskrit": "sa pūrveṣām api guruḥ kālena anavacchedāt",
+    "initialWord": "sa",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_27",
+    "chapterId": "chapter_1",
+    "order": 27,
+    "number": "1.27",
+    "sanskrit": "tasya vācakaḥ praṇavaḥ",
+    "initialWord": "tasya",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_28",
+    "chapterId": "chapter_1",
+    "order": 28,
+    "number": "1.28",
+    "sanskrit": "taj japas tad artha bhāvanam",
+    "initialWord": "taj",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_29",
+    "chapterId": "chapter_1",
+    "order": 29,
+    "number": "1.29",
+    "sanskrit": "tataḥ pratyak cetana adhigamo api antarāya abhāvaś ca",
+    "initialWord": "tataḥ",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_30",
+    "chapterId": "chapter_1",
+    "order": 30,
+    "number": "1.30",
+    "sanskrit": "vyādhi styāna saṁśaya pramāda ālasya avirati bhrānti darśana alabdha bhūmikatva anavasthitatvāni citta vikṣepāḥ te antarāyāḥ",
+    "initialWord": "vyādhi",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_31",
+    "chapterId": "chapter_1",
+    "order": 31,
+    "number": "1.31",
+    "sanskrit": "duḥkha daurmanasya aṅgamejayatva śvāsa praśvāsā vikṣepa sahabhuvaḥ",
+    "initialWord": "duḥkha",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_32",
+    "chapterId": "chapter_1",
+    "order": 32,
+    "number": "1.32",
+    "sanskrit": "tat pratiṣedhārtham eka tattva abhyāsaḥ",
+    "initialWord": "tat",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_33",
+    "chapterId": "chapter_1",
+    "order": 33,
+    "number": "1.33",
+    "sanskrit": "maitrī karuṇā muditā upekṣāṇāṁ sukha duḥkha puṇya apuṇya viṣayāṇāṁ bhāvanātaḥ citta prasādanam",
+    "initialWord": "maitrī",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_34",
+    "chapterId": "chapter_1",
+    "order": 34,
+    "number": "1.34",
+    "sanskrit": "pracchardana vidāraṇābhyāṁ vā prāṇasya",
+    "initialWord": "pracchardana",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_35",
+    "chapterId": "chapter_1",
+    "order": 35,
+    "number": "1.35",
+    "sanskrit": "viṣayavatī vā pravṛttir utpannā manasaḥ sthiti nibandhinī",
+    "initialWord": "viṣayavatī",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_36",
+    "chapterId": "chapter_1",
+    "order": 36,
+    "number": "1.36",
+    "sanskrit": "viśokā vā jyotiṣmatī",
+    "initialWord": "viśokā",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_37",
+    "chapterId": "chapter_1",
+    "order": 37,
+    "number": "1.37",
+    "sanskrit": "vīta rāga viṣayaṁ vā cittam",
+    "initialWord": "vīta",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_38",
+    "chapterId": "chapter_1",
+    "order": 38,
+    "number": "1.38",
+    "sanskrit": "svapna nidrā jñāna ālambanaṁ vā",
+    "initialWord": "svapna",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_39",
+    "chapterId": "chapter_1",
+    "order": 39,
+    "number": "1.39",
+    "sanskrit": "yathā abhimata dhyānād vā",
+    "initialWord": "yathā",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_40",
+    "chapterId": "chapter_1",
+    "order": 40,
+    "number": "1.40",
+    "sanskrit": "paramāṇu parama mahattva antaḥ asya vaśīkāraḥ",
+    "initialWord": "paramāṇu",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_41",
+    "chapterId": "chapter_1",
+    "order": 41,
+    "number": "1.41",
+    "sanskrit": "kṣīṇa vṛtter abhijātasya iva maṇeḥ grahītṛ grahaṇa grāhyeṣu tatstha tad añjanatā samāpattiḥ",
+    "initialWord": "kṣīṇa",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_42",
+    "chapterId": "chapter_1",
+    "order": 42,
+    "number": "1.42",
+    "sanskrit": "tatra śabda artha jñāna vikalpaiḥ saṅkīrṇā savitarkā samāpattiḥ",
+    "initialWord": "tatra",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_43",
+    "chapterId": "chapter_1",
+    "order": 43,
+    "number": "1.43",
+    "sanskrit": "smṛti pariśuddhau svarūpa śūnye iva artha mātra nirbhāsā nirvitarkā",
+    "initialWord": "smṛti",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_44",
+    "chapterId": "chapter_1",
+    "order": 44,
+    "number": "1.44",
+    "sanskrit": "etayaiva savicārā nirvicārā ca sūkṣma viṣayā vyākhyātā",
+    "initialWord": "etayaiva",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_45",
+    "chapterId": "chapter_1",
+    "order": 45,
+    "number": "1.45",
+    "sanskrit": "sūkṣma viṣayatvaṁ ca aliṅga paryavasānam",
+    "initialWord": "sūkṣma",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_46",
+    "chapterId": "chapter_1",
+    "order": 46,
+    "number": "1.46",
+    "sanskrit": "tā eva sabījaḥ samādhiḥ",
+    "initialWord": "tā",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_47",
+    "chapterId": "chapter_1",
+    "order": 47,
+    "number": "1.47",
+    "sanskrit": "nirvicāra vaiśāradye adhyātma prasādaḥ",
+    "initialWord": "nirvicāra",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_48",
+    "chapterId": "chapter_1",
+    "order": 48,
+    "number": "1.48",
+    "sanskrit": "ṛtambharā tatra prajñā",
+    "initialWord": "ṛtambharā",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_49",
+    "chapterId": "chapter_1",
+    "order": 49,
+    "number": "1.49",
+    "sanskrit": "śruta anumāna prajñābhyām anya viṣayā viśeṣa arthattvāt",
+    "initialWord": "śruta",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_50",
+    "chapterId": "chapter_1",
+    "order": 50,
+    "number": "1.50",
+    "sanskrit": "taj jaḥ saṁskāraḥ anya saṁskāra pratibandhī",
+    "initialWord": "taj",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_1_51",
+    "chapterId": "chapter_1",
+    "order": 51,
+    "number": "1.51",
+    "sanskrit": "tasya api nirodhe sarva nirodhāt nirbījaḥ samādhiḥ",
+    "initialWord": "tasya",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_01",
+    "chapterId": "chapter_2",
+    "order": 1,
+    "number": "2.1",
+    "sanskrit": "tapaḥ svādhyāya īśvara praṇidhānāni kriyā yogaḥ",
+    "initialWord": "tapaḥ",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_02",
+    "chapterId": "chapter_2",
+    "order": 2,
+    "number": "2.2",
+    "sanskrit": "samādhi bhāvanārthaḥ kleśa tanūkaraṇārthaś ca",
+    "initialWord": "samādhi",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_03",
+    "chapterId": "chapter_2",
+    "order": 3,
+    "number": "2.3",
+    "sanskrit": "avidyā asmitā rāga dveṣa abhiniveśāḥ kleśāḥ",
+    "initialWord": "avidyā",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_04",
+    "chapterId": "chapter_2",
+    "order": 4,
+    "number": "2.4",
+    "sanskrit": "avidyā kṣetram uttareṣāṁ prasupta tanu vicchinna udārāṇām",
+    "initialWord": "avidyā",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_05",
+    "chapterId": "chapter_2",
+    "order": 5,
+    "number": "2.5",
+    "sanskrit": "anitya aśuci duḥkha anātmasu nitya śuci sukha ātma khyātir avidyā",
+    "initialWord": "anitya",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_06",
+    "chapterId": "chapter_2",
+    "order": 6,
+    "number": "2.6",
+    "sanskrit": "dṛg darśana śaktyor ekātmatā iva asmitā",
+    "initialWord": "dṛg",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_07",
+    "chapterId": "chapter_2",
+    "order": 7,
+    "number": "2.7",
+    "sanskrit": "sukha anuśayī rāgaḥ",
+    "initialWord": "sukha",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_08",
+    "chapterId": "chapter_2",
+    "order": 8,
+    "number": "2.8",
+    "sanskrit": "duḥkha anuśayī dveṣaḥ",
+    "initialWord": "duḥkha",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_09",
+    "chapterId": "chapter_2",
+    "order": 9,
+    "number": "2.9",
+    "sanskrit": "sva rasa vāhī viduṣo api tathā rūḍhaḥ abhiniveśaḥ",
+    "initialWord": "sva",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_10",
+    "chapterId": "chapter_2",
+    "order": 10,
+    "number": "2.10",
+    "sanskrit": "te pratiprasava heyāḥ sūkṣmāḥ",
+    "initialWord": "te",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_11",
+    "chapterId": "chapter_2",
+    "order": 11,
+    "number": "2.11",
+    "sanskrit": "dhyāna heyāḥ tat vṛttayaḥ",
+    "initialWord": "dhyāna",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_12",
+    "chapterId": "chapter_2",
+    "order": 12,
+    "number": "2.12",
+    "sanskrit": "kleśa mūlaḥ karma āśayaḥ dṛṣṭa adṛṣṭa janma vedanīyaḥ",
+    "initialWord": "kleśa",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_13",
+    "chapterId": "chapter_2",
+    "order": 13,
+    "number": "2.13",
+    "sanskrit": "sati mūle tat vipākaḥ jāti āyuḥ bhogāḥ",
+    "initialWord": "sati",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_14",
+    "chapterId": "chapter_2",
+    "order": 14,
+    "number": "2.14",
+    "sanskrit": "te hlāda paritāpa phalāḥ puṇya apuṇya hetutvāt",
+    "initialWord": "te",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_15",
+    "chapterId": "chapter_2",
+    "order": 15,
+    "number": "2.15",
+    "sanskrit": "pariṇāma tāpa saṁskāra duḥkhaiḥ guṇa vṛtti virodhāc ca duḥkham eva sarvaṁ vivekinaḥ",
+    "initialWord": "pariṇāma",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_16",
+    "chapterId": "chapter_2",
+    "order": 16,
+    "number": "2.16",
+    "sanskrit": "heyaṁ duḥkham anāgatam",
+    "initialWord": "heyaṁ",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_17",
+    "chapterId": "chapter_2",
+    "order": 17,
+    "number": "2.17",
+    "sanskrit": "draṣṭṛ dṛśya yoḥ saṁyogaḥ heya hetuḥ",
+    "initialWord": "draṣṭṛ",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_18",
+    "chapterId": "chapter_2",
+    "order": 18,
+    "number": "2.18",
+    "sanskrit": "prakāśa kriyā sthiti śīlaṁ bhūta indriya ātmakaṁ bhoga apavarga arthaṁ dṛśyam",
+    "initialWord": "prakāśa",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_19",
+    "chapterId": "chapter_2",
+    "order": 19,
+    "number": "2.19",
+    "sanskrit": "viśeṣa aviśeṣa liṅga mātra aliṅgāni guṇa parvāṇi",
+    "initialWord": "viśeṣa",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_20",
+    "chapterId": "chapter_2",
+    "order": 20,
+    "number": "2.20",
+    "sanskrit": "draṣṭā dṛśi mātraḥ śuddhaḥ api pratyaya anupaśyaḥ",
+    "initialWord": "draṣṭā",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_21",
+    "chapterId": "chapter_2",
+    "order": 21,
+    "number": "2.21",
+    "sanskrit": "tad artha eva dṛśyasya ātmā",
+    "initialWord": "tad",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_22",
+    "chapterId": "chapter_2",
+    "order": 22,
+    "number": "2.22",
+    "sanskrit": "kṛta arthaṁ prati naṣṭam api anaṣṭaṁ tad anya sādhāraṇatvāt",
+    "initialWord": "kṛta",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_23",
+    "chapterId": "chapter_2",
+    "order": 23,
+    "number": "2.23",
+    "sanskrit": "sva svāmi śaktyoḥ svarūpa upalabdhi hetuḥ saṁyogaḥ",
+    "initialWord": "sva",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_24",
+    "chapterId": "chapter_2",
+    "order": 24,
+    "number": "2.24",
+    "sanskrit": "tasya hetuḥ avidyā",
+    "initialWord": "tasya",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_25",
+    "chapterId": "chapter_2",
+    "order": 25,
+    "number": "2.25",
+    "sanskrit": "tad abhāvāt saṁyoga abhāvaḥ hānaṁ tad dṛśeḥ kaivalyam",
+    "initialWord": "tad",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_26",
+    "chapterId": "chapter_2",
+    "order": 26,
+    "number": "2.26",
+    "sanskrit": "viveka khyātiḥ aviplavā hānopāyaḥ",
+    "initialWord": "viveka",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_27",
+    "chapterId": "chapter_2",
+    "order": 27,
+    "number": "2.27",
+    "sanskrit": "tasya saptadhā prānta bhūmiḥ prajñā",
+    "initialWord": "tasya",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_28",
+    "chapterId": "chapter_2",
+    "order": 28,
+    "number": "2.28",
+    "sanskrit": "yoga aṅga anuṣṭhānāt aśuddhi kṣaye jñāna dīptiḥ ā viveka khyāteḥ",
+    "initialWord": "yoga",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_29",
+    "chapterId": "chapter_2",
+    "order": 29,
+    "number": "2.29",
+    "sanskrit": "yama niyama āsana prāṇāyāma pratyāhāra dhāraṇā dhyāna samādhi aṣṭāṅgāni",
+    "initialWord": "yama",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_30",
+    "chapterId": "chapter_2",
+    "order": 30,
+    "number": "2.30",
+    "sanskrit": "ahiṁsā satya asteya brahmacarya aparigrahāḥ yamāḥ",
+    "initialWord": "ahiṁsā",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_31",
+    "chapterId": "chapter_2",
+    "order": 31,
+    "number": "2.31",
+    "sanskrit": "jāti deśa kāla samaya anavacchinnāḥ sārvabhaumā mahāvratam",
+    "initialWord": "jāti",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_32",
+    "chapterId": "chapter_2",
+    "order": 32,
+    "number": "2.32",
+    "sanskrit": "śauca santoṣa tapaḥ svādhyāya īśvara praṇidhānāni niyamāḥ",
+    "initialWord": "śauca",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_33",
+    "chapterId": "chapter_2",
+    "order": 33,
+    "number": "2.33",
+    "sanskrit": "vitarka bādhane pratipakṣa bhāvanam",
+    "initialWord": "vitarka",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_34",
+    "chapterId": "chapter_2",
+    "order": 34,
+    "number": "2.34",
+    "sanskrit": "vitarkā hiṁsādayaḥ kṛta kārita anumoditā lobha krodha moha pūrvakāḥ mṛdu madhya adhimātrā duḥkha ajñāna ananta phalā iti pratipakṣa bhāvanam",
+    "initialWord": "vitarkā",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_35",
+    "chapterId": "chapter_2",
+    "order": 35,
+    "number": "2.35",
+    "sanskrit": "ahiṁsā pratiṣṭhāyāṁ tat sannidhau vaira tyāgaḥ",
+    "initialWord": "ahiṁsā",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_36",
+    "chapterId": "chapter_2",
+    "order": 36,
+    "number": "2.36",
+    "sanskrit": "satya pratiṣṭhāyāṁ kriyā phala āśrayatvam",
+    "initialWord": "satya",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_37",
+    "chapterId": "chapter_2",
+    "order": 37,
+    "number": "2.37",
+    "sanskrit": "asteya pratiṣṭhāyāṁ sarva ratna upasthānam",
+    "initialWord": "asteya",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_38",
+    "chapterId": "chapter_2",
+    "order": 38,
+    "number": "2.38",
+    "sanskrit": "brahmacarya pratiṣṭhāyāṁ vīrya lābhaḥ",
+    "initialWord": "brahmacarya",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_39",
+    "chapterId": "chapter_2",
+    "order": 39,
+    "number": "2.39",
+    "sanskrit": "aparigraha sthairye janma kathantā saṁbodhaḥ",
+    "initialWord": "aparigraha",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_40",
+    "chapterId": "chapter_2",
+    "order": 40,
+    "number": "2.40",
+    "sanskrit": "śaucāt svāṅga jugupsā parair asaṁsargaḥ",
+    "initialWord": "śaucāt",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_41",
+    "chapterId": "chapter_2",
+    "order": 41,
+    "number": "2.41",
+    "sanskrit": "sattva śuddhi saumanasya ekāgrya indriya jaya ātma darśana yogyatvāni ca",
+    "initialWord": "sattva",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_42",
+    "chapterId": "chapter_2",
+    "order": 42,
+    "number": "2.42",
+    "sanskrit": "santoṣāt anuttamaḥ sukha lābhaḥ",
+    "initialWord": "santoṣāt",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_43",
+    "chapterId": "chapter_2",
+    "order": 43,
+    "number": "2.43",
+    "sanskrit": "kāya indriya siddhiḥ aśuddhi kṣayāt tapasaḥ",
+    "initialWord": "kāya",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_44",
+    "chapterId": "chapter_2",
+    "order": 44,
+    "number": "2.44",
+    "sanskrit": "svādhyāyāt iṣṭa devatā samprayogaḥ",
+    "initialWord": "svādhyāyāt",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_45",
+    "chapterId": "chapter_2",
+    "order": 45,
+    "number": "2.45",
+    "sanskrit": "samādhi siddhiḥ īśvara praṇidhānāt",
+    "initialWord": "samādhi",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_46",
+    "chapterId": "chapter_2",
+    "order": 46,
+    "number": "2.46",
+    "sanskrit": "sthira sukham āsanam",
+    "initialWord": "sthira",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_47",
+    "chapterId": "chapter_2",
+    "order": 47,
+    "number": "2.47",
+    "sanskrit": "prayatna śaithilya ananta samāpattibhyām",
+    "initialWord": "prayatna",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_48",
+    "chapterId": "chapter_2",
+    "order": 48,
+    "number": "2.48",
+    "sanskrit": "tataḥ dvandva anabhighātaḥ",
+    "initialWord": "tataḥ",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_49",
+    "chapterId": "chapter_2",
+    "order": 49,
+    "number": "2.49",
+    "sanskrit": "tasmin sati śvāsa praśvāsa yoḥ gati vicchedaḥ prāṇāyāmaḥ",
+    "initialWord": "tasmin",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_50",
+    "chapterId": "chapter_2",
+    "order": 50,
+    "number": "2.50",
+    "sanskrit": "bāhya abhyantara stambha vṛttiḥ deśa kāla saṁkhyābhiḥ pari dṛṣṭaḥ dīrgha sūkṣmaḥ",
+    "initialWord": "bāhya",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_51",
+    "chapterId": "chapter_2",
+    "order": 51,
+    "number": "2.51",
+    "sanskrit": "bāhya abhyantara viṣaya ākṣepī caturthaḥ",
+    "initialWord": "bāhya",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_52",
+    "chapterId": "chapter_2",
+    "order": 52,
+    "number": "2.52",
+    "sanskrit": "tataḥ kṣīyate prakāśa āvaraṇam",
+    "initialWord": "tataḥ",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_53",
+    "chapterId": "chapter_2",
+    "order": 53,
+    "number": "2.53",
+    "sanskrit": "dhāraṇāsu ca yogyatā manasaḥ",
+    "initialWord": "dhāraṇāsu",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_54",
+    "chapterId": "chapter_2",
+    "order": 54,
+    "number": "2.54",
+    "sanskrit": "sva viṣaya asaṁprayoge cittasya svarūpa anukāraḥ iva indriyāṇāṁ pratyāhāraḥ",
+    "initialWord": "sva",
+    "media": {
+      "video": null
+    }
+  },
+  {
+    "id": "sutra_2_55",
+    "chapterId": "chapter_2",
+    "order": 55,
+    "number": "2.55",
+    "sanskrit": "tataḥ paramā vaśyatā indriyāṇām",
+    "initialWord": "tataḥ",
+    "media": {
+      "video": null
+    }
+  }
+]

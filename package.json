@@ -1,0 +1,11 @@
+{
+  "name": "sutra-by-heart-content",
+  "private": true,
+  "scripts": {
+    "test:ui": "node tests/smoke.cjs",
+    "test:admin": "node tests/admin_smoke.cjs"
+  },
+  "devDependencies": {
+    "jsdom": "^29.1.1"
+  }
+}
