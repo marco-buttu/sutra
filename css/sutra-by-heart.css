@@ -131,7 +131,20 @@ button {
   background-size: cover, auto 125%;
 }
 
-.home-cover::before,
+.home-cover::before {
+  top: 32px;
+  right: auto;
+  left: 10%;
+  display: block;
+  width: 120px;
+  height: auto;
+  aspect-ratio: 1;
+  border: 0;
+  border-radius: 0;
+  background: url("../assets/sutra-by-heart-logo.png") center / contain no-repeat;
+  opacity: 0.92;
+}
+
 .home-cover::after {
   display: none;
 }
@@ -473,8 +486,17 @@ button {
 .continuous-options {
   display: flex;
   grid-column: 1 / -1;
+  align-items: flex-end;
   flex-wrap: wrap;
   gap: 8px 24px;
+}
+
+.pause-mode-field {
+  flex: 0 0 100%;
+}
+
+.pause-mode-field select {
+  width: 190px;
 }
 
 .continuous-player {
@@ -490,6 +512,7 @@ button {
 
 .sequence-play,
 .sequence-stop,
+.sequence-repeat-current,
 .home-button {
   min-height: 42px;
   border-radius: 2px;
@@ -523,6 +546,7 @@ button {
 }
 
 .sequence-stop,
+.sequence-repeat-current,
 .home-button {
   padding: 0 14px;
   border: 1px solid #b7c9cd;
@@ -531,12 +555,14 @@ button {
 }
 
 .sequence-stop:hover:not(:disabled),
+.sequence-repeat-current:hover:not(:disabled),
 .home-button:hover {
   border-color: var(--deep-blue);
   background: var(--white);
 }
 
-.sequence-stop:disabled {
+.sequence-stop:disabled,
+.sequence-repeat-current:disabled {
   color: #929a9b;
   cursor: default;
   opacity: 0.65;
@@ -544,6 +570,7 @@ button {
 
 .sequence-play:focus-visible,
 .sequence-stop:focus-visible,
+.sequence-repeat-current:focus-visible,
 .home-button:focus-visible {
   outline: 3px solid rgba(196, 154, 82, 0.3);
   outline-offset: 3px;
@@ -1112,6 +1139,13 @@ button {
     background-size: cover, cover;
   }
 
+  .home-cover::before {
+    top: 12px;
+    right: auto;
+    left: 26px;
+    width: 96px;
+  }
+
   .cover-inner {
     min-height: 460px;
   }
@@ -1149,6 +1183,14 @@ button {
   .continuous-controls .mode-field,
   .continuous-controls .continuous-options {
     grid-column: 1 / -1;
+  }
+
+  .pause-mode-field {
+    flex-basis: 100%;
+  }
+
+  .pause-mode-field select {
+    width: 100%;
   }
 
   .continuous-player {

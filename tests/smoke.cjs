@@ -41,10 +41,14 @@ function installBrowserStubs(window) {
       this.preload = "";
       this.src = "";
       this.duration = 0.01;
+      this.currentTime = 0;
+      this.muted = false;
+      this.playCount = 0;
       window.__testAudio = this;
     }
 
     async play() {
+      this.playCount += 1;
       this.paused = false;
       this.ended = false;
       this.dispatchEvent(new window.Event("play"));
@@ -227,9 +231,15 @@ async function verifyPage(filePath) {
     }
 
     const bellInput = document.querySelector("#sequence-bell");
-    const repetitionPauseInput = document.querySelector("#sequence-repetition-pause");
+    const pauseModeSelect = document.querySelector("#sequence-pause-mode");
+    const repeatCurrentButton = document.querySelector("#sequence-repeat-current");
     const currentTrack = document.querySelector("#sequence-current");
-    if (!bellInput.checked || repetitionPauseInput.checked || !currentTrack.hidden) {
+    if (
+      !bellInput.checked ||
+      pauseModeSelect.value !== "none" ||
+      !repeatCurrentButton.disabled ||
+      !currentTrack.hidden
+    ) {
       throw new Error("The continuous recitation defaults are incorrect.");
     }
 
@@ -246,6 +256,16 @@ async function verifyPage(filePath) {
     if (!currentTrack.querySelector(".sequence-current-pronunciation").textContent.trim()) {
       throw new Error("The current pronunciation is missing.");
     }
+    if (repeatCurrentButton.disabled) {
+      throw new Error("The repeat-current control is disabled during playback.");
+    }
+    const playCountBeforeRepeat = dom.window.__testAudio.playCount;
+    repeatCurrentButton.click();
+    await waitFor(
+      dom.window,
+      () => dom.window.__testAudio.playCount > playCountBeforeRepeat,
+      "the repeated current sutra"
+    );
 
     dom.window.__testAudio.ended = true;
     dom.window.__testAudio.dispatchEvent(new dom.window.Event("ended"));
@@ -267,25 +287,54 @@ async function verifyPage(filePath) {
     document.querySelector("#sequence-stop").click();
 
     bellInput.checked = false;
-    repetitionPauseInput.checked = true;
+    pauseModeSelect.value = "after";
     document.querySelector("#sequence-play").click();
-    await waitFor(dom.window, () => !currentTrack.hidden, "the repetition-pause track");
+    await waitFor(dom.window, () => !currentTrack.hidden, "the after-pause track");
     dom.window.__testAudio.ended = true;
     dom.window.__testAudio.dispatchEvent(new dom.window.Event("ended"));
     await waitFor(
       dom.window,
-      () => document.querySelector("#sequence-status").textContent.includes("Pausa per ripetere"),
-      "the repetition pause"
+      () => document.querySelector("#sequence-status").textContent.includes("Pausa dopo"),
+      "the pause after the sutra"
     );
     if (!dom.window.__testTimeoutDelays.some((delay) => Math.abs(delay - 11) < 0.001)) {
-      throw new Error("The repetition pause is not 110% of the audio duration.");
+      throw new Error("The pause after the sutra is not 110% of its duration.");
     }
     if (currentTrack.hidden) {
-      throw new Error("The sutra text must remain visible during the repetition pause.");
+      throw new Error("The sutra text must remain visible during the pause after it.");
     }
-    await new Promise((resolve) => dom.window.setTimeout(resolve, 25));
-    if (dom.window.__testAudio.src === expectedBellSource) {
-      throw new Error("The bell played even though it was disabled.");
+    if (repeatCurrentButton.disabled) {
+      throw new Error("The current sutra cannot be repeated during the pause after it.");
+    }
+    document.querySelector("#sequence-stop").click();
+
+    bellInput.checked = true;
+    pauseModeSelect.value = "before";
+    document.querySelector("#sequence-play").click();
+    await waitFor(
+      dom.window,
+      () => dom.window.__testAudio.src === expectedBellSource,
+      "the initial bell before the first pause"
+    );
+    if (!currentTrack.hidden || !repeatCurrentButton.disabled) {
+      throw new Error("The text and repeat control must be hidden during the initial bell.");
+    }
+    dom.window.__testAudio.ended = true;
+    dom.window.__testAudio.dispatchEvent(new dom.window.Event("ended"));
+    await waitFor(
+      dom.window,
+      () => document.querySelector("#sequence-status").textContent.includes("Pausa prima"),
+      "the pause before the sutra"
+    );
+    if (!dom.window.__testTimeoutDelays.some((delay) => Math.abs(delay - 10) < 0.001)) {
+      throw new Error("The pause before the sutra is not equal to its duration.");
+    }
+    if (!currentTrack.hidden || !repeatCurrentButton.disabled) {
+      throw new Error("The sutra must remain hidden during the pause before it.");
+    }
+    await waitFor(dom.window, () => !currentTrack.hidden, "the track after its leading pause");
+    if (repeatCurrentButton.disabled) {
+      throw new Error("The current sutra cannot be repeated after the leading pause.");
     }
     document.querySelector("#sequence-stop").click();
 

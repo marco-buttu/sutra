@@ -313,9 +313,13 @@
                 <input id="sequence-bell" type="checkbox" checked>
                 <span>${escapeHtml(message("continuous.bellLabel"))}</span>
               </label>
-              <label class="repeat-control">
-                <input id="sequence-repetition-pause" type="checkbox">
+              <label class="control-field pause-mode-field">
                 <span>${escapeHtml(message("continuous.repetitionPauseLabel"))}</span>
+                <select id="sequence-pause-mode">
+                  <option value="none">${escapeHtml(message("continuous.pauseNoneOption"))}</option>
+                  <option value="before">${escapeHtml(message("continuous.pauseBeforeOption"))}</option>
+                  <option value="after">${escapeHtml(message("continuous.pauseAfterOption"))}</option>
+                </select>
               </label>
             </div>
           </div>
@@ -327,6 +331,9 @@
             </button>
             <button class="sequence-stop" id="sequence-stop" type="button" disabled>
               ${escapeHtml(message("continuous.stop"))}
+            </button>
+            <button class="sequence-repeat-current" id="sequence-repeat-current" type="button" disabled>
+              ${escapeHtml(message("continuous.repeatCurrent"))}
             </button>
             <p class="sequence-status" id="sequence-status" aria-live="polite">
               ${escapeHtml(message("continuous.ready"))}
@@ -763,10 +770,11 @@
     const endSelect = document.querySelector("#sequence-end");
     const repeatInput = document.querySelector("#sequence-repeat");
     const bellInput = document.querySelector("#sequence-bell");
-    const repetitionPauseInput = document.querySelector("#sequence-repetition-pause");
+    const pauseModeSelect = document.querySelector("#sequence-pause-mode");
     const playButton = document.querySelector("#sequence-play");
     const playLabel = playButton.querySelector(".sequence-play-label");
     const stopButton = document.querySelector("#sequence-stop");
+    const repeatCurrentButton = document.querySelector("#sequence-repeat-current");
     const status = document.querySelector("#sequence-status");
     const currentTrack = document.querySelector("#sequence-current");
     const currentSanskrit = currentTrack.querySelector(".sequence-current-sanskrit");
@@ -794,6 +802,7 @@
       modeSelect.disabled = disabled;
       startSelect.disabled = disabled;
       endSelect.disabled = disabled;
+      pauseModeSelect.disabled = disabled;
     }
 
     function setPlayState(state) {
@@ -849,6 +858,10 @@
       }
     }
 
+    function setRepeatCurrentEnabled(enabled) {
+      repeatCurrentButton.disabled = !enabled;
+    }
+
     function stopSequence(statusMessage = message("continuous.ready")) {
       player.pause();
       clearPauseTimer();
@@ -857,6 +870,7 @@
       setPlayState("idle");
       setControlsDisabled(false);
       stopButton.disabled = true;
+      setRepeatCurrentEnabled(false);
       status.textContent = statusMessage;
       hideCurrentTrack();
       clearPlayerSource();
@@ -870,6 +884,7 @@
       sequenceState.phase = "track";
       const track = sequenceState.queue[sequenceState.index];
       showCurrentTrack(track);
+      setRepeatCurrentEnabled(true);
       player.src = resolveAudio(track.audio);
       try {
         await player.play();
@@ -885,6 +900,7 @@
       clearPauseTimer();
       sequenceState.phase = "bell";
       hideCurrentTrack();
+      setRepeatCurrentEnabled(false);
       status.textContent = message("continuous.bellPlaying");
       player.src = resolveAudio(restartCueAudio);
       try {
@@ -894,48 +910,184 @@
       }
     }
 
+    function trackDurationMilliseconds(multiplier = 1) {
+      return Number.isFinite(player.duration) && player.duration > 0
+        ? player.duration * 1000 * multiplier
+        : 0;
+    }
+
+    function loadTrackDuration(track) {
+      return new Promise((resolve, reject) => {
+        let settled = false;
+
+        function cleanup() {
+          player.removeEventListener("loadedmetadata", onLoadedMetadata);
+          player.removeEventListener("error", onError);
+        }
+
+        function finish() {
+          if (settled) {
+            return;
+          }
+          const duration = trackDurationMilliseconds();
+          if (duration > 0) {
+            settled = true;
+            cleanup();
+            resolve(duration);
+          }
+        }
+
+        function onLoadedMetadata() {
+          finish();
+        }
+
+        function onError() {
+          if (settled) {
+            return;
+          }
+          settled = true;
+          cleanup();
+          reject(new Error("Unable to load track metadata."));
+        }
+
+        player.addEventListener("loadedmetadata", onLoadedMetadata);
+        player.addEventListener("error", onError);
+        player.src = resolveAudio(track.audio);
+        player.load();
+        finish();
+      });
+    }
+
+    function startSequencePause(phase, durationMilliseconds) {
+      if (!sequenceState) {
+        return;
+      }
+      const track = sequenceState.queue[sequenceState.index];
+      sequenceState.phase = phase;
+      sequenceState.pauseRemaining = durationMilliseconds;
+      sequenceState.pauseDeadline = Date.now() + durationMilliseconds;
+      if (phase === "pause-before") {
+        hideCurrentTrack();
+        setRepeatCurrentEnabled(false);
+      } else {
+        showCurrentTrack(track);
+        setRepeatCurrentEnabled(true);
+      }
+      sequenceState.pauseTimer = window.setTimeout(() => {
+        if (!sequenceState) {
+          return;
+        }
+        sequenceState.pauseTimer = null;
+        if (phase === "pause-before") {
+          playCurrentTrack();
+        } else {
+          advanceAfterTrack();
+        }
+      }, durationMilliseconds);
+      setPlayState("playing");
+      status.textContent = message(
+        phase === "pause-before" ? "continuous.pauseBefore" : "continuous.pauseAfter",
+        {number: track.number}
+      );
+    }
+
+    async function startBeforePause() {
+      if (!sequenceState) {
+        return;
+      }
+      const activeState = sequenceState;
+      const activeIndex = activeState.index;
+      const track = activeState.queue[activeIndex];
+      clearPauseTimer();
+      activeState.phase = "preparing-before";
+      hideCurrentTrack();
+      setRepeatCurrentEnabled(false);
+      status.textContent = message("continuous.pauseBefore", {number: track.number});
+      try {
+        const durationMilliseconds = await loadTrackDuration(track);
+        if (sequenceState !== activeState || activeState.index !== activeIndex) {
+          return;
+        }
+        startSequencePause("pause-before", durationMilliseconds);
+      } catch (error) {
+        if (sequenceState !== activeState) {
+          return;
+        }
+        stopSequence(message("errors.sequenceTrack", {number: track.number}));
+      }
+    }
+
+    async function primeBeforePause() {
+      if (!sequenceState) {
+        return;
+      }
+      const activeState = sequenceState;
+      const track = activeState.queue[activeState.index];
+      activeState.phase = "priming";
+      hideCurrentTrack();
+      setRepeatCurrentEnabled(false);
+      player.src = resolveAudio(track.audio);
+      player.muted = true;
+      try {
+        await player.play();
+        player.pause();
+        player.currentTime = 0;
+        player.muted = false;
+        if (sequenceState !== activeState) {
+          return;
+        }
+        await startBeforePause();
+      } catch (error) {
+        player.muted = false;
+        if (sequenceState !== activeState) {
+          return;
+        }
+        stopSequence(message("errors.sequenceTrack", {number: track.number}));
+      }
+    }
+
+    async function startCycle({initial = false} = {}) {
+      if (!sequenceState) {
+        return;
+      }
+      sequenceState.index = 0;
+      if (sequenceState.pauseMode !== "before") {
+        await playCurrentTrack();
+        return;
+      }
+      if (sequenceState.bell) {
+        await playBellCue();
+      } else if (initial) {
+        await primeBeforePause();
+      } else {
+        await startBeforePause();
+      }
+    }
+
     async function advanceAfterTrack() {
       if (!sequenceState) {
         return;
       }
       if (sequenceState.index < sequenceState.queue.length - 1) {
         sequenceState.index += 1;
-        await playCurrentTrack();
+        if (sequenceState.pauseMode === "before") {
+          await startBeforePause();
+        } else {
+          await playCurrentTrack();
+        }
       } else if (sequenceState.repeat) {
         if (sequenceState.bell) {
           await playBellCue();
         } else {
-          sequenceState.index = 0;
-          await playCurrentTrack();
+          await startCycle();
         }
       } else {
         stopSequence(message("continuous.completed"));
       }
     }
 
-    function startRepetitionPause(durationMilliseconds) {
-      if (!sequenceState) {
-        return;
-      }
-      const track = sequenceState.queue[sequenceState.index];
-      sequenceState.phase = "repetition-pause";
-      sequenceState.pauseRemaining = durationMilliseconds;
-      sequenceState.pauseDeadline = Date.now() + durationMilliseconds;
-      sequenceState.pauseTimer = window.setTimeout(() => {
-        if (!sequenceState) {
-          return;
-        }
-        sequenceState.pauseTimer = null;
-        advanceAfterTrack();
-      }, durationMilliseconds);
-      setPlayState("playing");
-      status.textContent = message("continuous.repetitionPause", {
-        number: track.number
-      });
-    }
-
-    function pauseRepetitionTimer() {
-      if (!sequenceState || sequenceState.phase !== "repetition-pause") {
+    function pauseSequenceTimer() {
+      if (!sequenceState || !sequenceState.phase.startsWith("pause-")) {
         return;
       }
       sequenceState.pauseRemaining = Math.max(
@@ -944,14 +1096,18 @@
       );
       clearPauseTimer();
       setPlayState("paused");
-      status.textContent = message("continuous.repetitionPausePaused");
+      status.textContent = message(
+        sequenceState.phase === "pause-before"
+          ? "continuous.pauseBeforePaused"
+          : "continuous.pauseAfterPaused"
+      );
     }
 
-    function resumeRepetitionTimer() {
-      if (!sequenceState || sequenceState.phase !== "repetition-pause") {
+    function resumeSequenceTimer() {
+      if (!sequenceState || !sequenceState.phase.startsWith("pause-")) {
         return;
       }
-      startRepetitionPause(sequenceState.pauseRemaining);
+      startSequencePause(sequenceState.phase, sequenceState.pauseRemaining);
     }
 
     chapterSelect.addEventListener("change", populateRange);
@@ -976,11 +1132,14 @@
 
     playButton.addEventListener("click", async () => {
       if (playbackMode === "sequence" && sequenceState) {
-        if (sequenceState.phase === "repetition-pause") {
+        if (["priming", "preparing-before"].includes(sequenceState.phase)) {
+          return;
+        }
+        if (sequenceState.phase.startsWith("pause-")) {
           if (sequenceState.pauseTimer) {
-            pauseRepetitionTimer();
+            pauseSequenceTimer();
           } else {
-            resumeRepetitionTimer();
+            resumeSequenceTimer();
           }
           return;
         }
@@ -1011,18 +1170,30 @@
         index: 0,
         repeat: repeatInput.checked,
         bell: bellInput.checked,
-        repetitionPause: repetitionPauseInput.checked,
-        phase: "track",
+        pauseMode: pauseModeSelect.value,
+        phase: "idle",
         pauseTimer: null,
         pauseRemaining: 0,
         pauseDeadline: 0
       };
       setControlsDisabled(true);
       stopButton.disabled = false;
-      await playCurrentTrack();
+      setRepeatCurrentEnabled(false);
+      await startCycle({initial: true});
     });
 
     stopButton.addEventListener("click", () => stopSequence());
+
+    repeatCurrentButton.addEventListener("click", async () => {
+      if (
+        !sequenceState ||
+        !["track", "pause-after"].includes(sequenceState.phase)
+      ) {
+        return;
+      }
+      clearPauseTimer();
+      await playCurrentTrack();
+    });
 
     repeatInput.addEventListener("change", () => {
       if (sequenceState) {
@@ -1036,22 +1207,12 @@
       }
     });
 
-    repetitionPauseInput.addEventListener("change", () => {
-      if (!sequenceState) {
-        return;
-      }
-      sequenceState.repetitionPause = repetitionPauseInput.checked;
-      if (!sequenceState.repetitionPause && sequenceState.phase === "repetition-pause") {
-        clearPauseTimer();
-        advanceAfterTrack();
-      }
-    });
-
     sequenceUi = {
       playCurrentTrack,
       playBellCue,
+      startBeforePause,
       advanceAfterTrack,
-      startRepetitionPause,
+      startSequencePause,
       setPlayState,
       stopSequence,
       updateStatus,
@@ -1066,6 +1227,9 @@
     if (playbackMode === "single" && activeButton) {
       markAudioButtonPlaying(activeButton);
     } else if (playbackMode === "sequence" && sequenceState && sequenceUi) {
+      if (["priming", "preparing-before"].includes(sequenceState.phase)) {
+        return;
+      }
       sequenceUi.setPlayState("playing");
       if (sequenceState.phase === "bell") {
         sequenceUi.setStatus(message("continuous.bellPlaying"));
@@ -1082,7 +1246,8 @@
       playbackMode === "sequence" &&
       sequenceState &&
       sequenceUi &&
-      !player.ended
+      !player.ended &&
+      !["priming", "preparing-before"].includes(sequenceState.phase)
     ) {
       sequenceUi.setPlayState("paused");
       if (sequenceState.phase === "bell") {
@@ -1101,13 +1266,17 @@
     } else if (playbackMode === "sequence" && sequenceState && sequenceUi) {
       if (sequenceState.phase === "bell") {
         sequenceState.index = 0;
-        sequenceUi.playCurrentTrack();
-      } else {
+        if (sequenceState.pauseMode === "before") {
+          sequenceUi.startBeforePause();
+        } else {
+          sequenceUi.playCurrentTrack();
+        }
+      } else if (sequenceState.phase === "track") {
         const durationMilliseconds = Number.isFinite(player.duration)
           ? player.duration * 1100
           : 0;
-        if (sequenceState.repetitionPause && durationMilliseconds > 0) {
-          sequenceUi.startRepetitionPause(durationMilliseconds);
+        if (sequenceState.pauseMode === "after" && durationMilliseconds > 0) {
+          sequenceUi.startSequencePause("pause-after", durationMilliseconds);
         } else {
           sequenceUi.advanceAfterTrack();
         }
