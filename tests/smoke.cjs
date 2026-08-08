@@ -40,7 +40,7 @@ function installBrowserStubs(window) {
       this.ended = false;
       this.preload = "";
       this.src = "";
-      this.duration = 0.01;
+      this.duration = 0.05;
       this.currentTime = 0;
       this.muted = false;
       this.playCount = 0;
@@ -234,6 +234,7 @@ async function verifyPage(filePath) {
     const pauseModeSelect = document.querySelector("#sequence-pause-mode");
     const repeatCurrentButton = document.querySelector("#sequence-repeat-current");
     const currentTrack = document.querySelector("#sequence-current");
+    const pauseModeLabel = document.querySelector(".pause-mode-field > span");
     if (
       !bellInput.checked ||
       pauseModeSelect.value !== "none" ||
@@ -241,6 +242,9 @@ async function verifyPage(filePath) {
       !currentTrack.hidden
     ) {
       throw new Error("The continuous recitation defaults are incorrect.");
+    }
+    if (pauseModeLabel.textContent.trim() !== "Pausa per ripetere") {
+      throw new Error("The repetition-pause label is incorrect.");
     }
 
     const modeSelect = document.querySelector("#sequence-mode");
@@ -256,16 +260,10 @@ async function verifyPage(filePath) {
     if (!currentTrack.querySelector(".sequence-current-pronunciation").textContent.trim()) {
       throw new Error("The current pronunciation is missing.");
     }
-    if (repeatCurrentButton.disabled) {
-      throw new Error("The repeat-current control is disabled during playback.");
+    if (!repeatCurrentButton.disabled) {
+      throw new Error("The repeat-current control must be disabled during playback.");
     }
-    const playCountBeforeRepeat = dom.window.__testAudio.playCount;
-    repeatCurrentButton.click();
-    await waitFor(
-      dom.window,
-      () => dom.window.__testAudio.playCount > playCountBeforeRepeat,
-      "the repeated current sutra"
-    );
+    const firstTrackSource = dom.window.__testAudio.src;
 
     dom.window.__testAudio.ended = true;
     dom.window.__testAudio.dispatchEvent(new dom.window.Event("ended"));
@@ -280,16 +278,39 @@ async function verifyPage(filePath) {
     if (!currentTrack.hidden) {
       throw new Error("The sutra text must be hidden while the bell is playing.");
     }
+    if (repeatCurrentButton.disabled) {
+      throw new Error("The last sutra cannot be repeated during the cycle bell.");
+    }
+
+    repeatCurrentButton.click();
+    await waitFor(
+      dom.window,
+      () => dom.window.__testAudio.src === firstTrackSource && !currentTrack.hidden,
+      "the last sutra repeated from the cycle bell"
+    );
+    if (!repeatCurrentButton.disabled) {
+      throw new Error("The repeat-current control must be disabled during a replay.");
+    }
 
     dom.window.__testAudio.ended = true;
     dom.window.__testAudio.dispatchEvent(new dom.window.Event("ended"));
-    await waitFor(dom.window, () => !currentTrack.hidden, "the repeated sequence track");
+    await waitFor(
+      dom.window,
+      () => dom.window.__testAudio.src === firstTrackSource && !currentTrack.hidden,
+      "the next cycle after the bell replay"
+    );
+    if (!repeatCurrentButton.disabled) {
+      throw new Error("The repeat-current control is active during normal playback.");
+    }
     document.querySelector("#sequence-stop").click();
 
     bellInput.checked = false;
     pauseModeSelect.value = "after";
     document.querySelector("#sequence-play").click();
     await waitFor(dom.window, () => !currentTrack.hidden, "the after-pause track");
+    if (!repeatCurrentButton.disabled) {
+      throw new Error("The repeat-current control is active before a sutra is completed.");
+    }
     dom.window.__testAudio.ended = true;
     dom.window.__testAudio.dispatchEvent(new dom.window.Event("ended"));
     await waitFor(
@@ -297,7 +318,7 @@ async function verifyPage(filePath) {
       () => document.querySelector("#sequence-status").textContent.includes("Pausa dopo"),
       "the pause after the sutra"
     );
-    if (!dom.window.__testTimeoutDelays.some((delay) => Math.abs(delay - 11) < 0.001)) {
+    if (!dom.window.__testTimeoutDelays.some((delay) => Math.abs(delay - 55) < 0.001)) {
       throw new Error("The pause after the sutra is not 110% of its duration.");
     }
     if (currentTrack.hidden) {
@@ -306,10 +327,36 @@ async function verifyPage(filePath) {
     if (repeatCurrentButton.disabled) {
       throw new Error("The current sutra cannot be repeated during the pause after it.");
     }
+    const afterPauseCount = dom.window.__testTimeoutDelays.filter(
+      (delay) => Math.abs(delay - 55) < 0.001
+    ).length;
+    const playCountBeforeAfterReplay = dom.window.__testAudio.playCount;
+    repeatCurrentButton.click();
+    await waitFor(
+      dom.window,
+      () => dom.window.__testAudio.playCount > playCountBeforeAfterReplay,
+      "the sutra replayed from the following pause"
+    );
+    if (!repeatCurrentButton.disabled || dom.window.__testAudio.src !== firstTrackSource) {
+      throw new Error("The sutra was not replayed correctly from the pause after it.");
+    }
+    dom.window.__testAudio.ended = true;
+    dom.window.__testAudio.dispatchEvent(new dom.window.Event("ended"));
+    await waitFor(
+      dom.window,
+      () => dom.window.__testTimeoutDelays.filter(
+        (delay) => Math.abs(delay - 55) < 0.001
+      ).length > afterPauseCount,
+      "the restarted pause after a replay"
+    );
+    if (repeatCurrentButton.disabled) {
+      throw new Error("The repeat-current control did not reactivate after the replay.");
+    }
     document.querySelector("#sequence-stop").click();
 
     bellInput.checked = true;
     pauseModeSelect.value = "before";
+    document.querySelector("#sequence-end").value = "1";
     document.querySelector("#sequence-play").click();
     await waitFor(
       dom.window,
@@ -326,15 +373,99 @@ async function verifyPage(filePath) {
       () => document.querySelector("#sequence-status").textContent.includes("Pausa prima"),
       "the pause before the sutra"
     );
-    if (!dom.window.__testTimeoutDelays.some((delay) => Math.abs(delay - 10) < 0.001)) {
+    if (!dom.window.__testTimeoutDelays.some((delay) => Math.abs(delay - 50) < 0.001)) {
       throw new Error("The pause before the sutra is not equal to its duration.");
     }
     if (!currentTrack.hidden || !repeatCurrentButton.disabled) {
       throw new Error("The sutra must remain hidden during the pause before it.");
     }
     await waitFor(dom.window, () => !currentTrack.hidden, "the track after its leading pause");
+    if (!repeatCurrentButton.disabled) {
+      throw new Error("The repeat-current control must be disabled during the first sutra.");
+    }
+    const firstBeforeTrackSource = dom.window.__testAudio.src;
+    dom.window.__testAudio.ended = true;
+    dom.window.__testAudio.dispatchEvent(new dom.window.Event("ended"));
+    await waitFor(
+      dom.window,
+      () => currentTrack.hidden && !repeatCurrentButton.disabled,
+      "the repeat control in the pause before the second sutra"
+    );
+    repeatCurrentButton.click();
+    await waitFor(
+      dom.window,
+      () => dom.window.__testAudio.src === firstBeforeTrackSource && !currentTrack.hidden,
+      "the first sutra replayed before the second"
+    );
+    if (!repeatCurrentButton.disabled) {
+      throw new Error("The repeat-current control must be disabled during the replay.");
+    }
+    dom.window.__testAudio.ended = true;
+    dom.window.__testAudio.dispatchEvent(new dom.window.Event("ended"));
+    await waitFor(
+      dom.window,
+      () => currentTrack.hidden && !repeatCurrentButton.disabled,
+      "the full leading pause restarted after the replay"
+    );
+    await waitFor(
+      dom.window,
+      () => !currentTrack.hidden && dom.window.__testAudio.src !== firstBeforeTrackSource,
+      "the second sutra after its restarted leading pause"
+    );
+    if (!repeatCurrentButton.disabled) {
+      throw new Error("The repeat-current control is active during the second sutra.");
+    }
+    const secondBeforeTrackSource = dom.window.__testAudio.src;
+    dom.window.__testAudio.ended = true;
+    dom.window.__testAudio.dispatchEvent(new dom.window.Event("ended"));
+    await waitFor(
+      dom.window,
+      () => dom.window.__testAudio.src === expectedBellSource,
+      "the bell before the repeated cycle"
+    );
     if (repeatCurrentButton.disabled) {
-      throw new Error("The current sutra cannot be repeated after the leading pause.");
+      throw new Error("The final sutra cannot be repeated during the cycle bell.");
+    }
+    repeatCurrentButton.click();
+    await waitFor(
+      dom.window,
+      () => dom.window.__testAudio.src === secondBeforeTrackSource && !currentTrack.hidden,
+      "the final sutra repeated from the cycle bell"
+    );
+    dom.window.__testAudio.ended = true;
+    dom.window.__testAudio.dispatchEvent(new dom.window.Event("ended"));
+    await waitFor(
+      dom.window,
+      () => currentTrack.hidden && !repeatCurrentButton.disabled,
+      "the first leading pause after the bell replay"
+    );
+    if (dom.window.__testAudio.src === expectedBellSource) {
+      throw new Error("The bell was replayed after repeating the final sutra.");
+    }
+    document.querySelector("#sequence-stop").click();
+
+    bellInput.checked = false;
+    pauseModeSelect.value = "before";
+    document.querySelector("#sequence-end").value = "0";
+    document.querySelector("#sequence-play").click();
+    await waitFor(
+      dom.window,
+      () => document.querySelector("#sequence-status").textContent.includes("Pausa prima"),
+      "the initial leading pause without a bell"
+    );
+    if (!repeatCurrentButton.disabled) {
+      throw new Error("The initial pause incorrectly exposes a previous sutra.");
+    }
+    await waitFor(dom.window, () => !currentTrack.hidden, "the only sutra in the range");
+    dom.window.__testAudio.ended = true;
+    dom.window.__testAudio.dispatchEvent(new dom.window.Event("ended"));
+    await waitFor(
+      dom.window,
+      () => currentTrack.hidden && !repeatCurrentButton.disabled,
+      "the leading pause at a silent cycle boundary"
+    );
+    if (dom.window.__testAudio.src === expectedBellSource) {
+      throw new Error("The disabled bell played at the cycle boundary.");
     }
     document.querySelector("#sequence-stop").click();
 

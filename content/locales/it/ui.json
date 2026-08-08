@@ -45,7 +45,7 @@
     "toLabel": "A",
     "repeatLabel": "Ripeti in ciclo",
     "bellLabel": "Campana",
-    "repetitionPauseLabel": "Pausa",
+    "repetitionPauseLabel": "Pausa per ripetere",
     "pauseNoneOption": "Nessuna",
     "pauseBeforeOption": "Prima",
     "pauseAfterOption": "Dopo",
@@ -65,6 +65,9 @@
     "trackStatus": "{state}: sutra {number} · {current} di {total}",
     "playingState": "In riproduzione",
     "pausedState": "In pausa",
+    "replayingState": "Ripetizione in corso",
+    "replayPausedState": "Ripetizione in pausa",
+    "replayStatus": "{state}: sutra {number}",
     "noSutras": "Nessun sutra disponibile."
   },
   "verification": {

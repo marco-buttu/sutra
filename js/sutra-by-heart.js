@@ -839,6 +839,16 @@
       });
     }
 
+    function updateReplayStatus(state) {
+      if (!sequenceState?.lastCompletedTrack) {
+        return;
+      }
+      status.textContent = message("continuous.replayStatus", {
+        state,
+        number: sequenceState.lastCompletedTrack.number
+      });
+    }
+
     function showCurrentTrack(track) {
       currentSanskrit.textContent = track.sanskrit;
       currentPronunciation.textContent = track.pronunciation;
@@ -884,7 +894,7 @@
       sequenceState.phase = "track";
       const track = sequenceState.queue[sequenceState.index];
       showCurrentTrack(track);
-      setRepeatCurrentEnabled(true);
+      setRepeatCurrentEnabled(false);
       player.src = resolveAudio(track.audio);
       try {
         await player.play();
@@ -898,9 +908,10 @@
         return;
       }
       clearPauseTimer();
+      sequenceState.index = 0;
       sequenceState.phase = "bell";
       hideCurrentTrack();
-      setRepeatCurrentEnabled(false);
+      setRepeatCurrentEnabled(Boolean(sequenceState.lastCompletedTrack));
       status.textContent = message("continuous.bellPlaying");
       player.src = resolveAudio(restartCueAudio);
       try {
@@ -968,11 +979,10 @@
       sequenceState.pauseDeadline = Date.now() + durationMilliseconds;
       if (phase === "pause-before") {
         hideCurrentTrack();
-        setRepeatCurrentEnabled(false);
       } else {
         showCurrentTrack(track);
-        setRepeatCurrentEnabled(true);
       }
+      setRepeatCurrentEnabled(Boolean(sequenceState.lastCompletedTrack));
       sequenceState.pauseTimer = window.setTimeout(() => {
         if (!sequenceState) {
           return;
@@ -997,15 +1007,22 @@
       }
       const activeState = sequenceState;
       const activeIndex = activeState.index;
+      activeState.beforePauseRequestId += 1;
+      const requestId = activeState.beforePauseRequestId;
       const track = activeState.queue[activeIndex];
       clearPauseTimer();
       activeState.phase = "preparing-before";
       hideCurrentTrack();
-      setRepeatCurrentEnabled(false);
+      setRepeatCurrentEnabled(Boolean(activeState.lastCompletedTrack));
       status.textContent = message("continuous.pauseBefore", {number: track.number});
       try {
         const durationMilliseconds = await loadTrackDuration(track);
-        if (sequenceState !== activeState || activeState.index !== activeIndex) {
+        if (
+          sequenceState !== activeState ||
+          activeState.index !== activeIndex ||
+          activeState.beforePauseRequestId !== requestId ||
+          activeState.phase !== "preparing-before"
+        ) {
           return;
         }
         startSequencePause("pause-before", durationMilliseconds);
@@ -1014,6 +1031,62 @@
           return;
         }
         stopSequence(message("errors.sequenceTrack", {number: track.number}));
+      }
+    }
+
+    async function replayLastCompletedTrack() {
+      if (!sequenceState?.lastCompletedTrack) {
+        return;
+      }
+      const allowedPhases = [
+        "bell",
+        "preparing-before",
+        "pause-before",
+        "pause-after"
+      ];
+      if (!allowedPhases.includes(sequenceState.phase)) {
+        return;
+      }
+
+      const track = sequenceState.lastCompletedTrack;
+      const returnPhase = sequenceState.phase;
+      clearPauseTimer();
+      sequenceState.beforePauseRequestId += 1;
+      sequenceState.replayReturnPhase = returnPhase;
+      sequenceState.phase = "replay";
+      player.pause();
+      showCurrentTrack(track);
+      setRepeatCurrentEnabled(false);
+      player.src = resolveAudio(track.audio);
+      try {
+        await player.play();
+      } catch (error) {
+        stopSequence(message("errors.sequenceTrack", {number: track.number}));
+      }
+    }
+
+    async function resumeAfterReplay() {
+      if (!sequenceState) {
+        return;
+      }
+      const returnPhase = sequenceState.replayReturnPhase;
+      const replayDurationMilliseconds = trackDurationMilliseconds(1.1);
+      sequenceState.replayReturnPhase = null;
+
+      if (returnPhase === "pause-after") {
+        if (replayDurationMilliseconds > 0) {
+          startSequencePause("pause-after", replayDurationMilliseconds);
+        } else {
+          await advanceAfterTrack();
+        }
+      } else if (["preparing-before", "pause-before"].includes(returnPhase)) {
+        await startBeforePause();
+      } else if (returnPhase === "bell") {
+        if (sequenceState.pauseMode === "before") {
+          await startBeforePause();
+        } else {
+          await playCurrentTrack();
+        }
       }
     }
 
@@ -1174,7 +1247,10 @@
         phase: "idle",
         pauseTimer: null,
         pauseRemaining: 0,
-        pauseDeadline: 0
+        pauseDeadline: 0,
+        lastCompletedTrack: null,
+        replayReturnPhase: null,
+        beforePauseRequestId: 0
       };
       setControlsDisabled(true);
       stopButton.disabled = false;
@@ -1185,14 +1261,7 @@
     stopButton.addEventListener("click", () => stopSequence());
 
     repeatCurrentButton.addEventListener("click", async () => {
-      if (
-        !sequenceState ||
-        !["track", "pause-after"].includes(sequenceState.phase)
-      ) {
-        return;
-      }
-      clearPauseTimer();
-      await playCurrentTrack();
+      await replayLastCompletedTrack();
     });
 
     repeatInput.addEventListener("change", () => {
@@ -1211,11 +1280,13 @@
       playCurrentTrack,
       playBellCue,
       startBeforePause,
+      resumeAfterReplay,
       advanceAfterTrack,
       startSequencePause,
       setPlayState,
       stopSequence,
       updateStatus,
+      updateReplayStatus,
       setStatus: (value) => {
         status.textContent = value;
       }
@@ -1233,6 +1304,8 @@
       sequenceUi.setPlayState("playing");
       if (sequenceState.phase === "bell") {
         sequenceUi.setStatus(message("continuous.bellPlaying"));
+      } else if (sequenceState.phase === "replay") {
+        sequenceUi.updateReplayStatus(message("continuous.replayingState"));
       } else {
         sequenceUi.updateStatus(message("continuous.playingState"));
       }
@@ -1252,6 +1325,8 @@
       sequenceUi.setPlayState("paused");
       if (sequenceState.phase === "bell") {
         sequenceUi.setStatus(message("continuous.bellPaused"));
+      } else if (sequenceState.phase === "replay") {
+        sequenceUi.updateReplayStatus(message("continuous.replayPausedState"));
       } else {
         sequenceUi.updateStatus(message("continuous.pausedState"));
       }
@@ -1271,7 +1346,10 @@
         } else {
           sequenceUi.playCurrentTrack();
         }
+      } else if (sequenceState.phase === "replay") {
+        sequenceUi.resumeAfterReplay();
       } else if (sequenceState.phase === "track") {
+        sequenceState.lastCompletedTrack = sequenceState.queue[sequenceState.index];
         const durationMilliseconds = Number.isFinite(player.duration)
           ? player.duration * 1100
           : 0;
