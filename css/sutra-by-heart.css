@@ -994,6 +994,7 @@ button {
   color: var(--ink);
   font-size: 15px;
   line-height: 1.62;
+  white-space: pre-line;
 }
 
 .label {
